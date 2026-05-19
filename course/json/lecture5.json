@@ -1,0 +1,399 @@
+{
+  "id": "course-lecture5",
+  "source_file": "course/eng/lecture5.pdf",
+  "source_filename": "lecture5.pdf",
+  "parsing_status": "parsed",
+  "needs_review": false,
+  "course_title": "Principles of Programming Languages",
+  "lecture_title": "Lecture 5: Semantics",
+  "main_topics": [
+    {
+      "id": "lecture5-topic-1",
+      "name": "Semantics: introduction"
+    },
+    {
+      "id": "lecture5-topic-2",
+      "name": "An evaluator for IMP"
+    },
+    {
+      "id": "lecture5-topic-3",
+      "name": "Semantics: motivation"
+    },
+    {
+      "id": "lecture5-topic-4",
+      "name": "-$ cat test.c"
+    },
+    {
+      "id": "lecture5-topic-5",
+      "name": "int main()"
+    },
+    {
+      "id": "lecture5-topic-6",
+      "name": "int x;"
+    },
+    {
+      "id": "lecture5-topic-7",
+      "name": "return (x=1) + (x=2);"
+    },
+    {
+      "id": "lecture5-topic-8",
+      "name": "-$ gcc test.c"
+    },
+    {
+      "id": "lecture5-topic-9",
+      "name": "-$ ./a.out ; echo $?"
+    },
+    {
+      "id": "lecture5-topic-10",
+      "name": "Java"
+    }
+  ],
+  "subtopics": [
+    {
+      "id": "lecture5-subtopic-1",
+      "name": "Semantics is concerned with the meaning of language"
+    },
+    {
+      "id": "lecture5-subtopic-2",
+      "name": "Semantics must be unambiguous"
+    },
+    {
+      "id": "lecture5-subtopic-3",
+      "name": "Semantics must be ﬂexible"
+    },
+    {
+      "id": "lecture5-subtopic-4",
+      "name": "“Trust the programmer”"
+    },
+    {
+      "id": "lecture5-subtopic-5",
+      "name": "“Don’t prevent the programmer from doing what needs to"
+    },
+    {
+      "id": "lecture5-subtopic-6",
+      "name": "“Keep the language small and simple”"
+    },
+    {
+      "id": "lecture5-subtopic-7",
+      "name": "“Provide only one way to do an operation”"
+    },
+    {
+      "id": "lecture5-subtopic-8",
+      "name": "“Make it fast, even if it is not guaranteed to be portable”"
+    },
+    {
+      "id": "lecture5-subtopic-9",
+      "name": "operational"
+    },
+    {
+      "id": "lecture5-subtopic-10",
+      "name": "denotational"
+    },
+    {
+      "id": "lecture5-subtopic-11",
+      "name": "axiomatic"
+    },
+    {
+      "id": "lecture5-subtopic-12",
+      "name": "variables"
+    },
+    {
+      "id": "lecture5-subtopic-13",
+      "name": "arithmetic expressions"
+    },
+    {
+      "id": "lecture5-subtopic-14",
+      "name": "boolean expressions"
+    },
+    {
+      "id": "lecture5-subtopic-15",
+      "name": "assignment statements"
+    }
+  ],
+  "definitions": [
+    {
+      "id": "lecture5-definition-1",
+      "text": "Definition Env := string -> nat."
+    },
+    {
+      "id": "lecture5-definition-2",
+      "text": "Definition env (string : string) :="
+    },
+    {
+      "id": "lecture5-definition-3",
+      "text": "Definition update (x : string)(v : nat)(env : Env) : Env :="
+    }
+  ],
+  "key_concepts": [
+    {
+      "id": "lecture5-concept-1",
+      "name": "Semantics: introduction"
+    },
+    {
+      "id": "lecture5-concept-2",
+      "name": "An evaluator for IMP"
+    },
+    {
+      "id": "lecture5-concept-3",
+      "name": "Semantics: motivation"
+    },
+    {
+      "id": "lecture5-concept-4",
+      "name": "-$ cat test.c"
+    },
+    {
+      "id": "lecture5-concept-5",
+      "name": "int main()"
+    },
+    {
+      "id": "lecture5-concept-6",
+      "name": "int x;"
+    },
+    {
+      "id": "lecture5-concept-7",
+      "name": "return (x=1) + (x=2);"
+    },
+    {
+      "id": "lecture5-concept-8",
+      "name": "-$ gcc test.c"
+    },
+    {
+      "id": "lecture5-concept-9",
+      "name": "-$ ./a.out ; echo $?"
+    },
+    {
+      "id": "lecture5-concept-10",
+      "name": "Java"
+    },
+    {
+      "id": "lecture5-concept-11",
+      "name": "Semantics is concerned with the meaning of language"
+    },
+    {
+      "id": "lecture5-concept-12",
+      "name": "Semantics must be unambiguous"
+    },
+    {
+      "id": "lecture5-concept-13",
+      "name": "Semantics must be ﬂexible"
+    },
+    {
+      "id": "lecture5-concept-14",
+      "name": "“Trust the programmer”"
+    },
+    {
+      "id": "lecture5-concept-15",
+      "name": "“Don’t prevent the programmer from doing what needs to"
+    },
+    {
+      "id": "lecture5-concept-16",
+      "name": "“Keep the language small and simple”"
+    },
+    {
+      "id": "lecture5-concept-17",
+      "name": "“Provide only one way to do an operation”"
+    },
+    {
+      "id": "lecture5-concept-18",
+      "name": "“Make it fast, even if it is not guaranteed to be portable”"
+    },
+    {
+      "id": "lecture5-concept-19",
+      "name": "operational"
+    },
+    {
+      "id": "lecture5-concept-20",
+      "name": "denotational"
+    }
+  ],
+  "algorithms": [],
+  "formulas": [
+    {
+      "id": "lecture5-formula-1",
+      "expression": "return (x=1) + (x=2);"
+    },
+    {
+      "id": "lecture5-formula-2",
+      "expression": "int x = 0;"
+    },
+    {
+      "id": "lecture5-formula-3",
+      "expression": "println((x=1) + (x=2));"
+    },
+    {
+      "id": "lecture5-formula-4",
+      "expression": "n ::= 10;;"
+    },
+    {
+      "id": "lecture5-formula-5",
+      "expression": "i ::= 1;;"
+    },
+    {
+      "id": "lecture5-formula-6",
+      "expression": "sum ::= 0;;"
+    },
+    {
+      "id": "lecture5-formula-7",
+      "expression": "while (i «= n) do"
+    },
+    {
+      "id": "lecture5-formula-8",
+      "expression": "sum ::= sum +’ i;;"
+    },
+    {
+      "id": "lecture5-formula-9",
+      "expression": "i ::= i +’ 1"
+    },
+    {
+      "id": "lecture5-formula-10",
+      "expression": "▶ variable = storage location at address + symbolic name"
+    },
+    {
+      "id": "lecture5-formula-11",
+      "expression": "▶ var_name ↦→ value"
+    },
+    {
+      "id": "lecture5-formula-12",
+      "expression": "Definition Env := string -> nat."
+    }
+  ],
+  "examples": [],
+  "exercises": [],
+  "prerequisites": [],
+  "learning_objectives": [],
+  "possible_lesson_breakdown": [
+    {
+      "id": "lecture5-lesson-1",
+      "title": "Semantics: introduction",
+      "source_topic_id": "lecture5-topic-1"
+    },
+    {
+      "id": "lecture5-lesson-2",
+      "title": "An evaluator for IMP",
+      "source_topic_id": "lecture5-topic-2"
+    },
+    {
+      "id": "lecture5-lesson-3",
+      "title": "Semantics: motivation",
+      "source_topic_id": "lecture5-topic-3"
+    },
+    {
+      "id": "lecture5-lesson-4",
+      "title": "-$ cat test.c",
+      "source_topic_id": "lecture5-topic-4"
+    },
+    {
+      "id": "lecture5-lesson-5",
+      "title": "int main()",
+      "source_topic_id": "lecture5-topic-5"
+    },
+    {
+      "id": "lecture5-lesson-6",
+      "title": "int x;",
+      "source_topic_id": "lecture5-topic-6"
+    },
+    {
+      "id": "lecture5-lesson-7",
+      "title": "return (x=1) + (x=2);",
+      "source_topic_id": "lecture5-topic-7"
+    },
+    {
+      "id": "lecture5-lesson-8",
+      "title": "-$ gcc test.c",
+      "source_topic_id": "lecture5-topic-8"
+    },
+    {
+      "id": "lecture5-lesson-9",
+      "title": "-$ ./a.out ; echo $?",
+      "source_topic_id": "lecture5-topic-9"
+    },
+    {
+      "id": "lecture5-lesson-10",
+      "title": "Java",
+      "source_topic_id": "lecture5-topic-10"
+    }
+  ],
+  "possible_unit_grouping": [
+    {
+      "id": "lecture5-unit-1",
+      "title": "Lecture 5: Semantics",
+      "lesson_ids": [
+        "lecture5-lesson-1",
+        "lecture5-lesson-2",
+        "lecture5-lesson-3",
+        "lecture5-lesson-4",
+        "lecture5-lesson-5",
+        "lecture5-lesson-6",
+        "lecture5-lesson-7",
+        "lecture5-lesson-8",
+        "lecture5-lesson-9",
+        "lecture5-lesson-10"
+      ]
+    }
+  ],
+  "concept_relationships": [
+    {
+      "id": "lecture5-relation-1",
+      "from_concept_id": "lecture5-topic-1",
+      "to_concept_id": "lecture5-topic-2",
+      "relationship_type": "precedes",
+      "needs_review": true
+    },
+    {
+      "id": "lecture5-relation-2",
+      "from_concept_id": "lecture5-topic-2",
+      "to_concept_id": "lecture5-topic-3",
+      "relationship_type": "precedes",
+      "needs_review": true
+    },
+    {
+      "id": "lecture5-relation-3",
+      "from_concept_id": "lecture5-topic-3",
+      "to_concept_id": "lecture5-topic-4",
+      "relationship_type": "precedes",
+      "needs_review": true
+    },
+    {
+      "id": "lecture5-relation-4",
+      "from_concept_id": "lecture5-topic-4",
+      "to_concept_id": "lecture5-topic-5",
+      "relationship_type": "precedes",
+      "needs_review": true
+    },
+    {
+      "id": "lecture5-relation-5",
+      "from_concept_id": "lecture5-topic-5",
+      "to_concept_id": "lecture5-topic-6",
+      "relationship_type": "precedes",
+      "needs_review": true
+    },
+    {
+      "id": "lecture5-relation-6",
+      "from_concept_id": "lecture5-topic-6",
+      "to_concept_id": "lecture5-topic-7",
+      "relationship_type": "precedes",
+      "needs_review": true
+    },
+    {
+      "id": "lecture5-relation-7",
+      "from_concept_id": "lecture5-topic-7",
+      "to_concept_id": "lecture5-topic-8",
+      "relationship_type": "precedes",
+      "needs_review": true
+    },
+    {
+      "id": "lecture5-relation-8",
+      "from_concept_id": "lecture5-topic-8",
+      "to_concept_id": "lecture5-topic-9",
+      "relationship_type": "precedes",
+      "needs_review": true
+    },
+    {
+      "id": "lecture5-relation-9",
+      "from_concept_id": "lecture5-topic-9",
+      "to_concept_id": "lecture5-topic-10",
+      "relationship_type": "precedes",
+      "needs_review": true
+    }
+  ]
+}

@@ -1,0 +1,434 @@
+{
+  "id": "course-lecture02",
+  "source_file": "course/eng/lecture02.pdf",
+  "source_filename": "lecture02.pdf",
+  "parsing_status": "parsed",
+  "needs_review": false,
+  "course_title": "Principles of Programming Languages",
+  "lecture_title": "Lecture 2: Inductive deﬁnitions (in Coq).",
+  "main_topics": [
+    {
+      "id": "lecture02-topic-1",
+      "name": "Inference rules"
+    },
+    {
+      "id": "lecture02-topic-2",
+      "name": "Derivations"
+    },
+    {
+      "id": "lecture02-topic-3",
+      "name": "Proofs and proofs by induction"
+    },
+    {
+      "id": "lecture02-topic-4",
+      "name": "0∈ N zero n∈ N"
+    },
+    {
+      "id": "lecture02-topic-5",
+      "name": "S n∈ N succ"
+    },
+    {
+      "id": "lecture02-topic-6",
+      "name": "programming languages"
+    },
+    {
+      "id": "lecture02-topic-7",
+      "name": "Naturals in Coq"
+    },
+    {
+      "id": "lecture02-topic-8",
+      "name": "Inductive Nat := O : Nat"
+    },
+    {
+      "id": "lecture02-topic-9",
+      "name": "| S : Nat -> Nat."
+    },
+    {
+      "id": "lecture02-topic-10",
+      "name": "O∈ N zero"
+    }
+  ],
+  "subtopics": [
+    {
+      "id": "lecture02-subtopic-1",
+      "name": "Inference rules = rule schemes"
+    },
+    {
+      "id": "lecture02-subtopic-2",
+      "name": "Example: natural numbers"
+    },
+    {
+      "id": "lecture02-subtopic-3",
+      "name": "Inference rules can be used to deﬁne inﬁnite sets"
+    },
+    {
+      "id": "lecture02-subtopic-4",
+      "name": "We will use them to deﬁne the syntax and the semantics of"
+    },
+    {
+      "id": "lecture02-subtopic-5",
+      "name": "The syntax of natural numbers:"
+    },
+    {
+      "id": "lecture02-subtopic-6",
+      "name": "In Coq:"
+    },
+    {
+      "id": "lecture02-subtopic-7",
+      "name": "Deﬁnition:"
+    },
+    {
+      "id": "lecture02-subtopic-8",
+      "name": "Derivation example for S (S O )∈ N:"
+    },
+    {
+      "id": "lecture02-subtopic-9",
+      "name": "Recall syntax:"
+    },
+    {
+      "id": "lecture02-subtopic-10",
+      "name": "Addition:"
+    },
+    {
+      "id": "lecture02-subtopic-11",
+      "name": "Recall the inductive deﬁnition forN:"
+    },
+    {
+      "id": "lecture02-subtopic-12",
+      "name": "What is a proof by induction in this case?"
+    },
+    {
+      "id": "lecture02-subtopic-13",
+      "name": "Suppose that we want to prove P(n) where n∈ N and P is"
+    },
+    {
+      "id": "lecture02-subtopic-14",
+      "name": "P(n) holds if:"
+    },
+    {
+      "id": "lecture02-subtopic-15",
+      "name": "P(0) holds - this corresponds to zero"
+    }
+  ],
+  "definitions": [
+    {
+      "id": "lecture02-definition-1",
+      "text": "using the definition of plus: we"
+    }
+  ],
+  "key_concepts": [
+    {
+      "id": "lecture02-concept-1",
+      "name": "Inference rules"
+    },
+    {
+      "id": "lecture02-concept-2",
+      "name": "Derivations"
+    },
+    {
+      "id": "lecture02-concept-3",
+      "name": "Proofs and proofs by induction"
+    },
+    {
+      "id": "lecture02-concept-4",
+      "name": "0∈ N zero n∈ N"
+    },
+    {
+      "id": "lecture02-concept-5",
+      "name": "S n∈ N succ"
+    },
+    {
+      "id": "lecture02-concept-6",
+      "name": "programming languages"
+    },
+    {
+      "id": "lecture02-concept-7",
+      "name": "Naturals in Coq"
+    },
+    {
+      "id": "lecture02-concept-8",
+      "name": "Inductive Nat := O : Nat"
+    },
+    {
+      "id": "lecture02-concept-9",
+      "name": "| S : Nat -> Nat."
+    },
+    {
+      "id": "lecture02-concept-10",
+      "name": "O∈ N zero"
+    },
+    {
+      "id": "lecture02-concept-11",
+      "name": "Inference rules = rule schemes"
+    },
+    {
+      "id": "lecture02-concept-12",
+      "name": "Example: natural numbers"
+    },
+    {
+      "id": "lecture02-concept-13",
+      "name": "Inference rules can be used to deﬁne inﬁnite sets"
+    },
+    {
+      "id": "lecture02-concept-14",
+      "name": "We will use them to deﬁne the syntax and the semantics of"
+    },
+    {
+      "id": "lecture02-concept-15",
+      "name": "The syntax of natural numbers:"
+    },
+    {
+      "id": "lecture02-concept-16",
+      "name": "In Coq:"
+    },
+    {
+      "id": "lecture02-concept-17",
+      "name": "Deﬁnition:"
+    },
+    {
+      "id": "lecture02-concept-18",
+      "name": "Derivation example for S (S O )∈ N:"
+    },
+    {
+      "id": "lecture02-concept-19",
+      "name": "Recall syntax:"
+    },
+    {
+      "id": "lecture02-concept-20",
+      "name": "Addition:"
+    }
+  ],
+  "algorithms": [
+    {
+      "id": "lecture02-algorithm-1",
+      "text": "Inference rules"
+    },
+    {
+      "id": "lecture02-algorithm-2",
+      "text": "▶ Inference rules = rule schemes"
+    },
+    {
+      "id": "lecture02-algorithm-3",
+      "text": "▶ Inference rules can be used to deﬁne inﬁnite sets"
+    }
+  ],
+  "formulas": [
+    {
+      "id": "lecture02-formula-1",
+      "expression": "▶ Inference rules = rule schemes"
+    },
+    {
+      "id": "lecture02-formula-2",
+      "expression": "Inductive Nat := O : Nat"
+    },
+    {
+      "id": "lecture02-formula-3",
+      "expression": "0 + m = m S n + m = S (n + m)"
+    },
+    {
+      "id": "lecture02-formula-4",
+      "expression": "Fixpoint plus (n m : Nat) : nat :="
+    },
+    {
+      "id": "lecture02-formula-5",
+      "expression": "| 0 => m"
+    },
+    {
+      "id": "lecture02-formula-6",
+      "expression": "| S n' => S (plus n' m)"
+    },
+    {
+      "id": "lecture02-formula-7",
+      "expression": "= O"
+    },
+    {
+      "id": "lecture02-formula-8",
+      "expression": "= S O"
+    },
+    {
+      "id": "lecture02-formula-9",
+      "expression": "= S (S O)"
+    },
+    {
+      "id": "lecture02-formula-10",
+      "expression": "= S (S (S (S O)))"
+    },
+    {
+      "id": "lecture02-formula-11",
+      "expression": "forall m, plus O m = m."
+    },
+    {
+      "id": "lecture02-formula-12",
+      "expression": "∀P."
+    }
+  ],
+  "examples": [
+    {
+      "id": "lecture02-example-1",
+      "text": "▶ Example: natural numbers"
+    },
+    {
+      "id": "lecture02-example-2",
+      "text": "▶ Derivation example for S (S O )∈ N:"
+    },
+    {
+      "id": "lecture02-example-3",
+      "text": "Proofs by induction: example 1"
+    },
+    {
+      "id": "lecture02-example-4",
+      "text": "Example 1 in Coq"
+    },
+    {
+      "id": "lecture02-example-5",
+      "text": "Example 2 in Coq"
+    },
+    {
+      "id": "lecture02-example-6",
+      "text": "Example: arithmetic expressions"
+    }
+  ],
+  "exercises": [
+    {
+      "id": "lecture02-exercise-1",
+      "text": "(* Exercise: why this does not work by simplification? *)"
+    }
+  ],
+  "prerequisites": [],
+  "learning_objectives": [],
+  "possible_lesson_breakdown": [
+    {
+      "id": "lecture02-lesson-1",
+      "title": "Inference rules",
+      "source_topic_id": "lecture02-topic-1"
+    },
+    {
+      "id": "lecture02-lesson-2",
+      "title": "Derivations",
+      "source_topic_id": "lecture02-topic-2"
+    },
+    {
+      "id": "lecture02-lesson-3",
+      "title": "Proofs and proofs by induction",
+      "source_topic_id": "lecture02-topic-3"
+    },
+    {
+      "id": "lecture02-lesson-4",
+      "title": "0∈ N zero n∈ N",
+      "source_topic_id": "lecture02-topic-4"
+    },
+    {
+      "id": "lecture02-lesson-5",
+      "title": "S n∈ N succ",
+      "source_topic_id": "lecture02-topic-5"
+    },
+    {
+      "id": "lecture02-lesson-6",
+      "title": "programming languages",
+      "source_topic_id": "lecture02-topic-6"
+    },
+    {
+      "id": "lecture02-lesson-7",
+      "title": "Naturals in Coq",
+      "source_topic_id": "lecture02-topic-7"
+    },
+    {
+      "id": "lecture02-lesson-8",
+      "title": "Inductive Nat := O : Nat",
+      "source_topic_id": "lecture02-topic-8"
+    },
+    {
+      "id": "lecture02-lesson-9",
+      "title": "| S : Nat -> Nat.",
+      "source_topic_id": "lecture02-topic-9"
+    },
+    {
+      "id": "lecture02-lesson-10",
+      "title": "O∈ N zero",
+      "source_topic_id": "lecture02-topic-10"
+    }
+  ],
+  "possible_unit_grouping": [
+    {
+      "id": "lecture02-unit-1",
+      "title": "Lecture 2: Inductive deﬁnitions (in Coq).",
+      "lesson_ids": [
+        "lecture02-lesson-1",
+        "lecture02-lesson-2",
+        "lecture02-lesson-3",
+        "lecture02-lesson-4",
+        "lecture02-lesson-5",
+        "lecture02-lesson-6",
+        "lecture02-lesson-7",
+        "lecture02-lesson-8",
+        "lecture02-lesson-9",
+        "lecture02-lesson-10"
+      ]
+    }
+  ],
+  "concept_relationships": [
+    {
+      "id": "lecture02-relation-1",
+      "from_concept_id": "lecture02-topic-1",
+      "to_concept_id": "lecture02-topic-2",
+      "relationship_type": "precedes",
+      "needs_review": true
+    },
+    {
+      "id": "lecture02-relation-2",
+      "from_concept_id": "lecture02-topic-2",
+      "to_concept_id": "lecture02-topic-3",
+      "relationship_type": "precedes",
+      "needs_review": true
+    },
+    {
+      "id": "lecture02-relation-3",
+      "from_concept_id": "lecture02-topic-3",
+      "to_concept_id": "lecture02-topic-4",
+      "relationship_type": "precedes",
+      "needs_review": true
+    },
+    {
+      "id": "lecture02-relation-4",
+      "from_concept_id": "lecture02-topic-4",
+      "to_concept_id": "lecture02-topic-5",
+      "relationship_type": "precedes",
+      "needs_review": true
+    },
+    {
+      "id": "lecture02-relation-5",
+      "from_concept_id": "lecture02-topic-5",
+      "to_concept_id": "lecture02-topic-6",
+      "relationship_type": "precedes",
+      "needs_review": true
+    },
+    {
+      "id": "lecture02-relation-6",
+      "from_concept_id": "lecture02-topic-6",
+      "to_concept_id": "lecture02-topic-7",
+      "relationship_type": "precedes",
+      "needs_review": true
+    },
+    {
+      "id": "lecture02-relation-7",
+      "from_concept_id": "lecture02-topic-7",
+      "to_concept_id": "lecture02-topic-8",
+      "relationship_type": "precedes",
+      "needs_review": true
+    },
+    {
+      "id": "lecture02-relation-8",
+      "from_concept_id": "lecture02-topic-8",
+      "to_concept_id": "lecture02-topic-9",
+      "relationship_type": "precedes",
+      "needs_review": true
+    },
+    {
+      "id": "lecture02-relation-9",
+      "from_concept_id": "lecture02-topic-9",
+      "to_concept_id": "lecture02-topic-10",
+      "relationship_type": "precedes",
+      "needs_review": true
+    }
+  ]
+}

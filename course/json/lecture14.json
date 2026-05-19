@@ -1,0 +1,412 @@
+{
+  "id": "course-lecture14",
+  "source_file": "course/eng/lecture14.pdf",
+  "source_filename": "lecture14.pdf",
+  "parsing_status": "parsed",
+  "needs_review": false,
+  "course_title": "Principles of Programming Languages",
+  "lecture_title": "",
+  "main_topics": [
+    {
+      "id": "lecture14-topic-1",
+      "name": "Paradigms"
+    },
+    {
+      "id": "lecture14-topic-2",
+      "name": "Logic Programming"
+    },
+    {
+      "id": "lecture14-topic-3",
+      "name": "General facts about PLs"
+    },
+    {
+      "id": "lecture14-topic-4",
+      "name": "We have seen PLs where the computations are based on:"
+    },
+    {
+      "id": "lecture14-topic-5",
+      "name": "Are there other approaches?"
+    },
+    {
+      "id": "lecture14-topic-6",
+      "name": ": Logic programming"
+    },
+    {
+      "id": "lecture14-topic-7",
+      "name": "Computation vs. Deduction"
+    },
+    {
+      "id": "lecture14-topic-8",
+      "name": "i.e., n + 0 = 0)"
+    },
+    {
+      "id": "lecture14-topic-9",
+      "name": "rules, i.e., needs human ingenuity to complete"
+    },
+    {
+      "id": "lecture14-topic-10",
+      "name": "It took 358 years until it was proved!"
+    }
+  ],
+  "subtopics": [
+    {
+      "id": "lecture14-subtopic-1",
+      "name": "Imperative Programming:"
+    },
+    {
+      "id": "lecture14-subtopic-2",
+      "name": "Object Oriented Programming:"
+    },
+    {
+      "id": "lecture14-subtopic-3",
+      "name": "Functional Programming:"
+    },
+    {
+      "id": "lecture14-subtopic-4",
+      "name": "Logic Programming"
+    },
+    {
+      "id": "lecture14-subtopic-5",
+      "name": "state + modiﬁable variable + assignment"
+    },
+    {
+      "id": "lecture14-subtopic-6",
+      "name": "Lambda calculus + higher-order functions + recursion"
+    },
+    {
+      "id": "lecture14-subtopic-7",
+      "name": "Y es: Logic programming"
+    },
+    {
+      "id": "lecture14-subtopic-8",
+      "name": "Y es"
+    },
+    {
+      "id": "lecture14-subtopic-9",
+      "name": "Computation: 10 + 0 = 10 (using some predeﬁned rules,"
+    },
+    {
+      "id": "lecture14-subtopic-10",
+      "name": "Deduction: requires more than automatic application of"
+    },
+    {
+      "id": "lecture14-subtopic-11",
+      "name": "Example: a2 + b2 = c2 ... Pythagoras→ ﬁrst proof"
+    },
+    {
+      "id": "lecture14-subtopic-12",
+      "name": "Another example: an + bn̸= cn, n> 2 (Fermat’s last thm)"
+    },
+    {
+      "id": "lecture14-subtopic-13",
+      "name": "Example: a2 + b2 = c2"
+    },
+    {
+      "id": "lecture14-subtopic-14",
+      "name": "Is there a way to unify computation and deduction?"
+    },
+    {
+      "id": "lecture14-subtopic-15",
+      "name": "G. Boole reduced a certain class of logical reasoning to"
+    }
+  ],
+  "definitions": [],
+  "key_concepts": [
+    {
+      "id": "lecture14-concept-1",
+      "name": "Paradigms"
+    },
+    {
+      "id": "lecture14-concept-2",
+      "name": "Logic Programming"
+    },
+    {
+      "id": "lecture14-concept-3",
+      "name": "General facts about PLs"
+    },
+    {
+      "id": "lecture14-concept-4",
+      "name": "We have seen PLs where the computations are based on:"
+    },
+    {
+      "id": "lecture14-concept-5",
+      "name": "Are there other approaches?"
+    },
+    {
+      "id": "lecture14-concept-6",
+      "name": ": Logic programming"
+    },
+    {
+      "id": "lecture14-concept-7",
+      "name": "Computation vs. Deduction"
+    },
+    {
+      "id": "lecture14-concept-8",
+      "name": "i.e., n + 0 = 0)"
+    },
+    {
+      "id": "lecture14-concept-9",
+      "name": "rules, i.e., needs human ingenuity to complete"
+    },
+    {
+      "id": "lecture14-concept-10",
+      "name": "It took 358 years until it was proved!"
+    },
+    {
+      "id": "lecture14-concept-11",
+      "name": "Imperative Programming:"
+    },
+    {
+      "id": "lecture14-concept-12",
+      "name": "Object Oriented Programming:"
+    },
+    {
+      "id": "lecture14-concept-13",
+      "name": "Functional Programming:"
+    },
+    {
+      "id": "lecture14-concept-14",
+      "name": "Logic Programming"
+    },
+    {
+      "id": "lecture14-concept-15",
+      "name": "state + modiﬁable variable + assignment"
+    },
+    {
+      "id": "lecture14-concept-16",
+      "name": "Lambda calculus + higher-order functions + recursion"
+    },
+    {
+      "id": "lecture14-concept-17",
+      "name": "Y es: Logic programming"
+    },
+    {
+      "id": "lecture14-concept-18",
+      "name": "Y es"
+    },
+    {
+      "id": "lecture14-concept-19",
+      "name": "Computation: 10 + 0 = 10 (using some predeﬁned rules,"
+    },
+    {
+      "id": "lecture14-concept-20",
+      "name": "Deduction: requires more than automatic application of"
+    }
+  ],
+  "algorithms": [
+    {
+      "id": "lecture14-algorithm-1",
+      "text": "▶ Inference rules:"
+    },
+    {
+      "id": "lecture14-algorithm-2",
+      "text": "▶ When proving, the conclusion of an inference rule matches"
+    },
+    {
+      "id": "lecture14-algorithm-3",
+      "text": "▶ Various algorithms for uniﬁcation (Martelli&Montanari,"
+    }
+  ],
+  "formulas": [
+    {
+      "id": "lecture14-formula-1",
+      "expression": "▶ Computation: 10 + 0 = 10 (using some predeﬁned rules,"
+    },
+    {
+      "id": "lecture14-formula-2",
+      "expression": "i.e., n + 0 = 0)"
+    },
+    {
+      "id": "lecture14-formula-3",
+      "expression": "▶ Example: a2 + b2 = c2 ... Pythagoras→ ﬁrst proof"
+    },
+    {
+      "id": "lecture14-formula-4",
+      "expression": "▶ Another example: an + bn̸= cn, n> 2 (Fermat’s last thm)"
+    },
+    {
+      "id": "lecture14-formula-5",
+      "expression": "▶ Example: a2 + b2 = c2"
+    },
+    {
+      "id": "lecture14-formula-6",
+      "expression": "... Pythagoras→ ﬁrst proof"
+    },
+    {
+      "id": "lecture14-formula-7",
+      "expression": "▶ 1 + 1 = 2 is the result of a computation and a theorem of"
+    },
+    {
+      "id": "lecture14-formula-8",
+      "expression": "▶ Formulas: φ := p(t1,..., tn)|¬φ|φ∧φ|∃ x.φ"
+    },
+    {
+      "id": "lecture14-formula-9",
+      "expression": "▶ σ ={x↦→ 3, y↦→ y ′, z↦→ f (a, b)} - substitution"
+    },
+    {
+      "id": "lecture14-formula-10",
+      "expression": "▶ Let T1 = g(h(z, y ), x, y ) be a term"
+    },
+    {
+      "id": "lecture14-formula-11",
+      "expression": "▶ Then,σ(T1) = σ(g(h(z, y ), x, y )) = g(h(f (a, b), y ′), 3, y ′))."
+    },
+    {
+      "id": "lecture14-formula-12",
+      "expression": "▶ A substitutionσ is the uniﬁer of t1 and t2 ifσ(t1) = σ(t2)."
+    }
+  ],
+  "examples": [
+    {
+      "id": "lecture14-example-1",
+      "text": "▶ Example: a2 + b2 = c2 ... Pythagoras→ ﬁrst proof"
+    },
+    {
+      "id": "lecture14-example-2",
+      "text": "▶ Another example: an + bn̸= cn, n> 2 (Fermat’s last thm)"
+    },
+    {
+      "id": "lecture14-example-3",
+      "text": "▶ Example: a2 + b2 = c2"
+    }
+  ],
+  "exercises": [],
+  "prerequisites": [],
+  "learning_objectives": [],
+  "possible_lesson_breakdown": [
+    {
+      "id": "lecture14-lesson-1",
+      "title": "Paradigms",
+      "source_topic_id": "lecture14-topic-1"
+    },
+    {
+      "id": "lecture14-lesson-2",
+      "title": "Logic Programming",
+      "source_topic_id": "lecture14-topic-2"
+    },
+    {
+      "id": "lecture14-lesson-3",
+      "title": "General facts about PLs",
+      "source_topic_id": "lecture14-topic-3"
+    },
+    {
+      "id": "lecture14-lesson-4",
+      "title": "We have seen PLs where the computations are based on:",
+      "source_topic_id": "lecture14-topic-4"
+    },
+    {
+      "id": "lecture14-lesson-5",
+      "title": "Are there other approaches?",
+      "source_topic_id": "lecture14-topic-5"
+    },
+    {
+      "id": "lecture14-lesson-6",
+      "title": ": Logic programming",
+      "source_topic_id": "lecture14-topic-6"
+    },
+    {
+      "id": "lecture14-lesson-7",
+      "title": "Computation vs. Deduction",
+      "source_topic_id": "lecture14-topic-7"
+    },
+    {
+      "id": "lecture14-lesson-8",
+      "title": "i.e., n + 0 = 0)",
+      "source_topic_id": "lecture14-topic-8"
+    },
+    {
+      "id": "lecture14-lesson-9",
+      "title": "rules, i.e., needs human ingenuity to complete",
+      "source_topic_id": "lecture14-topic-9"
+    },
+    {
+      "id": "lecture14-lesson-10",
+      "title": "It took 358 years until it was proved!",
+      "source_topic_id": "lecture14-topic-10"
+    }
+  ],
+  "possible_unit_grouping": [
+    {
+      "id": "lecture14-unit-1",
+      "title": "lecture14",
+      "lesson_ids": [
+        "lecture14-lesson-1",
+        "lecture14-lesson-2",
+        "lecture14-lesson-3",
+        "lecture14-lesson-4",
+        "lecture14-lesson-5",
+        "lecture14-lesson-6",
+        "lecture14-lesson-7",
+        "lecture14-lesson-8",
+        "lecture14-lesson-9",
+        "lecture14-lesson-10"
+      ]
+    }
+  ],
+  "concept_relationships": [
+    {
+      "id": "lecture14-relation-1",
+      "from_concept_id": "lecture14-topic-1",
+      "to_concept_id": "lecture14-topic-2",
+      "relationship_type": "precedes",
+      "needs_review": true
+    },
+    {
+      "id": "lecture14-relation-2",
+      "from_concept_id": "lecture14-topic-2",
+      "to_concept_id": "lecture14-topic-3",
+      "relationship_type": "precedes",
+      "needs_review": true
+    },
+    {
+      "id": "lecture14-relation-3",
+      "from_concept_id": "lecture14-topic-3",
+      "to_concept_id": "lecture14-topic-4",
+      "relationship_type": "precedes",
+      "needs_review": true
+    },
+    {
+      "id": "lecture14-relation-4",
+      "from_concept_id": "lecture14-topic-4",
+      "to_concept_id": "lecture14-topic-5",
+      "relationship_type": "precedes",
+      "needs_review": true
+    },
+    {
+      "id": "lecture14-relation-5",
+      "from_concept_id": "lecture14-topic-5",
+      "to_concept_id": "lecture14-topic-6",
+      "relationship_type": "precedes",
+      "needs_review": true
+    },
+    {
+      "id": "lecture14-relation-6",
+      "from_concept_id": "lecture14-topic-6",
+      "to_concept_id": "lecture14-topic-7",
+      "relationship_type": "precedes",
+      "needs_review": true
+    },
+    {
+      "id": "lecture14-relation-7",
+      "from_concept_id": "lecture14-topic-7",
+      "to_concept_id": "lecture14-topic-8",
+      "relationship_type": "precedes",
+      "needs_review": true
+    },
+    {
+      "id": "lecture14-relation-8",
+      "from_concept_id": "lecture14-topic-8",
+      "to_concept_id": "lecture14-topic-9",
+      "relationship_type": "precedes",
+      "needs_review": true
+    },
+    {
+      "id": "lecture14-relation-9",
+      "from_concept_id": "lecture14-topic-9",
+      "to_concept_id": "lecture14-topic-10",
+      "relationship_type": "precedes",
+      "needs_review": true
+    }
+  ]
+}

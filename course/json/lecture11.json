@@ -1,0 +1,396 @@
+{
+  "id": "course-lecture11",
+  "source_file": "course/eng/lecture11.pdf",
+  "source_filename": "lecture11.pdf",
+  "parsing_status": "parsed",
+  "needs_review": false,
+  "course_title": "Principles of Programming Languages",
+  "lecture_title": "",
+  "main_topics": [
+    {
+      "id": "lecture11-topic-1",
+      "name": "Motivation"
+    },
+    {
+      "id": "lecture11-topic-2",
+      "name": "Demo(s)"
+    },
+    {
+      "id": "lecture11-topic-3",
+      "name": "Expressions"
+    },
+    {
+      "id": "lecture11-topic-4",
+      "name": "Deﬁning a stack machine"
+    },
+    {
+      "id": "lecture11-topic-5",
+      "name": "Compilation & Soundness"
+    },
+    {
+      "id": "lecture11-topic-6",
+      "name": "about them"
+    },
+    {
+      "id": "lecture11-topic-7",
+      "name": "Simple expressions in Coq"
+    },
+    {
+      "id": "lecture11-topic-8",
+      "name": "Exp ::= Nat | Id | Exp \"+\" Exp | Exp \"*\" Exp"
+    },
+    {
+      "id": "lecture11-topic-9",
+      "name": "Inductive Exp :="
+    },
+    {
+      "id": "lecture11-topic-10",
+      "name": "| const : nat -> Exp"
+    }
+  ],
+  "subtopics": [
+    {
+      "id": "lecture11-subtopic-1",
+      "name": "Interactive theorem provers: Coq, Isabelle"
+    },
+    {
+      "id": "lecture11-subtopic-2",
+      "name": "Why?"
+    },
+    {
+      "id": "lecture11-subtopic-3",
+      "name": "Mathematical proofs are often big and lacking details"
+    },
+    {
+      "id": "lecture11-subtopic-4",
+      "name": "Proofs can be developed using computers"
+    },
+    {
+      "id": "lecture11-subtopic-5",
+      "name": "Use a tool for handling all proof details"
+    },
+    {
+      "id": "lecture11-subtopic-6",
+      "name": "Make sure proofs are exact - computer checked"
+    },
+    {
+      "id": "lecture11-subtopic-7",
+      "name": "These can be used to deﬁne PLs and to prove properties"
+    },
+    {
+      "id": "lecture11-subtopic-8",
+      "name": "Simple language of expressions - BNF:"
+    },
+    {
+      "id": "lecture11-subtopic-9",
+      "name": "(Abstract) syntax can be deﬁned usingInductive:"
+    },
+    {
+      "id": "lecture11-subtopic-10",
+      "name": "Expressions are interpreted in an environment, their"
+    },
+    {
+      "id": "lecture11-subtopic-11",
+      "name": "The interpretation function:"
+    },
+    {
+      "id": "lecture11-subtopic-12",
+      "name": "Syntax:"
+    },
+    {
+      "id": "lecture11-subtopic-13",
+      "name": "Semantics:"
+    },
+    {
+      "id": "lecture11-subtopic-14",
+      "name": "Run instructions:"
+    },
+    {
+      "id": "lecture11-subtopic-15",
+      "name": "Compilation ofExp to the stack machine:"
+    }
+  ],
+  "definitions": [],
+  "key_concepts": [
+    {
+      "id": "lecture11-concept-1",
+      "name": "Motivation"
+    },
+    {
+      "id": "lecture11-concept-2",
+      "name": "Demo(s)"
+    },
+    {
+      "id": "lecture11-concept-3",
+      "name": "Expressions"
+    },
+    {
+      "id": "lecture11-concept-4",
+      "name": "Deﬁning a stack machine"
+    },
+    {
+      "id": "lecture11-concept-5",
+      "name": "Compilation & Soundness"
+    },
+    {
+      "id": "lecture11-concept-6",
+      "name": "about them"
+    },
+    {
+      "id": "lecture11-concept-7",
+      "name": "Simple expressions in Coq"
+    },
+    {
+      "id": "lecture11-concept-8",
+      "name": "Exp ::= Nat | Id | Exp \"+\" Exp | Exp \"*\" Exp"
+    },
+    {
+      "id": "lecture11-concept-9",
+      "name": "Inductive Exp :="
+    },
+    {
+      "id": "lecture11-concept-10",
+      "name": "| const : nat -> Exp"
+    },
+    {
+      "id": "lecture11-concept-11",
+      "name": "Interactive theorem provers: Coq, Isabelle"
+    },
+    {
+      "id": "lecture11-concept-12",
+      "name": "Why?"
+    },
+    {
+      "id": "lecture11-concept-13",
+      "name": "Mathematical proofs are often big and lacking details"
+    },
+    {
+      "id": "lecture11-concept-14",
+      "name": "Proofs can be developed using computers"
+    },
+    {
+      "id": "lecture11-concept-15",
+      "name": "Use a tool for handling all proof details"
+    },
+    {
+      "id": "lecture11-concept-16",
+      "name": "Make sure proofs are exact - computer checked"
+    },
+    {
+      "id": "lecture11-concept-17",
+      "name": "These can be used to deﬁne PLs and to prove properties"
+    },
+    {
+      "id": "lecture11-concept-18",
+      "name": "Simple language of expressions - BNF:"
+    },
+    {
+      "id": "lecture11-concept-19",
+      "name": "(Abstract) syntax can be deﬁned usingInductive:"
+    },
+    {
+      "id": "lecture11-concept-20",
+      "name": "Expressions are interpreted in an environment, their"
+    }
+  ],
+  "algorithms": [
+    {
+      "id": "lecture11-algorithm-1",
+      "text": "of ﬂight control and navigation algorithms"
+    }
+  ],
+  "formulas": [
+    {
+      "id": "lecture11-formula-1",
+      "expression": "Exp ::= Nat | Id | Exp \"+\" Exp | Exp \"*\" Exp"
+    },
+    {
+      "id": "lecture11-formula-2",
+      "expression": "Inductive Exp :="
+    },
+    {
+      "id": "lecture11-formula-3",
+      "expression": "(sigma : Var -> nat) : nat :="
+    },
+    {
+      "id": "lecture11-formula-4",
+      "expression": "| const x => x"
+    },
+    {
+      "id": "lecture11-formula-5",
+      "expression": "| id s => sigma s"
+    },
+    {
+      "id": "lecture11-formula-6",
+      "expression": "| plus e1 e2=>(interpret e1 sigma)+(interpret e2 sigma)"
+    },
+    {
+      "id": "lecture11-formula-7",
+      "expression": "| times e1 e2=>(interpret e1 sigma)*(interpret e2 sigma)"
+    },
+    {
+      "id": "lecture11-formula-8",
+      "expression": "Inductive Instruction :="
+    },
+    {
+      "id": "lecture11-formula-9",
+      "expression": "(env : Var -> nat) (stack : list nat) :="
+    },
+    {
+      "id": "lecture11-formula-10",
+      "expression": "| push_const n => n :: stack"
+    },
+    {
+      "id": "lecture11-formula-11",
+      "expression": "| push_var v => (env v) :: stack"
+    },
+    {
+      "id": "lecture11-formula-12",
+      "expression": "| add => match stack with"
+    }
+  ],
+  "examples": [],
+  "exercises": [
+    {
+      "id": "lecture11-exercise-1",
+      "text": "Exercise: a stack machine"
+    }
+  ],
+  "prerequisites": [],
+  "learning_objectives": [],
+  "possible_lesson_breakdown": [
+    {
+      "id": "lecture11-lesson-1",
+      "title": "Motivation",
+      "source_topic_id": "lecture11-topic-1"
+    },
+    {
+      "id": "lecture11-lesson-2",
+      "title": "Demo(s)",
+      "source_topic_id": "lecture11-topic-2"
+    },
+    {
+      "id": "lecture11-lesson-3",
+      "title": "Expressions",
+      "source_topic_id": "lecture11-topic-3"
+    },
+    {
+      "id": "lecture11-lesson-4",
+      "title": "Deﬁning a stack machine",
+      "source_topic_id": "lecture11-topic-4"
+    },
+    {
+      "id": "lecture11-lesson-5",
+      "title": "Compilation & Soundness",
+      "source_topic_id": "lecture11-topic-5"
+    },
+    {
+      "id": "lecture11-lesson-6",
+      "title": "about them",
+      "source_topic_id": "lecture11-topic-6"
+    },
+    {
+      "id": "lecture11-lesson-7",
+      "title": "Simple expressions in Coq",
+      "source_topic_id": "lecture11-topic-7"
+    },
+    {
+      "id": "lecture11-lesson-8",
+      "title": "Exp ::= Nat | Id | Exp \"+\" Exp | Exp \"*\" Exp",
+      "source_topic_id": "lecture11-topic-8"
+    },
+    {
+      "id": "lecture11-lesson-9",
+      "title": "Inductive Exp :=",
+      "source_topic_id": "lecture11-topic-9"
+    },
+    {
+      "id": "lecture11-lesson-10",
+      "title": "| const : nat -> Exp",
+      "source_topic_id": "lecture11-topic-10"
+    }
+  ],
+  "possible_unit_grouping": [
+    {
+      "id": "lecture11-unit-1",
+      "title": "lecture11",
+      "lesson_ids": [
+        "lecture11-lesson-1",
+        "lecture11-lesson-2",
+        "lecture11-lesson-3",
+        "lecture11-lesson-4",
+        "lecture11-lesson-5",
+        "lecture11-lesson-6",
+        "lecture11-lesson-7",
+        "lecture11-lesson-8",
+        "lecture11-lesson-9",
+        "lecture11-lesson-10"
+      ]
+    }
+  ],
+  "concept_relationships": [
+    {
+      "id": "lecture11-relation-1",
+      "from_concept_id": "lecture11-topic-1",
+      "to_concept_id": "lecture11-topic-2",
+      "relationship_type": "precedes",
+      "needs_review": true
+    },
+    {
+      "id": "lecture11-relation-2",
+      "from_concept_id": "lecture11-topic-2",
+      "to_concept_id": "lecture11-topic-3",
+      "relationship_type": "precedes",
+      "needs_review": true
+    },
+    {
+      "id": "lecture11-relation-3",
+      "from_concept_id": "lecture11-topic-3",
+      "to_concept_id": "lecture11-topic-4",
+      "relationship_type": "precedes",
+      "needs_review": true
+    },
+    {
+      "id": "lecture11-relation-4",
+      "from_concept_id": "lecture11-topic-4",
+      "to_concept_id": "lecture11-topic-5",
+      "relationship_type": "precedes",
+      "needs_review": true
+    },
+    {
+      "id": "lecture11-relation-5",
+      "from_concept_id": "lecture11-topic-5",
+      "to_concept_id": "lecture11-topic-6",
+      "relationship_type": "precedes",
+      "needs_review": true
+    },
+    {
+      "id": "lecture11-relation-6",
+      "from_concept_id": "lecture11-topic-6",
+      "to_concept_id": "lecture11-topic-7",
+      "relationship_type": "precedes",
+      "needs_review": true
+    },
+    {
+      "id": "lecture11-relation-7",
+      "from_concept_id": "lecture11-topic-7",
+      "to_concept_id": "lecture11-topic-8",
+      "relationship_type": "precedes",
+      "needs_review": true
+    },
+    {
+      "id": "lecture11-relation-8",
+      "from_concept_id": "lecture11-topic-8",
+      "to_concept_id": "lecture11-topic-9",
+      "relationship_type": "precedes",
+      "needs_review": true
+    },
+    {
+      "id": "lecture11-relation-9",
+      "from_concept_id": "lecture11-topic-9",
+      "to_concept_id": "lecture11-topic-10",
+      "relationship_type": "precedes",
+      "needs_review": true
+    }
+  ]
+}

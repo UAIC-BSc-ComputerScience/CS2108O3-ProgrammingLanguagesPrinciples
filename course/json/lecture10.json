@@ -1,0 +1,397 @@
+{
+  "id": "course-lecture10",
+  "source_file": "course/eng/lecture10.pdf",
+  "source_filename": "lecture10.pdf",
+  "parsing_status": "parsed",
+  "needs_review": false,
+  "course_title": "Principles of Programming Languages",
+  "lecture_title": "",
+  "main_topics": [
+    {
+      "id": "lecture10-topic-1",
+      "name": "Motivation"
+    },
+    {
+      "id": "lecture10-topic-2",
+      "name": "Typing"
+    },
+    {
+      "id": "lecture10-topic-3",
+      "name": "Typing rules"
+    },
+    {
+      "id": "lecture10-topic-4",
+      "name": "Properties"
+    },
+    {
+      "id": "lecture10-topic-5",
+      "name": "Q1: What is the output of this C program?"
+    },
+    {
+      "id": "lecture10-topic-6",
+      "name": "./a.out"
+    },
+    {
+      "id": "lecture10-topic-7",
+      "name": "x = 0, took the 'else' branch"
+    },
+    {
+      "id": "lecture10-topic-8",
+      "name": "Q2: What if x is set to10 instead of0?"
+    },
+    {
+      "id": "lecture10-topic-9",
+      "name": "x = 10, took the 'then' branch"
+    },
+    {
+      "id": "lecture10-topic-10",
+      "name": "#include <stdio.h>"
+    }
+  ],
+  "subtopics": [
+    {
+      "id": "lecture10-subtopic-1",
+      "name": "Mixing Boolean and arithmetic expressions may increase"
+    },
+    {
+      "id": "lecture10-subtopic-2",
+      "name": "The code above is still readable if the integer variable"
+    },
+    {
+      "id": "lecture10-subtopic-3",
+      "name": "Mixing Boolean and arithmetic expressions may lead to"
+    },
+    {
+      "id": "lecture10-subtopic-4",
+      "name": "The last expression applies the booleanand operator to"
+    },
+    {
+      "id": "lecture10-subtopic-5",
+      "name": "Conceptually, the last expression is ill-formed"
+    },
+    {
+      "id": "lecture10-subtopic-6",
+      "name": "Note that we applied steps until we obtained a value"
+    },
+    {
+      "id": "lecture10-subtopic-7",
+      "name": "We cannot make any steps using"
+    },
+    {
+      "id": "lecture10-subtopic-8",
+      "name": "In such cases we say that2 +’ btrue is stuck: 2 +’"
+    },
+    {
+      "id": "lecture10-subtopic-9",
+      "name": "Types:Bool andNat"
+    },
+    {
+      "id": "lecture10-subtopic-10",
+      "name": "Coq:"
+    },
+    {
+      "id": "lecture10-subtopic-11",
+      "name": "We deﬁne a relation:⊆Exp×Typ using inference rules for"
+    },
+    {
+      "id": "lecture10-subtopic-12",
+      "name": "When e :Nat we say that the type of e isNat"
+    }
+  ],
+  "definitions": [
+    {
+      "id": "lecture10-definition-1",
+      "text": "Definition value (e : Exp) :="
+    }
+  ],
+  "key_concepts": [
+    {
+      "id": "lecture10-concept-1",
+      "name": "Motivation"
+    },
+    {
+      "id": "lecture10-concept-2",
+      "name": "Typing"
+    },
+    {
+      "id": "lecture10-concept-3",
+      "name": "Typing rules"
+    },
+    {
+      "id": "lecture10-concept-4",
+      "name": "Properties"
+    },
+    {
+      "id": "lecture10-concept-5",
+      "name": "Q1: What is the output of this C program?"
+    },
+    {
+      "id": "lecture10-concept-6",
+      "name": "./a.out"
+    },
+    {
+      "id": "lecture10-concept-7",
+      "name": "x = 0, took the 'else' branch"
+    },
+    {
+      "id": "lecture10-concept-8",
+      "name": "Q2: What if x is set to10 instead of0?"
+    },
+    {
+      "id": "lecture10-concept-9",
+      "name": "x = 10, took the 'then' branch"
+    },
+    {
+      "id": "lecture10-concept-10",
+      "name": "#include <stdio.h>"
+    },
+    {
+      "id": "lecture10-concept-11",
+      "name": "Mixing Boolean and arithmetic expressions may increase"
+    },
+    {
+      "id": "lecture10-concept-12",
+      "name": "The code above is still readable if the integer variable"
+    },
+    {
+      "id": "lecture10-concept-13",
+      "name": "Mixing Boolean and arithmetic expressions may lead to"
+    },
+    {
+      "id": "lecture10-concept-14",
+      "name": "The last expression applies the booleanand operator to"
+    },
+    {
+      "id": "lecture10-concept-15",
+      "name": "Conceptually, the last expression is ill-formed"
+    },
+    {
+      "id": "lecture10-concept-16",
+      "name": "Note that we applied steps until we obtained a value"
+    },
+    {
+      "id": "lecture10-concept-17",
+      "name": "We cannot make any steps using"
+    },
+    {
+      "id": "lecture10-concept-18",
+      "name": "In such cases we say that2 +’ btrue is stuck: 2 +’"
+    },
+    {
+      "id": "lecture10-concept-19",
+      "name": "Types:Bool andNat"
+    },
+    {
+      "id": "lecture10-concept-20",
+      "name": "Coq:"
+    }
+  ],
+  "algorithms": [
+    {
+      "id": "lecture10-algorithm-1",
+      "text": "▶ We deﬁne a relation:⊆Exp×Typ using inference rules for"
+    }
+  ],
+  "formulas": [
+    {
+      "id": "lecture10-formula-1",
+      "expression": "x = 0, took the 'else' branch"
+    },
+    {
+      "id": "lecture10-formula-2",
+      "expression": "x = 10, took the 'then' branch"
+    },
+    {
+      "id": "lecture10-formula-3",
+      "expression": "int x = 0;"
+    },
+    {
+      "id": "lecture10-formula-4",
+      "expression": "printf(\"x = %d, \", x);"
+    },
+    {
+      "id": "lecture10-formula-5",
+      "expression": "Inductive Exp :="
+    },
+    {
+      "id": "lecture10-formula-6",
+      "expression": "Notation \"A +' B\" := (aplus A B) (at level 50)."
+    },
+    {
+      "id": "lecture10-formula-7",
+      "expression": "Notation \"A *' B\" := (amul A B) (at level 46)."
+    },
+    {
+      "id": "lecture10-formula-8",
+      "expression": "Notation \"A <=' B\" := (blessthan A B) (at level 53)."
+    },
+    {
+      "id": "lecture10-formula-9",
+      "expression": "= 2 +' 2"
+    },
+    {
+      "id": "lecture10-formula-10",
+      "expression": "= 2 +' btrue"
+    },
+    {
+      "id": "lecture10-formula-11",
+      "expression": "= band 2 2"
+    },
+    {
+      "id": "lecture10-formula-12",
+      "expression": "Exp -> State -> Exp -> Prop :="
+    }
+  ],
+  "examples": [
+    {
+      "id": "lecture10-example-1",
+      "text": "Example e2 :"
+    },
+    {
+      "id": "lecture10-example-2",
+      "text": "Example ill_typed :"
+    },
+    {
+      "id": "lecture10-example-3",
+      "text": "Typing rules - example"
+    }
+  ],
+  "exercises": [],
+  "prerequisites": [],
+  "learning_objectives": [],
+  "possible_lesson_breakdown": [
+    {
+      "id": "lecture10-lesson-1",
+      "title": "Motivation",
+      "source_topic_id": "lecture10-topic-1"
+    },
+    {
+      "id": "lecture10-lesson-2",
+      "title": "Typing",
+      "source_topic_id": "lecture10-topic-2"
+    },
+    {
+      "id": "lecture10-lesson-3",
+      "title": "Typing rules",
+      "source_topic_id": "lecture10-topic-3"
+    },
+    {
+      "id": "lecture10-lesson-4",
+      "title": "Properties",
+      "source_topic_id": "lecture10-topic-4"
+    },
+    {
+      "id": "lecture10-lesson-5",
+      "title": "Q1: What is the output of this C program?",
+      "source_topic_id": "lecture10-topic-5"
+    },
+    {
+      "id": "lecture10-lesson-6",
+      "title": "./a.out",
+      "source_topic_id": "lecture10-topic-6"
+    },
+    {
+      "id": "lecture10-lesson-7",
+      "title": "x = 0, took the 'else' branch",
+      "source_topic_id": "lecture10-topic-7"
+    },
+    {
+      "id": "lecture10-lesson-8",
+      "title": "Q2: What if x is set to10 instead of0?",
+      "source_topic_id": "lecture10-topic-8"
+    },
+    {
+      "id": "lecture10-lesson-9",
+      "title": "x = 10, took the 'then' branch",
+      "source_topic_id": "lecture10-topic-9"
+    },
+    {
+      "id": "lecture10-lesson-10",
+      "title": "#include <stdio.h>",
+      "source_topic_id": "lecture10-topic-10"
+    }
+  ],
+  "possible_unit_grouping": [
+    {
+      "id": "lecture10-unit-1",
+      "title": "lecture10",
+      "lesson_ids": [
+        "lecture10-lesson-1",
+        "lecture10-lesson-2",
+        "lecture10-lesson-3",
+        "lecture10-lesson-4",
+        "lecture10-lesson-5",
+        "lecture10-lesson-6",
+        "lecture10-lesson-7",
+        "lecture10-lesson-8",
+        "lecture10-lesson-9",
+        "lecture10-lesson-10"
+      ]
+    }
+  ],
+  "concept_relationships": [
+    {
+      "id": "lecture10-relation-1",
+      "from_concept_id": "lecture10-topic-1",
+      "to_concept_id": "lecture10-topic-2",
+      "relationship_type": "precedes",
+      "needs_review": true
+    },
+    {
+      "id": "lecture10-relation-2",
+      "from_concept_id": "lecture10-topic-2",
+      "to_concept_id": "lecture10-topic-3",
+      "relationship_type": "precedes",
+      "needs_review": true
+    },
+    {
+      "id": "lecture10-relation-3",
+      "from_concept_id": "lecture10-topic-3",
+      "to_concept_id": "lecture10-topic-4",
+      "relationship_type": "precedes",
+      "needs_review": true
+    },
+    {
+      "id": "lecture10-relation-4",
+      "from_concept_id": "lecture10-topic-4",
+      "to_concept_id": "lecture10-topic-5",
+      "relationship_type": "precedes",
+      "needs_review": true
+    },
+    {
+      "id": "lecture10-relation-5",
+      "from_concept_id": "lecture10-topic-5",
+      "to_concept_id": "lecture10-topic-6",
+      "relationship_type": "precedes",
+      "needs_review": true
+    },
+    {
+      "id": "lecture10-relation-6",
+      "from_concept_id": "lecture10-topic-6",
+      "to_concept_id": "lecture10-topic-7",
+      "relationship_type": "precedes",
+      "needs_review": true
+    },
+    {
+      "id": "lecture10-relation-7",
+      "from_concept_id": "lecture10-topic-7",
+      "to_concept_id": "lecture10-topic-8",
+      "relationship_type": "precedes",
+      "needs_review": true
+    },
+    {
+      "id": "lecture10-relation-8",
+      "from_concept_id": "lecture10-topic-8",
+      "to_concept_id": "lecture10-topic-9",
+      "relationship_type": "precedes",
+      "needs_review": true
+    },
+    {
+      "id": "lecture10-relation-9",
+      "from_concept_id": "lecture10-topic-9",
+      "to_concept_id": "lecture10-topic-10",
+      "relationship_type": "precedes",
+      "needs_review": true
+    }
+  ]
+}

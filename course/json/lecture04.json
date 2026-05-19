@@ -1,0 +1,403 @@
+{
+  "id": "course-lecture04",
+  "source_file": "course/eng/lecture04.pdf",
+  "source_filename": "lecture04.pdf",
+  "parsing_status": "parsed",
+  "needs_review": false,
+  "course_title": "Principles of Programming Languages",
+  "lecture_title": "Lecture 4: Semantics",
+  "main_topics": [
+    {
+      "id": "lecture04-topic-1",
+      "name": "Semantics: introduction"
+    },
+    {
+      "id": "lecture04-topic-2",
+      "name": "A simple imperative language"
+    },
+    {
+      "id": "lecture04-topic-3",
+      "name": "Semantics: motivation"
+    },
+    {
+      "id": "lecture04-topic-4",
+      "name": "-$ cat test.c"
+    },
+    {
+      "id": "lecture04-topic-5",
+      "name": "int main()"
+    },
+    {
+      "id": "lecture04-topic-6",
+      "name": "int x;"
+    },
+    {
+      "id": "lecture04-topic-7",
+      "name": "return (x=1) + (x=2);"
+    },
+    {
+      "id": "lecture04-topic-8",
+      "name": "-$ gcc test.c"
+    },
+    {
+      "id": "lecture04-topic-9",
+      "name": "-$ ./a.out ; echo $?"
+    },
+    {
+      "id": "lecture04-topic-10",
+      "name": "Java"
+    }
+  ],
+  "subtopics": [
+    {
+      "id": "lecture04-subtopic-1",
+      "name": "out-of-lifetime.c"
+    },
+    {
+      "id": "lecture04-subtopic-2",
+      "name": "Semantics is concerned with the meaning of language"
+    },
+    {
+      "id": "lecture04-subtopic-3",
+      "name": "Semantics must be unambiguous"
+    },
+    {
+      "id": "lecture04-subtopic-4",
+      "name": "Semantics must be ﬂexible"
+    },
+    {
+      "id": "lecture04-subtopic-5",
+      "name": "“Trust the programmer”"
+    },
+    {
+      "id": "lecture04-subtopic-6",
+      "name": "“Don’t prevent the programmer from doing what needs to"
+    },
+    {
+      "id": "lecture04-subtopic-7",
+      "name": "“Keep the language small and simple”"
+    },
+    {
+      "id": "lecture04-subtopic-8",
+      "name": "“Provide only one way to do an operation”"
+    },
+    {
+      "id": "lecture04-subtopic-9",
+      "name": "“Make it fast, even if it is not guaranteed to be portable”"
+    },
+    {
+      "id": "lecture04-subtopic-10",
+      "name": "operational"
+    },
+    {
+      "id": "lecture04-subtopic-11",
+      "name": "denotational"
+    },
+    {
+      "id": "lecture04-subtopic-12",
+      "name": "axiomatic"
+    },
+    {
+      "id": "lecture04-subtopic-13",
+      "name": "variables"
+    },
+    {
+      "id": "lecture04-subtopic-14",
+      "name": "arithmetic expressions"
+    },
+    {
+      "id": "lecture04-subtopic-15",
+      "name": "boolean expressions"
+    }
+  ],
+  "definitions": [
+    {
+      "id": "lecture04-definition-1",
+      "text": "Definition var_eq (v1 v2 : Var) :="
+    },
+    {
+      "id": "lecture04-definition-2",
+      "text": "Definition Env := Var -> nat."
+    },
+    {
+      "id": "lecture04-definition-3",
+      "text": "Definition env (var : Var) := if (var_eq var n)"
+    },
+    {
+      "id": "lecture04-definition-4",
+      "text": "Definition update (x : Var)(v : nat)(env : Env) : Env :="
+    }
+  ],
+  "key_concepts": [
+    {
+      "id": "lecture04-concept-1",
+      "name": "Semantics: introduction"
+    },
+    {
+      "id": "lecture04-concept-2",
+      "name": "A simple imperative language"
+    },
+    {
+      "id": "lecture04-concept-3",
+      "name": "Semantics: motivation"
+    },
+    {
+      "id": "lecture04-concept-4",
+      "name": "-$ cat test.c"
+    },
+    {
+      "id": "lecture04-concept-5",
+      "name": "int main()"
+    },
+    {
+      "id": "lecture04-concept-6",
+      "name": "int x;"
+    },
+    {
+      "id": "lecture04-concept-7",
+      "name": "return (x=1) + (x=2);"
+    },
+    {
+      "id": "lecture04-concept-8",
+      "name": "-$ gcc test.c"
+    },
+    {
+      "id": "lecture04-concept-9",
+      "name": "-$ ./a.out ; echo $?"
+    },
+    {
+      "id": "lecture04-concept-10",
+      "name": "Java"
+    },
+    {
+      "id": "lecture04-concept-11",
+      "name": "out-of-lifetime.c"
+    },
+    {
+      "id": "lecture04-concept-12",
+      "name": "Semantics is concerned with the meaning of language"
+    },
+    {
+      "id": "lecture04-concept-13",
+      "name": "Semantics must be unambiguous"
+    },
+    {
+      "id": "lecture04-concept-14",
+      "name": "Semantics must be ﬂexible"
+    },
+    {
+      "id": "lecture04-concept-15",
+      "name": "“Trust the programmer”"
+    },
+    {
+      "id": "lecture04-concept-16",
+      "name": "“Don’t prevent the programmer from doing what needs to"
+    },
+    {
+      "id": "lecture04-concept-17",
+      "name": "“Keep the language small and simple”"
+    },
+    {
+      "id": "lecture04-concept-18",
+      "name": "“Provide only one way to do an operation”"
+    },
+    {
+      "id": "lecture04-concept-19",
+      "name": "“Make it fast, even if it is not guaranteed to be portable”"
+    },
+    {
+      "id": "lecture04-concept-20",
+      "name": "operational"
+    }
+  ],
+  "algorithms": [],
+  "formulas": [
+    {
+      "id": "lecture04-formula-1",
+      "expression": "return (x=1) + (x=2);"
+    },
+    {
+      "id": "lecture04-formula-2",
+      "expression": "int x = 0;"
+    },
+    {
+      "id": "lecture04-formula-3",
+      "expression": "println((x=1) + (x=2));"
+    },
+    {
+      "id": "lecture04-formula-4",
+      "expression": "n ::= 10;;"
+    },
+    {
+      "id": "lecture04-formula-5",
+      "expression": "i ::= 1;;"
+    },
+    {
+      "id": "lecture04-formula-6",
+      "expression": "sum ::= 0;;"
+    },
+    {
+      "id": "lecture04-formula-7",
+      "expression": "while (i «= n) do"
+    },
+    {
+      "id": "lecture04-formula-8",
+      "expression": "sum ::= sum +’ i;;"
+    },
+    {
+      "id": "lecture04-formula-9",
+      "expression": "i ::= i +’ 1"
+    },
+    {
+      "id": "lecture04-formula-10",
+      "expression": "▶ variable = storage location at address + symbolic name"
+    },
+    {
+      "id": "lecture04-formula-11",
+      "expression": "▶ var_name ↦→ value"
+    },
+    {
+      "id": "lecture04-formula-12",
+      "expression": "Inductive Var := n | i | sum."
+    }
+  ],
+  "examples": [],
+  "exercises": [],
+  "prerequisites": [],
+  "learning_objectives": [],
+  "possible_lesson_breakdown": [
+    {
+      "id": "lecture04-lesson-1",
+      "title": "Semantics: introduction",
+      "source_topic_id": "lecture04-topic-1"
+    },
+    {
+      "id": "lecture04-lesson-2",
+      "title": "A simple imperative language",
+      "source_topic_id": "lecture04-topic-2"
+    },
+    {
+      "id": "lecture04-lesson-3",
+      "title": "Semantics: motivation",
+      "source_topic_id": "lecture04-topic-3"
+    },
+    {
+      "id": "lecture04-lesson-4",
+      "title": "-$ cat test.c",
+      "source_topic_id": "lecture04-topic-4"
+    },
+    {
+      "id": "lecture04-lesson-5",
+      "title": "int main()",
+      "source_topic_id": "lecture04-topic-5"
+    },
+    {
+      "id": "lecture04-lesson-6",
+      "title": "int x;",
+      "source_topic_id": "lecture04-topic-6"
+    },
+    {
+      "id": "lecture04-lesson-7",
+      "title": "return (x=1) + (x=2);",
+      "source_topic_id": "lecture04-topic-7"
+    },
+    {
+      "id": "lecture04-lesson-8",
+      "title": "-$ gcc test.c",
+      "source_topic_id": "lecture04-topic-8"
+    },
+    {
+      "id": "lecture04-lesson-9",
+      "title": "-$ ./a.out ; echo $?",
+      "source_topic_id": "lecture04-topic-9"
+    },
+    {
+      "id": "lecture04-lesson-10",
+      "title": "Java",
+      "source_topic_id": "lecture04-topic-10"
+    }
+  ],
+  "possible_unit_grouping": [
+    {
+      "id": "lecture04-unit-1",
+      "title": "Lecture 4: Semantics",
+      "lesson_ids": [
+        "lecture04-lesson-1",
+        "lecture04-lesson-2",
+        "lecture04-lesson-3",
+        "lecture04-lesson-4",
+        "lecture04-lesson-5",
+        "lecture04-lesson-6",
+        "lecture04-lesson-7",
+        "lecture04-lesson-8",
+        "lecture04-lesson-9",
+        "lecture04-lesson-10"
+      ]
+    }
+  ],
+  "concept_relationships": [
+    {
+      "id": "lecture04-relation-1",
+      "from_concept_id": "lecture04-topic-1",
+      "to_concept_id": "lecture04-topic-2",
+      "relationship_type": "precedes",
+      "needs_review": true
+    },
+    {
+      "id": "lecture04-relation-2",
+      "from_concept_id": "lecture04-topic-2",
+      "to_concept_id": "lecture04-topic-3",
+      "relationship_type": "precedes",
+      "needs_review": true
+    },
+    {
+      "id": "lecture04-relation-3",
+      "from_concept_id": "lecture04-topic-3",
+      "to_concept_id": "lecture04-topic-4",
+      "relationship_type": "precedes",
+      "needs_review": true
+    },
+    {
+      "id": "lecture04-relation-4",
+      "from_concept_id": "lecture04-topic-4",
+      "to_concept_id": "lecture04-topic-5",
+      "relationship_type": "precedes",
+      "needs_review": true
+    },
+    {
+      "id": "lecture04-relation-5",
+      "from_concept_id": "lecture04-topic-5",
+      "to_concept_id": "lecture04-topic-6",
+      "relationship_type": "precedes",
+      "needs_review": true
+    },
+    {
+      "id": "lecture04-relation-6",
+      "from_concept_id": "lecture04-topic-6",
+      "to_concept_id": "lecture04-topic-7",
+      "relationship_type": "precedes",
+      "needs_review": true
+    },
+    {
+      "id": "lecture04-relation-7",
+      "from_concept_id": "lecture04-topic-7",
+      "to_concept_id": "lecture04-topic-8",
+      "relationship_type": "precedes",
+      "needs_review": true
+    },
+    {
+      "id": "lecture04-relation-8",
+      "from_concept_id": "lecture04-topic-8",
+      "to_concept_id": "lecture04-topic-9",
+      "relationship_type": "precedes",
+      "needs_review": true
+    },
+    {
+      "id": "lecture04-relation-9",
+      "from_concept_id": "lecture04-topic-9",
+      "to_concept_id": "lecture04-topic-10",
+      "relationship_type": "precedes",
+      "needs_review": true
+    }
+  ]
+}

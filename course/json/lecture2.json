@@ -1,0 +1,442 @@
+{
+  "id": "course-lecture2",
+  "source_file": "course/eng/lecture2.pdf",
+  "source_filename": "lecture2.pdf",
+  "parsing_status": "parsed",
+  "needs_review": false,
+  "course_title": "Principles of Programming Languages",
+  "lecture_title": "Lecture 2: Algebraic Data Types. Functions.",
+  "main_topics": [
+    {
+      "id": "lecture2-topic-1",
+      "name": "ADTs and Functions"
+    },
+    {
+      "id": "lecture2-topic-2",
+      "name": "Inference rules"
+    },
+    {
+      "id": "lecture2-topic-3",
+      "name": "Derivations"
+    },
+    {
+      "id": "lecture2-topic-4",
+      "name": "Proofs"
+    },
+    {
+      "id": "lecture2-topic-5",
+      "name": "Induction Principles"
+    },
+    {
+      "id": "lecture2-topic-6",
+      "name": "Proofs by Induction"
+    },
+    {
+      "id": "lecture2-topic-7",
+      "name": "ADTs"
+    },
+    {
+      "id": "lecture2-topic-8",
+      "name": "Inductive Season :="
+    },
+    {
+      "id": "lecture2-topic-9",
+      "name": "| Winter"
+    },
+    {
+      "id": "lecture2-topic-10",
+      "name": "| Spring"
+    }
+  ],
+  "subtopics": [
+    {
+      "id": "lecture2-subtopic-1",
+      "name": "ADT: Algebraic Data Type"
+    },
+    {
+      "id": "lecture2-subtopic-2",
+      "name": "ADT = data types that are formed using other types"
+    },
+    {
+      "id": "lecture2-subtopic-3",
+      "name": "Enumerated type example:"
+    },
+    {
+      "id": "lecture2-subtopic-4",
+      "name": "This is a type with only four possible values"
+    },
+    {
+      "id": "lecture2-subtopic-5",
+      "name": "The values are grouped into several classes (variants)"
+    },
+    {
+      "id": "lecture2-subtopic-6",
+      "name": "Each variant has its own constructor"
+    },
+    {
+      "id": "lecture2-subtopic-7",
+      "name": "Inference rules = rule schemes"
+    },
+    {
+      "id": "lecture2-subtopic-8",
+      "name": "Example: natural numbers"
+    },
+    {
+      "id": "lecture2-subtopic-9",
+      "name": "Inference rules can be used to deﬁne inﬁnite sets"
+    },
+    {
+      "id": "lecture2-subtopic-10",
+      "name": "We will use them to deﬁne the syntax and the semantics of"
+    },
+    {
+      "id": "lecture2-subtopic-11",
+      "name": "The syntax of natural numbers:"
+    },
+    {
+      "id": "lecture2-subtopic-12",
+      "name": "In Coq:"
+    },
+    {
+      "id": "lecture2-subtopic-13",
+      "name": "The ﬁrst constructor takes no arguments"
+    },
+    {
+      "id": "lecture2-subtopic-14",
+      "name": "The second constructor has arguments"
+    },
+    {
+      "id": "lecture2-subtopic-15",
+      "name": "There is an inﬁnite number of elements of this type"
+    }
+  ],
+  "definitions": [
+    {
+      "id": "lecture2-definition-1",
+      "text": "using the definition of plus: we"
+    }
+  ],
+  "key_concepts": [
+    {
+      "id": "lecture2-concept-1",
+      "name": "ADTs and Functions"
+    },
+    {
+      "id": "lecture2-concept-2",
+      "name": "Inference rules"
+    },
+    {
+      "id": "lecture2-concept-3",
+      "name": "Derivations"
+    },
+    {
+      "id": "lecture2-concept-4",
+      "name": "Proofs"
+    },
+    {
+      "id": "lecture2-concept-5",
+      "name": "Induction Principles"
+    },
+    {
+      "id": "lecture2-concept-6",
+      "name": "Proofs by Induction"
+    },
+    {
+      "id": "lecture2-concept-7",
+      "name": "ADTs"
+    },
+    {
+      "id": "lecture2-concept-8",
+      "name": "Inductive Season :="
+    },
+    {
+      "id": "lecture2-concept-9",
+      "name": "| Winter"
+    },
+    {
+      "id": "lecture2-concept-10",
+      "name": "| Spring"
+    },
+    {
+      "id": "lecture2-concept-11",
+      "name": "ADT: Algebraic Data Type"
+    },
+    {
+      "id": "lecture2-concept-12",
+      "name": "ADT = data types that are formed using other types"
+    },
+    {
+      "id": "lecture2-concept-13",
+      "name": "Enumerated type example:"
+    },
+    {
+      "id": "lecture2-concept-14",
+      "name": "This is a type with only four possible values"
+    },
+    {
+      "id": "lecture2-concept-15",
+      "name": "The values are grouped into several classes (variants)"
+    },
+    {
+      "id": "lecture2-concept-16",
+      "name": "Each variant has its own constructor"
+    },
+    {
+      "id": "lecture2-concept-17",
+      "name": "Inference rules = rule schemes"
+    },
+    {
+      "id": "lecture2-concept-18",
+      "name": "Example: natural numbers"
+    },
+    {
+      "id": "lecture2-concept-19",
+      "name": "Inference rules can be used to deﬁne inﬁnite sets"
+    },
+    {
+      "id": "lecture2-concept-20",
+      "name": "We will use them to deﬁne the syntax and the semantics of"
+    }
+  ],
+  "algorithms": [
+    {
+      "id": "lecture2-algorithm-1",
+      "text": "Inference rules"
+    },
+    {
+      "id": "lecture2-algorithm-2",
+      "text": "▶ Inference rules = rule schemes"
+    },
+    {
+      "id": "lecture2-algorithm-3",
+      "text": "▶ Inference rules can be used to deﬁne inﬁnite sets"
+    }
+  ],
+  "formulas": [
+    {
+      "id": "lecture2-formula-1",
+      "expression": "▶ ADT = data types that are formed using other types"
+    },
+    {
+      "id": "lecture2-formula-2",
+      "expression": "Inductive Season :="
+    },
+    {
+      "id": "lecture2-formula-3",
+      "expression": "▶ Inference rules = rule schemes"
+    },
+    {
+      "id": "lecture2-formula-4",
+      "expression": "Inductive Nat := O : Nat"
+    },
+    {
+      "id": "lecture2-formula-5",
+      "expression": "0 + m = m S n + m = S (n + m)"
+    },
+    {
+      "id": "lecture2-formula-6",
+      "expression": "Fixpoint plus (n m : Nat) : nat :="
+    },
+    {
+      "id": "lecture2-formula-7",
+      "expression": "| 0 => m"
+    },
+    {
+      "id": "lecture2-formula-8",
+      "expression": "| S n' => S (plus n' m)"
+    },
+    {
+      "id": "lecture2-formula-9",
+      "expression": "= O"
+    },
+    {
+      "id": "lecture2-formula-10",
+      "expression": "= S O"
+    },
+    {
+      "id": "lecture2-formula-11",
+      "expression": "= S (S O)"
+    },
+    {
+      "id": "lecture2-formula-12",
+      "expression": "= S (S (S (S O)))"
+    }
+  ],
+  "examples": [
+    {
+      "id": "lecture2-example-1",
+      "text": "▶ Enumerated type example:"
+    },
+    {
+      "id": "lecture2-example-2",
+      "text": "▶ Example: natural numbers"
+    },
+    {
+      "id": "lecture2-example-3",
+      "text": "▶ Derivation example for S (S O )∈ N:"
+    },
+    {
+      "id": "lecture2-example-4",
+      "text": "Proofs by induction: example 1"
+    },
+    {
+      "id": "lecture2-example-5",
+      "text": "Proof by induction: example 1"
+    },
+    {
+      "id": "lecture2-example-6",
+      "text": "Proof by induction: example 2"
+    },
+    {
+      "id": "lecture2-example-7",
+      "text": "Example: ASTs"
+    },
+    {
+      "id": "lecture2-example-8",
+      "text": "Example: arithmetic expressions"
+    }
+  ],
+  "exercises": [
+    {
+      "id": "lecture2-exercise-1",
+      "text": "(* Exercise: why this does not work by simplification? *)"
+    }
+  ],
+  "prerequisites": [],
+  "learning_objectives": [],
+  "possible_lesson_breakdown": [
+    {
+      "id": "lecture2-lesson-1",
+      "title": "ADTs and Functions",
+      "source_topic_id": "lecture2-topic-1"
+    },
+    {
+      "id": "lecture2-lesson-2",
+      "title": "Inference rules",
+      "source_topic_id": "lecture2-topic-2"
+    },
+    {
+      "id": "lecture2-lesson-3",
+      "title": "Derivations",
+      "source_topic_id": "lecture2-topic-3"
+    },
+    {
+      "id": "lecture2-lesson-4",
+      "title": "Proofs",
+      "source_topic_id": "lecture2-topic-4"
+    },
+    {
+      "id": "lecture2-lesson-5",
+      "title": "Induction Principles",
+      "source_topic_id": "lecture2-topic-5"
+    },
+    {
+      "id": "lecture2-lesson-6",
+      "title": "Proofs by Induction",
+      "source_topic_id": "lecture2-topic-6"
+    },
+    {
+      "id": "lecture2-lesson-7",
+      "title": "ADTs",
+      "source_topic_id": "lecture2-topic-7"
+    },
+    {
+      "id": "lecture2-lesson-8",
+      "title": "Inductive Season :=",
+      "source_topic_id": "lecture2-topic-8"
+    },
+    {
+      "id": "lecture2-lesson-9",
+      "title": "| Winter",
+      "source_topic_id": "lecture2-topic-9"
+    },
+    {
+      "id": "lecture2-lesson-10",
+      "title": "| Spring",
+      "source_topic_id": "lecture2-topic-10"
+    }
+  ],
+  "possible_unit_grouping": [
+    {
+      "id": "lecture2-unit-1",
+      "title": "Lecture 2: Algebraic Data Types. Functions.",
+      "lesson_ids": [
+        "lecture2-lesson-1",
+        "lecture2-lesson-2",
+        "lecture2-lesson-3",
+        "lecture2-lesson-4",
+        "lecture2-lesson-5",
+        "lecture2-lesson-6",
+        "lecture2-lesson-7",
+        "lecture2-lesson-8",
+        "lecture2-lesson-9",
+        "lecture2-lesson-10"
+      ]
+    }
+  ],
+  "concept_relationships": [
+    {
+      "id": "lecture2-relation-1",
+      "from_concept_id": "lecture2-topic-1",
+      "to_concept_id": "lecture2-topic-2",
+      "relationship_type": "precedes",
+      "needs_review": true
+    },
+    {
+      "id": "lecture2-relation-2",
+      "from_concept_id": "lecture2-topic-2",
+      "to_concept_id": "lecture2-topic-3",
+      "relationship_type": "precedes",
+      "needs_review": true
+    },
+    {
+      "id": "lecture2-relation-3",
+      "from_concept_id": "lecture2-topic-3",
+      "to_concept_id": "lecture2-topic-4",
+      "relationship_type": "precedes",
+      "needs_review": true
+    },
+    {
+      "id": "lecture2-relation-4",
+      "from_concept_id": "lecture2-topic-4",
+      "to_concept_id": "lecture2-topic-5",
+      "relationship_type": "precedes",
+      "needs_review": true
+    },
+    {
+      "id": "lecture2-relation-5",
+      "from_concept_id": "lecture2-topic-5",
+      "to_concept_id": "lecture2-topic-6",
+      "relationship_type": "precedes",
+      "needs_review": true
+    },
+    {
+      "id": "lecture2-relation-6",
+      "from_concept_id": "lecture2-topic-6",
+      "to_concept_id": "lecture2-topic-7",
+      "relationship_type": "precedes",
+      "needs_review": true
+    },
+    {
+      "id": "lecture2-relation-7",
+      "from_concept_id": "lecture2-topic-7",
+      "to_concept_id": "lecture2-topic-8",
+      "relationship_type": "precedes",
+      "needs_review": true
+    },
+    {
+      "id": "lecture2-relation-8",
+      "from_concept_id": "lecture2-topic-8",
+      "to_concept_id": "lecture2-topic-9",
+      "relationship_type": "precedes",
+      "needs_review": true
+    },
+    {
+      "id": "lecture2-relation-9",
+      "from_concept_id": "lecture2-topic-9",
+      "to_concept_id": "lecture2-topic-10",
+      "relationship_type": "precedes",
+      "needs_review": true
+    }
+  ]
+}

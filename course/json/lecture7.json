@@ -1,0 +1,400 @@
+{
+  "id": "course-lecture7",
+  "source_file": "course/eng/lecture7.pdf",
+  "source_filename": "lecture7.pdf",
+  "parsing_status": "parsed",
+  "needs_review": false,
+  "course_title": "Principles of Programming Languages",
+  "lecture_title": "Lecture 7: Small-step Structural Operational",
+  "main_topics": [
+    {
+      "id": "lecture7-topic-1",
+      "name": "Small-step SOS"
+    },
+    {
+      "id": "lecture7-topic-2",
+      "name": "Conﬁgurations"
+    },
+    {
+      "id": "lecture7-topic-3",
+      "name": "Arithmetic expressions"
+    },
+    {
+      "id": "lecture7-topic-4",
+      "name": "Boolean expressions"
+    },
+    {
+      "id": "lecture7-topic-5",
+      "name": "Statements"
+    },
+    {
+      "id": "lecture7-topic-6",
+      "name": "Structural Operational Semantics"
+    },
+    {
+      "id": "lecture7-topic-7",
+      "name": "A language designer should understand the existing design"
+    },
+    {
+      "id": "lecture7-topic-8",
+      "name": "approaches:"
+    },
+    {
+      "id": "lecture7-topic-9",
+      "name": "week)"
+    },
+    {
+      "id": "lecture7-topic-10",
+      "name": "Structural Operational Semantics (SOS)"
+    }
+  ],
+  "subtopics": [
+    {
+      "id": "lecture7-subtopic-1",
+      "name": "Big-step structural operational semantics (discussed last"
+    },
+    {
+      "id": "lecture7-subtopic-2",
+      "name": "Small-step structural operational semantics"
+    },
+    {
+      "id": "lecture7-subtopic-3",
+      "name": "Denotational Semantics"
+    },
+    {
+      "id": "lecture7-subtopic-4",
+      "name": "Modular operational semantics"
+    },
+    {
+      "id": "lecture7-subtopic-5",
+      "name": "Reduction semantics with evaluation contexts"
+    },
+    {
+      "id": "lecture7-subtopic-6",
+      "name": "Abstract Machines, the chemical abstract machine"
+    },
+    {
+      "id": "lecture7-subtopic-7",
+      "name": "Axiomatic semantics"
+    },
+    {
+      "id": "lecture7-subtopic-8",
+      "name": "SOS was proposed by Plotkin in 1981"
+    },
+    {
+      "id": "lecture7-subtopic-9",
+      "name": "Simple framework to describe the behaviour of the"
+    },
+    {
+      "id": "lecture7-subtopic-10",
+      "name": "Rules specify transitions between program conﬁgurations"
+    },
+    {
+      "id": "lecture7-subtopic-11",
+      "name": "Conﬁgurations are tuples of various kinds of data"
+    },
+    {
+      "id": "lecture7-subtopic-12",
+      "name": "capture various components of program states"
+    },
+    {
+      "id": "lecture7-subtopic-13",
+      "name": "A variant of SOS that captures the notion of one"
+    },
+    {
+      "id": "lecture7-subtopic-14",
+      "name": "A.k.a. reduction semantics, transition semantics, one-step"
+    },
+    {
+      "id": "lecture7-subtopic-15",
+      "name": "Small-step SOS for a PL: a set of small-step inference"
+    }
+  ],
+  "definitions": [],
+  "key_concepts": [
+    {
+      "id": "lecture7-concept-1",
+      "name": "Small-step SOS"
+    },
+    {
+      "id": "lecture7-concept-2",
+      "name": "Conﬁgurations"
+    },
+    {
+      "id": "lecture7-concept-3",
+      "name": "Arithmetic expressions"
+    },
+    {
+      "id": "lecture7-concept-4",
+      "name": "Boolean expressions"
+    },
+    {
+      "id": "lecture7-concept-5",
+      "name": "Statements"
+    },
+    {
+      "id": "lecture7-concept-6",
+      "name": "Structural Operational Semantics"
+    },
+    {
+      "id": "lecture7-concept-7",
+      "name": "A language designer should understand the existing design"
+    },
+    {
+      "id": "lecture7-concept-8",
+      "name": "approaches:"
+    },
+    {
+      "id": "lecture7-concept-9",
+      "name": "week)"
+    },
+    {
+      "id": "lecture7-concept-10",
+      "name": "Structural Operational Semantics (SOS)"
+    },
+    {
+      "id": "lecture7-concept-11",
+      "name": "Big-step structural operational semantics (discussed last"
+    },
+    {
+      "id": "lecture7-concept-12",
+      "name": "Small-step structural operational semantics"
+    },
+    {
+      "id": "lecture7-concept-13",
+      "name": "Denotational Semantics"
+    },
+    {
+      "id": "lecture7-concept-14",
+      "name": "Modular operational semantics"
+    },
+    {
+      "id": "lecture7-concept-15",
+      "name": "Reduction semantics with evaluation contexts"
+    },
+    {
+      "id": "lecture7-concept-16",
+      "name": "Abstract Machines, the chemical abstract machine"
+    },
+    {
+      "id": "lecture7-concept-17",
+      "name": "Axiomatic semantics"
+    },
+    {
+      "id": "lecture7-concept-18",
+      "name": "SOS was proposed by Plotkin in 1981"
+    },
+    {
+      "id": "lecture7-concept-19",
+      "name": "Simple framework to describe the behaviour of the"
+    },
+    {
+      "id": "lecture7-concept-20",
+      "name": "Rules specify transitions between program conﬁgurations"
+    }
+  ],
+  "algorithms": [
+    {
+      "id": "lecture7-algorithm-1",
+      "text": "language constructs as inference rules"
+    }
+  ],
+  "formulas": [
+    {
+      "id": "lecture7-formula-1",
+      "expression": "denoted by a simple arrow “→’: it captures only one"
+    },
+    {
+      "id": "lecture7-formula-2",
+      "expression": "int x = 1;"
+    },
+    {
+      "id": "lecture7-formula-3",
+      "expression": "return (x = 1) + (x = 2);"
+    },
+    {
+      "id": "lecture7-formula-4",
+      "expression": "conﬁgurations:C→ C′"
+    },
+    {
+      "id": "lecture7-formula-5",
+      "expression": "▶ C→ C′: the conﬁgurationC′ is obtained from C after one"
+    },
+    {
+      "id": "lecture7-formula-6",
+      "expression": "C1→ C′"
+    },
+    {
+      "id": "lecture7-formula-7",
+      "expression": "1 C2→ C′"
+    },
+    {
+      "id": "lecture7-formula-8",
+      "expression": "2 ··· Cn→ C′"
+    },
+    {
+      "id": "lecture7-formula-9",
+      "expression": "C0→ C′"
+    },
+    {
+      "id": "lecture7-formula-10",
+      "expression": "relation⟨a,σ⟩→⟨ a′,σ⟩."
+    },
+    {
+      "id": "lecture7-formula-11",
+      "expression": "second argument→ two rules - one for each operand"
+    },
+    {
+      "id": "lecture7-formula-12",
+      "expression": "SMALL STEP -LOOKUP : ⟨x, σ⟩→⟨ σ(x),σ⟩ ifσ(x)̸=⊥"
+    }
+  ],
+  "examples": [
+    {
+      "id": "lecture7-example-1",
+      "text": "Derivation example"
+    },
+    {
+      "id": "lecture7-example-2",
+      "text": "We show here a derivation example for the sequent"
+    }
+  ],
+  "exercises": [],
+  "prerequisites": [],
+  "learning_objectives": [],
+  "possible_lesson_breakdown": [
+    {
+      "id": "lecture7-lesson-1",
+      "title": "Small-step SOS",
+      "source_topic_id": "lecture7-topic-1"
+    },
+    {
+      "id": "lecture7-lesson-2",
+      "title": "Conﬁgurations",
+      "source_topic_id": "lecture7-topic-2"
+    },
+    {
+      "id": "lecture7-lesson-3",
+      "title": "Arithmetic expressions",
+      "source_topic_id": "lecture7-topic-3"
+    },
+    {
+      "id": "lecture7-lesson-4",
+      "title": "Boolean expressions",
+      "source_topic_id": "lecture7-topic-4"
+    },
+    {
+      "id": "lecture7-lesson-5",
+      "title": "Statements",
+      "source_topic_id": "lecture7-topic-5"
+    },
+    {
+      "id": "lecture7-lesson-6",
+      "title": "Structural Operational Semantics",
+      "source_topic_id": "lecture7-topic-6"
+    },
+    {
+      "id": "lecture7-lesson-7",
+      "title": "A language designer should understand the existing design",
+      "source_topic_id": "lecture7-topic-7"
+    },
+    {
+      "id": "lecture7-lesson-8",
+      "title": "approaches:",
+      "source_topic_id": "lecture7-topic-8"
+    },
+    {
+      "id": "lecture7-lesson-9",
+      "title": "week)",
+      "source_topic_id": "lecture7-topic-9"
+    },
+    {
+      "id": "lecture7-lesson-10",
+      "title": "Structural Operational Semantics (SOS)",
+      "source_topic_id": "lecture7-topic-10"
+    }
+  ],
+  "possible_unit_grouping": [
+    {
+      "id": "lecture7-unit-1",
+      "title": "Lecture 7: Small-step Structural Operational",
+      "lesson_ids": [
+        "lecture7-lesson-1",
+        "lecture7-lesson-2",
+        "lecture7-lesson-3",
+        "lecture7-lesson-4",
+        "lecture7-lesson-5",
+        "lecture7-lesson-6",
+        "lecture7-lesson-7",
+        "lecture7-lesson-8",
+        "lecture7-lesson-9",
+        "lecture7-lesson-10"
+      ]
+    }
+  ],
+  "concept_relationships": [
+    {
+      "id": "lecture7-relation-1",
+      "from_concept_id": "lecture7-topic-1",
+      "to_concept_id": "lecture7-topic-2",
+      "relationship_type": "precedes",
+      "needs_review": true
+    },
+    {
+      "id": "lecture7-relation-2",
+      "from_concept_id": "lecture7-topic-2",
+      "to_concept_id": "lecture7-topic-3",
+      "relationship_type": "precedes",
+      "needs_review": true
+    },
+    {
+      "id": "lecture7-relation-3",
+      "from_concept_id": "lecture7-topic-3",
+      "to_concept_id": "lecture7-topic-4",
+      "relationship_type": "precedes",
+      "needs_review": true
+    },
+    {
+      "id": "lecture7-relation-4",
+      "from_concept_id": "lecture7-topic-4",
+      "to_concept_id": "lecture7-topic-5",
+      "relationship_type": "precedes",
+      "needs_review": true
+    },
+    {
+      "id": "lecture7-relation-5",
+      "from_concept_id": "lecture7-topic-5",
+      "to_concept_id": "lecture7-topic-6",
+      "relationship_type": "precedes",
+      "needs_review": true
+    },
+    {
+      "id": "lecture7-relation-6",
+      "from_concept_id": "lecture7-topic-6",
+      "to_concept_id": "lecture7-topic-7",
+      "relationship_type": "precedes",
+      "needs_review": true
+    },
+    {
+      "id": "lecture7-relation-7",
+      "from_concept_id": "lecture7-topic-7",
+      "to_concept_id": "lecture7-topic-8",
+      "relationship_type": "precedes",
+      "needs_review": true
+    },
+    {
+      "id": "lecture7-relation-8",
+      "from_concept_id": "lecture7-topic-8",
+      "to_concept_id": "lecture7-topic-9",
+      "relationship_type": "precedes",
+      "needs_review": true
+    },
+    {
+      "id": "lecture7-relation-9",
+      "from_concept_id": "lecture7-topic-9",
+      "to_concept_id": "lecture7-topic-10",
+      "relationship_type": "precedes",
+      "needs_review": true
+    }
+  ]
+}

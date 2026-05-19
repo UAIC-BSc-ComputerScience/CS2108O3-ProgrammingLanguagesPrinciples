@@ -1,0 +1,328 @@
+{
+  "id": "course-lecture01",
+  "source_file": "course/eng/lecture01.pdf",
+  "source_filename": "lecture01.pdf",
+  "parsing_status": "parsed",
+  "needs_review": false,
+  "course_title": "Principles of Programming Languages",
+  "lecture_title": "Lecture 1: Introduction",
+  "main_topics": [
+    {
+      "id": "lecture01-topic-1",
+      "name": "General course information"
+    },
+    {
+      "id": "lecture01-topic-2",
+      "name": "Preliminary discussion"
+    },
+    {
+      "id": "lecture01-topic-3",
+      "name": "History"
+    },
+    {
+      "id": "lecture01-topic-4",
+      "name": "Main Paradigms"
+    }
+  ],
+  "subtopics": [
+    {
+      "id": "lecture01-subtopic-1",
+      "name": "Learning a new PL is nowadays a requirement"
+    },
+    {
+      "id": "lecture01-subtopic-2",
+      "name": "“Programmers need to move from one PL to another with"
+    },
+    {
+      "id": "lecture01-subtopic-3",
+      "name": "PLs have their similarities, analogies, inherited"
+    },
+    {
+      "id": "lecture01-subtopic-4",
+      "name": "The deﬁnition of a programming language:"
+    },
+    {
+      "id": "lecture01-subtopic-5",
+      "name": "Have a better understanding of the PLs you already know"
+    },
+    {
+      "id": "lecture01-subtopic-6",
+      "name": "Ability to learn a new PL fast"
+    },
+    {
+      "id": "lecture01-subtopic-7",
+      "name": "Get familiar with a framework for deﬁning languages"
+    },
+    {
+      "id": "lecture01-subtopic-8",
+      "name": "Team: Andrei Arusoaie and Andreea Bu¸ terchi"
+    },
+    {
+      "id": "lecture01-subtopic-9",
+      "name": "Period: 1st semester (Fall 2020), 2nd year"
+    },
+    {
+      "id": "lecture01-subtopic-10",
+      "name": "https://www.uaic.ro/studii/structura-anului-universitar/"
+    },
+    {
+      "id": "lecture01-subtopic-11",
+      "name": "14 (full activity) weeks"
+    },
+    {
+      "id": "lecture01-subtopic-12",
+      "name": "Final grade = 40 (assignments) + 60 (semester project)"
+    },
+    {
+      "id": "lecture01-subtopic-13",
+      "name": "Assignments: 9 assignments; mandatory: 3,4,5,7,9"
+    },
+    {
+      "id": "lecture01-subtopic-14",
+      "name": "Project: 60 points=15 (syntax)+15 (seman-"
+    },
+    {
+      "id": "lecture01-subtopic-15",
+      "name": "Bonuses: interesting projects"
+    }
+  ],
+  "definitions": [],
+  "key_concepts": [
+    {
+      "id": "lecture01-concept-1",
+      "name": "General course information"
+    },
+    {
+      "id": "lecture01-concept-2",
+      "name": "Preliminary discussion"
+    },
+    {
+      "id": "lecture01-concept-3",
+      "name": "History"
+    },
+    {
+      "id": "lecture01-concept-4",
+      "name": "Main Paradigms"
+    },
+    {
+      "id": "lecture01-concept-5",
+      "name": "Learning a new PL is nowadays a requirement"
+    },
+    {
+      "id": "lecture01-concept-6",
+      "name": "“Programmers need to move from one PL to another with"
+    },
+    {
+      "id": "lecture01-concept-7",
+      "name": "PLs have their similarities, analogies, inherited"
+    },
+    {
+      "id": "lecture01-concept-8",
+      "name": "The deﬁnition of a programming language:"
+    },
+    {
+      "id": "lecture01-concept-9",
+      "name": "Have a better understanding of the PLs you already know"
+    },
+    {
+      "id": "lecture01-concept-10",
+      "name": "Ability to learn a new PL fast"
+    },
+    {
+      "id": "lecture01-concept-11",
+      "name": "Get familiar with a framework for deﬁning languages"
+    },
+    {
+      "id": "lecture01-concept-12",
+      "name": "Team: Andrei Arusoaie and Andreea Bu¸ terchi"
+    },
+    {
+      "id": "lecture01-concept-13",
+      "name": "Period: 1st semester (Fall 2020), 2nd year"
+    },
+    {
+      "id": "lecture01-concept-14",
+      "name": "https://www.uaic.ro/studii/structura-anului-universitar/"
+    },
+    {
+      "id": "lecture01-concept-15",
+      "name": "14 (full activity) weeks"
+    },
+    {
+      "id": "lecture01-concept-16",
+      "name": "Final grade = 40 (assignments) + 60 (semester project)"
+    },
+    {
+      "id": "lecture01-concept-17",
+      "name": "Assignments: 9 assignments; mandatory: 3,4,5,7,9"
+    },
+    {
+      "id": "lecture01-concept-18",
+      "name": "Project: 60 points=15 (syntax)+15 (seman-"
+    },
+    {
+      "id": "lecture01-concept-19",
+      "name": "Bonuses: interesting projects"
+    },
+    {
+      "id": "lecture01-concept-20",
+      "name": "Criteria: assignments(3,4,5,7,9) + syntax + semantics"
+    }
+  ],
+  "algorithms": [
+    {
+      "id": "lecture01-algorithm-1",
+      "text": "▶ well suited to express algorithms"
+    },
+    {
+      "id": "lecture01-algorithm-2",
+      "text": "▶ 1950: ALGOL = ALGOrithmic Languages (family of"
+    },
+    {
+      "id": "lecture01-algorithm-3",
+      "text": "▶ Algorithm = Logic + Control"
+    }
+  ],
+  "formulas": [
+    {
+      "id": "lecture01-formula-1",
+      "expression": "▶ Final grade = 40 (assignments) + 60 (semester project)"
+    },
+    {
+      "id": "lecture01-formula-2",
+      "expression": "▶ Project: 60 points=15 (syntax)+15 (seman-"
+    },
+    {
+      "id": "lecture01-formula-3",
+      "expression": "▶ 1950: ALGOL = ALGOrithmic Languages (family of"
+    },
+    {
+      "id": "lecture01-formula-4",
+      "expression": "▶ 1957: FORTRAN = FORmula TRANslation"
+    },
+    {
+      "id": "lecture01-formula-5",
+      "expression": "▶ 1960: LISP = LISt Processor"
+    },
+    {
+      "id": "lecture01-formula-6",
+      "expression": "s = 0;"
+    },
+    {
+      "id": "lecture01-formula-7",
+      "expression": "s = s + n;"
+    },
+    {
+      "id": "lecture01-formula-8",
+      "expression": "n = n - 1;"
+    },
+    {
+      "id": "lecture01-formula-9",
+      "expression": "this.name = name;"
+    },
+    {
+      "id": "lecture01-formula-10",
+      "expression": "Driver john = new Driver(\"John\");"
+    },
+    {
+      "id": "lecture01-formula-11",
+      "expression": "boolean status = john.getStatus();"
+    },
+    {
+      "id": "lecture01-formula-12",
+      "expression": "isDriving = false;"
+    }
+  ],
+  "examples": [
+    {
+      "id": "lecture01-example-1",
+      "text": "Example program:"
+    },
+    {
+      "id": "lecture01-example-2",
+      "text": "Example (Java):"
+    },
+    {
+      "id": "lecture01-example-3",
+      "text": "Example:"
+    },
+    {
+      "id": "lecture01-example-4",
+      "text": "Example (Prolog):"
+    }
+  ],
+  "exercises": [],
+  "prerequisites": [
+    {
+      "id": "lecture01-prerequisite-1",
+      "text": "▶ Learning a new PL is nowadays a requirement"
+    }
+  ],
+  "learning_objectives": [
+    {
+      "id": "lecture01-objective-1",
+      "text": "understand the basic mechanisms behind the creation of a PL"
+    },
+    {
+      "id": "lecture01-objective-2",
+      "text": "Skills to develop"
+    }
+  ],
+  "possible_lesson_breakdown": [
+    {
+      "id": "lecture01-lesson-1",
+      "title": "General course information",
+      "source_topic_id": "lecture01-topic-1"
+    },
+    {
+      "id": "lecture01-lesson-2",
+      "title": "Preliminary discussion",
+      "source_topic_id": "lecture01-topic-2"
+    },
+    {
+      "id": "lecture01-lesson-3",
+      "title": "History",
+      "source_topic_id": "lecture01-topic-3"
+    },
+    {
+      "id": "lecture01-lesson-4",
+      "title": "Main Paradigms",
+      "source_topic_id": "lecture01-topic-4"
+    }
+  ],
+  "possible_unit_grouping": [
+    {
+      "id": "lecture01-unit-1",
+      "title": "Lecture 1: Introduction",
+      "lesson_ids": [
+        "lecture01-lesson-1",
+        "lecture01-lesson-2",
+        "lecture01-lesson-3",
+        "lecture01-lesson-4"
+      ]
+    }
+  ],
+  "concept_relationships": [
+    {
+      "id": "lecture01-relation-1",
+      "from_concept_id": "lecture01-topic-1",
+      "to_concept_id": "lecture01-topic-2",
+      "relationship_type": "precedes",
+      "needs_review": true
+    },
+    {
+      "id": "lecture01-relation-2",
+      "from_concept_id": "lecture01-topic-2",
+      "to_concept_id": "lecture01-topic-3",
+      "relationship_type": "precedes",
+      "needs_review": true
+    },
+    {
+      "id": "lecture01-relation-3",
+      "from_concept_id": "lecture01-topic-3",
+      "to_concept_id": "lecture01-topic-4",
+      "relationship_type": "precedes",
+      "needs_review": true
+    }
+  ]
+}

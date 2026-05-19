@@ -1,0 +1,411 @@
+{
+  "id": "course-lecture13",
+  "source_file": "course/eng/lecture13.pdf",
+  "source_filename": "lecture13.pdf",
+  "parsing_status": "parsed",
+  "needs_review": false,
+  "course_title": "Principles of Programming Languages",
+  "lecture_title": "",
+  "main_topics": [
+    {
+      "id": "lecture13-topic-1",
+      "name": "Paradigms"
+    },
+    {
+      "id": "lecture13-topic-2",
+      "name": "Declarative Programming"
+    },
+    {
+      "id": "lecture13-topic-3",
+      "name": "Conclusion"
+    },
+    {
+      "id": "lecture13-topic-4",
+      "name": "General facts about PLs - I"
+    },
+    {
+      "id": "lecture13-topic-5",
+      "name": "state + modiﬁable variable + assignment"
+    },
+    {
+      "id": "lecture13-topic-6",
+      "name": "locations"
+    },
+    {
+      "id": "lecture13-topic-7",
+      "name": "General facts about PLs - II"
+    },
+    {
+      "id": "lecture13-topic-8",
+      "name": "base a PL"
+    },
+    {
+      "id": "lecture13-topic-9",
+      "name": "the environment"
+    },
+    {
+      "id": "lecture13-topic-10",
+      "name": "base a PL:"
+    }
+  ],
+  "subtopics": [
+    {
+      "id": "lecture13-subtopic-1",
+      "name": "Imperative Programming:"
+    },
+    {
+      "id": "lecture13-subtopic-2",
+      "name": "Object Oriented Programming:"
+    },
+    {
+      "id": "lecture13-subtopic-3",
+      "name": "Declarative Programming"
+    },
+    {
+      "id": "lecture13-subtopic-4",
+      "name": "Functional Programming"
+    },
+    {
+      "id": "lecture13-subtopic-5",
+      "name": "Logic Programming"
+    },
+    {
+      "id": "lecture13-subtopic-6",
+      "name": "Computational model based on:"
+    },
+    {
+      "id": "lecture13-subtopic-7",
+      "name": "Computation proceeds by modifying values stored in"
+    },
+    {
+      "id": "lecture13-subtopic-8",
+      "name": "The von Neumann Machine"
+    },
+    {
+      "id": "lecture13-subtopic-9",
+      "name": "Conventional PL are based on this computational model"
+    },
+    {
+      "id": "lecture13-subtopic-10",
+      "name": "However, this is not the only possible model upon which to"
+    },
+    {
+      "id": "lecture13-subtopic-11",
+      "name": "It is possible to compute without referring to a state. How?"
+    },
+    {
+      "id": "lecture13-subtopic-12",
+      "name": "... by rewriting expressions"
+    },
+    {
+      "id": "lecture13-subtopic-13",
+      "name": "The computation is expressed in terms of modiﬁcations of"
+    },
+    {
+      "id": "lecture13-subtopic-14",
+      "name": "“Pure” principles: do not modify the ‘state’; no side-effects"
+    },
+    {
+      "id": "lecture13-subtopic-15",
+      "name": "It is possible to compute without referring to a state"
+    }
+  ],
+  "definitions": [],
+  "key_concepts": [
+    {
+      "id": "lecture13-concept-1",
+      "name": "Paradigms"
+    },
+    {
+      "id": "lecture13-concept-2",
+      "name": "Declarative Programming"
+    },
+    {
+      "id": "lecture13-concept-3",
+      "name": "Conclusion"
+    },
+    {
+      "id": "lecture13-concept-4",
+      "name": "General facts about PLs - I"
+    },
+    {
+      "id": "lecture13-concept-5",
+      "name": "state + modiﬁable variable + assignment"
+    },
+    {
+      "id": "lecture13-concept-6",
+      "name": "locations"
+    },
+    {
+      "id": "lecture13-concept-7",
+      "name": "General facts about PLs - II"
+    },
+    {
+      "id": "lecture13-concept-8",
+      "name": "base a PL"
+    },
+    {
+      "id": "lecture13-concept-9",
+      "name": "the environment"
+    },
+    {
+      "id": "lecture13-concept-10",
+      "name": "base a PL:"
+    },
+    {
+      "id": "lecture13-concept-11",
+      "name": "Imperative Programming:"
+    },
+    {
+      "id": "lecture13-concept-12",
+      "name": "Object Oriented Programming:"
+    },
+    {
+      "id": "lecture13-concept-13",
+      "name": "Declarative Programming"
+    },
+    {
+      "id": "lecture13-concept-14",
+      "name": "Functional Programming"
+    },
+    {
+      "id": "lecture13-concept-15",
+      "name": "Logic Programming"
+    },
+    {
+      "id": "lecture13-concept-16",
+      "name": "Computational model based on:"
+    },
+    {
+      "id": "lecture13-concept-17",
+      "name": "Computation proceeds by modifying values stored in"
+    },
+    {
+      "id": "lecture13-concept-18",
+      "name": "The von Neumann Machine"
+    },
+    {
+      "id": "lecture13-concept-19",
+      "name": "Conventional PL are based on this computational model"
+    },
+    {
+      "id": "lecture13-concept-20",
+      "name": "However, this is not the only possible model upon which to"
+    }
+  ],
+  "algorithms": [],
+  "formulas": [
+    {
+      "id": "lecture13-formula-1",
+      "expression": "▶ Turing machine vs.λ-calculus (1936)"
+    },
+    {
+      "id": "lecture13-formula-2",
+      "expression": "▶ Math function: f (x) = x2"
+    },
+    {
+      "id": "lecture13-formula-3",
+      "expression": ", where f : R→ R"
+    },
+    {
+      "id": "lecture13-formula-4",
+      "expression": "▶ Functions = expressible values"
+    },
+    {
+      "id": "lecture13-formula-5",
+      "expression": "▶ Math function: f (x) = x2, where f : R→ R"
+    },
+    {
+      "id": "lecture13-formula-6",
+      "expression": "▶ Anonymous functions:\\x→ x∗ x – Haskell syntax"
+    },
+    {
+      "id": "lecture13-formula-7",
+      "expression": "▶ Application: (\\x→ x∗ x) 2"
+    },
+    {
+      "id": "lecture13-formula-8",
+      "expression": "λ-calculus"
+    },
+    {
+      "id": "lecture13-formula-9",
+      "expression": "▶ Syntax: e ::= x | (e e) | λx. e"
+    },
+    {
+      "id": "lecture13-formula-10",
+      "expression": "▶ λx. e - abstraction"
+    },
+    {
+      "id": "lecture13-formula-11",
+      "expression": "▶ Examples: 10, λx.x, ((λx.x) 10), (λx.x+y )"
+    },
+    {
+      "id": "lecture13-formula-12",
+      "expression": "▶ λx. e"
+    }
+  ],
+  "examples": [
+    {
+      "id": "lecture13-example-1",
+      "text": "▶ Example: (λx.x + y )≡α (λz.(x + y )[z/x]) = (λz.z + y )"
+    },
+    {
+      "id": "lecture13-example-2",
+      "text": "▶ Example: λx.(λy.x) - normal form"
+    },
+    {
+      "id": "lecture13-example-3",
+      "text": "▶ Example: λx.((λy.y ) x) - not in normal form"
+    },
+    {
+      "id": "lecture13-example-4",
+      "text": "▶ Example:"
+    },
+    {
+      "id": "lecture13-example-5",
+      "text": "Haskell example explained"
+    },
+    {
+      "id": "lecture13-example-6",
+      "text": "Another example (the redex under the lambda abstraction is"
+    }
+  ],
+  "exercises": [],
+  "prerequisites": [],
+  "learning_objectives": [],
+  "possible_lesson_breakdown": [
+    {
+      "id": "lecture13-lesson-1",
+      "title": "Paradigms",
+      "source_topic_id": "lecture13-topic-1"
+    },
+    {
+      "id": "lecture13-lesson-2",
+      "title": "Declarative Programming",
+      "source_topic_id": "lecture13-topic-2"
+    },
+    {
+      "id": "lecture13-lesson-3",
+      "title": "Conclusion",
+      "source_topic_id": "lecture13-topic-3"
+    },
+    {
+      "id": "lecture13-lesson-4",
+      "title": "General facts about PLs - I",
+      "source_topic_id": "lecture13-topic-4"
+    },
+    {
+      "id": "lecture13-lesson-5",
+      "title": "state + modiﬁable variable + assignment",
+      "source_topic_id": "lecture13-topic-5"
+    },
+    {
+      "id": "lecture13-lesson-6",
+      "title": "locations",
+      "source_topic_id": "lecture13-topic-6"
+    },
+    {
+      "id": "lecture13-lesson-7",
+      "title": "General facts about PLs - II",
+      "source_topic_id": "lecture13-topic-7"
+    },
+    {
+      "id": "lecture13-lesson-8",
+      "title": "base a PL",
+      "source_topic_id": "lecture13-topic-8"
+    },
+    {
+      "id": "lecture13-lesson-9",
+      "title": "the environment",
+      "source_topic_id": "lecture13-topic-9"
+    },
+    {
+      "id": "lecture13-lesson-10",
+      "title": "base a PL:",
+      "source_topic_id": "lecture13-topic-10"
+    }
+  ],
+  "possible_unit_grouping": [
+    {
+      "id": "lecture13-unit-1",
+      "title": "lecture13",
+      "lesson_ids": [
+        "lecture13-lesson-1",
+        "lecture13-lesson-2",
+        "lecture13-lesson-3",
+        "lecture13-lesson-4",
+        "lecture13-lesson-5",
+        "lecture13-lesson-6",
+        "lecture13-lesson-7",
+        "lecture13-lesson-8",
+        "lecture13-lesson-9",
+        "lecture13-lesson-10"
+      ]
+    }
+  ],
+  "concept_relationships": [
+    {
+      "id": "lecture13-relation-1",
+      "from_concept_id": "lecture13-topic-1",
+      "to_concept_id": "lecture13-topic-2",
+      "relationship_type": "precedes",
+      "needs_review": true
+    },
+    {
+      "id": "lecture13-relation-2",
+      "from_concept_id": "lecture13-topic-2",
+      "to_concept_id": "lecture13-topic-3",
+      "relationship_type": "precedes",
+      "needs_review": true
+    },
+    {
+      "id": "lecture13-relation-3",
+      "from_concept_id": "lecture13-topic-3",
+      "to_concept_id": "lecture13-topic-4",
+      "relationship_type": "precedes",
+      "needs_review": true
+    },
+    {
+      "id": "lecture13-relation-4",
+      "from_concept_id": "lecture13-topic-4",
+      "to_concept_id": "lecture13-topic-5",
+      "relationship_type": "precedes",
+      "needs_review": true
+    },
+    {
+      "id": "lecture13-relation-5",
+      "from_concept_id": "lecture13-topic-5",
+      "to_concept_id": "lecture13-topic-6",
+      "relationship_type": "precedes",
+      "needs_review": true
+    },
+    {
+      "id": "lecture13-relation-6",
+      "from_concept_id": "lecture13-topic-6",
+      "to_concept_id": "lecture13-topic-7",
+      "relationship_type": "precedes",
+      "needs_review": true
+    },
+    {
+      "id": "lecture13-relation-7",
+      "from_concept_id": "lecture13-topic-7",
+      "to_concept_id": "lecture13-topic-8",
+      "relationship_type": "precedes",
+      "needs_review": true
+    },
+    {
+      "id": "lecture13-relation-8",
+      "from_concept_id": "lecture13-topic-8",
+      "to_concept_id": "lecture13-topic-9",
+      "relationship_type": "precedes",
+      "needs_review": true
+    },
+    {
+      "id": "lecture13-relation-9",
+      "from_concept_id": "lecture13-topic-9",
+      "to_concept_id": "lecture13-topic-10",
+      "relationship_type": "precedes",
+      "needs_review": true
+    }
+  ]
+}
