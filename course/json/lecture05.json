@@ -100,7 +100,7 @@
     },
     {
       "id": "lecture05-subtopic-8",
-      "name": "Pair of configurations, to bederived or proved",
+      "name": "Pair of configurations, to be derived or proved",
       "needs_review": true
     },
     {
@@ -120,7 +120,7 @@
     },
     {
       "id": "lecture05-subtopic-12",
-      "name": "Y ou may also have met this terminology: inference rules,",
+      "name": "You may also have met this terminology: inference rules,",
       "needs_review": true
     },
     {
@@ -228,7 +228,7 @@
     },
     {
       "id": "lecture05-concept-18",
-      "name": "Pair of configurations, to bederived or proved",
+      "name": "Pair of configurations, to be derived or proved",
       "needs_review": true
     },
     {
@@ -245,7 +245,7 @@
   "algorithms": [
     {
       "id": "lecture05-algorithm-1",
-      "text": "▶ Y ou may also have met this terminology: inference rules,",
+      "text": "▶ You may also have met this terminology: inference rules,",
       "needs_review": true
     }
   ],

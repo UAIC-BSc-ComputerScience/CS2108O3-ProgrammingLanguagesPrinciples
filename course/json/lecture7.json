@@ -111,31 +111,6 @@
       "id": "lecture7-subtopic-10",
       "name": "capture various components of program states",
       "needs_review": true
-    },
-    {
-      "id": "lecture7-subtopic-11",
-      "name": "A variant of SOS that captures the notion of one",
-      "needs_review": true
-    },
-    {
-      "id": "lecture7-subtopic-12",
-      "name": "A.k.a. reduction semantics, transition semantics, one-step",
-      "needs_review": true
-    },
-    {
-      "id": "lecture7-subtopic-13",
-      "name": "Small-step SOS for a PL: a set of small-step inference",
-      "needs_review": true
-    },
-    {
-      "id": "lecture7-subtopic-14",
-      "name": "The transitions between small-step configurations is",
-      "needs_review": true
-    },
-    {
-      "id": "lecture7-subtopic-15",
-      "name": "cannot naturally define the evaluation of expressions like 2",
-      "needs_review": true
     }
   ],
   "definitions": [],
