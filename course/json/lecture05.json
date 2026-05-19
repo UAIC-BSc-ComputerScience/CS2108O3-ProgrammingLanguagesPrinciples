@@ -5,7 +5,8 @@
   "parsing_status": "parsed",
   "needs_review": true,
   "review_notes": [
-    "Automatically extracted from PDF; truncated or ambiguous entries may still require manual cleanup."
+    "Automatically extracted from PDF; truncated or ambiguous entries may still require manual cleanup.",
+    "Source title indicates this PDF covers Lectures 5-6; keep as single source file and split downstream if needed."
   ],
   "course_title": "Principles of Programming Languages",
   "lecture_title": "Lectures 5-6: Big-step Structural Operational Semantics",

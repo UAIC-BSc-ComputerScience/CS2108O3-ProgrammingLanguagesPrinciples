@@ -8,7 +8,7 @@
     "Automatically extracted from PDF; truncated or ambiguous entries may still require manual cleanup."
   ],
   "course_title": "Principles of Programming Languages",
-  "lecture_title": "Lectures 6: Big-step Structural Operational Semantics",
+  "lecture_title": "Lecture 6: Big-step Structural Operational Semantics",
   "main_topics": [
     {
       "id": "lecture6-topic-1",
@@ -371,7 +371,7 @@
   "possible_unit_grouping": [
     {
       "id": "lecture6-unit-1",
-      "title": "Lectures 6: Big-step Structural Operational Semantics",
+      "title": "Lecture 6: Big-step Structural Operational Semantics",
       "lesson_ids": [
         "lecture6-lesson-1",
         "lecture6-lesson-2",
