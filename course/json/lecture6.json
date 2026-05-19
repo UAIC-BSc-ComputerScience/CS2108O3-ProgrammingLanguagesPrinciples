@@ -41,17 +41,17 @@
       "needs_review": true
     },
     {
-      "id": "lecture6-topic-8",
+      "id": "lecture6-topic-7",
       "name": "Structural Operational Semantics (SOS)",
       "needs_review": true
     },
     {
-      "id": "lecture6-topic-9",
+      "id": "lecture6-topic-8",
       "name": "language constructs as inference rules",
       "needs_review": true
     },
     {
-      "id": "lecture6-topic-10",
+      "id": "lecture6-topic-9",
       "name": "structures (e.g., trees, sets, lists)",
       "needs_review": true
     }
@@ -163,11 +163,6 @@
     {
       "id": "lecture6-concept-6",
       "name": "A language designer should understand the existing design",
-      "needs_review": true
-    },
-    {
-      "id": "lecture6-concept-7",
-      "name": "Slide credits: prof. Grigore Rosu, UIUC",
       "needs_review": true
     },
     {
@@ -340,26 +335,20 @@
     },
     {
       "id": "lecture6-lesson-7",
-      "title": "Slide credits: prof. Grigore Rosu, UIUC",
+      "title": "Structural Operational Semantics (SOS)",
       "source_topic_id": "lecture6-topic-7",
       "needs_review": true
     },
     {
       "id": "lecture6-lesson-8",
-      "title": "Structural Operational Semantics (SOS)",
+      "title": "language constructs as inference rules",
       "source_topic_id": "lecture6-topic-8",
       "needs_review": true
     },
     {
       "id": "lecture6-lesson-9",
-      "title": "language constructs as inference rules",
-      "source_topic_id": "lecture6-topic-9",
-      "needs_review": true
-    },
-    {
-      "id": "lecture6-lesson-10",
       "title": "structures (e.g., trees, sets, lists)",
-      "source_topic_id": "lecture6-topic-10",
+      "source_topic_id": "lecture6-topic-9",
       "needs_review": true
     }
   ],
@@ -376,8 +365,7 @@
         "lecture6-lesson-6",
         "lecture6-lesson-7",
         "lecture6-lesson-8",
-        "lecture6-lesson-9",
-        "lecture6-lesson-10"
+        "lecture6-lesson-9"
       ],
       "needs_review": true
     }
@@ -436,13 +424,6 @@
       "id": "lecture6-relation-8",
       "from_concept_id": "lecture6-topic-8",
       "to_concept_id": "lecture6-topic-9",
-      "relationship_type": "precedes",
-      "needs_review": true
-    },
-    {
-      "id": "lecture6-relation-9",
-      "from_concept_id": "lecture6-topic-9",
-      "to_concept_id": "lecture6-topic-10",
       "relationship_type": "precedes",
       "needs_review": true
     }
