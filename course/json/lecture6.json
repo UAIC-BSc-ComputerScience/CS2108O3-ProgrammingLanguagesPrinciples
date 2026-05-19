@@ -3,266 +3,305 @@
   "source_file": "course/eng/lecture6.pdf",
   "source_filename": "lecture6.pdf",
   "parsing_status": "parsed",
-  "needs_review": false,
+  "needs_review": true,
+  "review_notes": [
+    "Automatically extracted from PDF; truncated or ambiguous entries may still require manual cleanup."
+  ],
   "course_title": "Principles of Programming Languages",
-  "lecture_title": "",
+  "lecture_title": "Lectures 6: Big-step Structural Operational Semantics",
   "main_topics": [
     {
       "id": "lecture6-topic-1",
-      "name": "Structural Operational Semantics"
+      "name": "Structural Operational Semantics",
+      "needs_review": true
     },
     {
       "id": "lecture6-topic-2",
-      "name": "Big-step SOS"
+      "name": "Big-step SOS",
+      "needs_review": true
     },
     {
       "id": "lecture6-topic-3",
-      "name": "Conﬁgurations"
+      "name": "Arithmetic expressions",
+      "needs_review": true
     },
     {
       "id": "lecture6-topic-4",
-      "name": "Arithmetic expressions"
+      "name": "Boolean expressions",
+      "needs_review": true
     },
     {
       "id": "lecture6-topic-5",
-      "name": "Boolean expressions"
+      "name": "Statements",
+      "needs_review": true
     },
     {
       "id": "lecture6-topic-6",
-      "name": "Statements"
+      "name": "A language designer should understand the existing design",
+      "needs_review": true
     },
     {
       "id": "lecture6-topic-7",
-      "name": "A language designer should understand the existing design"
+      "name": "Slide credits: prof. Grigore Rosu, UIUC",
+      "needs_review": true
     },
     {
       "id": "lecture6-topic-8",
-      "name": "approaches:"
+      "name": "Structural Operational Semantics (SOS)",
+      "needs_review": true
     },
     {
       "id": "lecture6-topic-9",
-      "name": "Slide credits: prof. Grigore Rosu, UIUC"
+      "name": "language constructs as inference rules",
+      "needs_review": true
     },
     {
       "id": "lecture6-topic-10",
-      "name": "Structural Operational Semantics (SOS)"
+      "name": "structures (e.g., trees, sets, lists)",
+      "needs_review": true
     }
   ],
   "subtopics": [
     {
       "id": "lecture6-subtopic-1",
-      "name": "Big-step structural operational semantics"
+      "name": "Big-step structural operational semantics",
+      "needs_review": true
     },
     {
       "id": "lecture6-subtopic-2",
-      "name": "Small-step structural operational semantics"
+      "name": "Small-step structural operational semantics",
+      "needs_review": true
     },
     {
       "id": "lecture6-subtopic-3",
-      "name": "Denotational Semantics"
+      "name": "Denotational Semantics",
+      "needs_review": true
     },
     {
       "id": "lecture6-subtopic-4",
-      "name": "Modular operational semantics"
+      "name": "Modular operational semantics",
+      "needs_review": true
     },
     {
       "id": "lecture6-subtopic-5",
-      "name": "Reduction semantics with evaluation contexts"
+      "name": "Reduction semantics with evaluation contexts",
+      "needs_review": true
     },
     {
       "id": "lecture6-subtopic-6",
-      "name": "Abstract Machines, the chemical abstract machine"
+      "name": "Abstract Machines, the chemical abstract machine",
+      "needs_review": true
     },
     {
       "id": "lecture6-subtopic-7",
-      "name": "Axiomatic semantics"
+      "name": "Axiomatic semantics",
+      "needs_review": true
     },
     {
       "id": "lecture6-subtopic-8",
-      "name": "SOS was proposed by Plotkin in 1981"
+      "name": "SOS was proposed by Plotkin in 1981",
+      "needs_review": true
     },
     {
       "id": "lecture6-subtopic-9",
-      "name": "Simple framework to describe the behaviour of the"
+      "name": "Rules specify transitions between program configurations",
+      "needs_review": true
     },
     {
       "id": "lecture6-subtopic-10",
-      "name": "Rules specify transitions between program conﬁgurations"
+      "name": "Configurations are tuples of various kinds of data",
+      "needs_review": true
     },
     {
       "id": "lecture6-subtopic-11",
-      "name": "Conﬁgurations are tuples of various kinds of data"
+      "name": "capture various components of program states",
+      "needs_review": true
     },
     {
       "id": "lecture6-subtopic-12",
-      "name": "capture various components of program states"
+      "name": "Probably the most natural way of defining structural",
+      "needs_review": true
     },
     {
       "id": "lecture6-subtopic-13",
-      "name": "Probably the most natural way of deﬁning structural"
+      "name": "A.k.a. natural semantics, relational semantics, evaluation",
+      "needs_review": true
     },
     {
       "id": "lecture6-subtopic-14",
-      "name": "A.k.a. natural semantics, relational semantics, evaluation"
+      "name": "Big-step SOS for a PL: a set of inference rules",
+      "needs_review": true
     },
     {
       "id": "lecture6-subtopic-15",
-      "name": "Big-step SOS for a PL: a set of inference rules"
+      "name": "Arithmetic expressions",
+      "needs_review": true
     }
   ],
   "definitions": [],
   "key_concepts": [
     {
       "id": "lecture6-concept-1",
-      "name": "Structural Operational Semantics"
+      "name": "Structural Operational Semantics",
+      "needs_review": true
     },
     {
       "id": "lecture6-concept-2",
-      "name": "Big-step SOS"
+      "name": "Big-step SOS",
+      "needs_review": true
     },
     {
       "id": "lecture6-concept-3",
-      "name": "Conﬁgurations"
+      "name": "Arithmetic expressions",
+      "needs_review": true
     },
     {
       "id": "lecture6-concept-4",
-      "name": "Arithmetic expressions"
+      "name": "Boolean expressions",
+      "needs_review": true
     },
     {
       "id": "lecture6-concept-5",
-      "name": "Boolean expressions"
+      "name": "Statements",
+      "needs_review": true
     },
     {
       "id": "lecture6-concept-6",
-      "name": "Statements"
+      "name": "A language designer should understand the existing design",
+      "needs_review": true
     },
     {
       "id": "lecture6-concept-7",
-      "name": "A language designer should understand the existing design"
+      "name": "Slide credits: prof. Grigore Rosu, UIUC",
+      "needs_review": true
     },
     {
       "id": "lecture6-concept-8",
-      "name": "approaches:"
+      "name": "Structural Operational Semantics (SOS)",
+      "needs_review": true
     },
     {
       "id": "lecture6-concept-9",
-      "name": "Slide credits: prof. Grigore Rosu, UIUC"
+      "name": "language constructs as inference rules",
+      "needs_review": true
     },
     {
       "id": "lecture6-concept-10",
-      "name": "Structural Operational Semantics (SOS)"
+      "name": "structures (e.g., trees, sets, lists)",
+      "needs_review": true
     },
     {
       "id": "lecture6-concept-11",
-      "name": "Big-step structural operational semantics"
+      "name": "Big-step structural operational semantics",
+      "needs_review": true
     },
     {
       "id": "lecture6-concept-12",
-      "name": "Small-step structural operational semantics"
+      "name": "Small-step structural operational semantics",
+      "needs_review": true
     },
     {
       "id": "lecture6-concept-13",
-      "name": "Denotational Semantics"
+      "name": "Denotational Semantics",
+      "needs_review": true
     },
     {
       "id": "lecture6-concept-14",
-      "name": "Modular operational semantics"
+      "name": "Modular operational semantics",
+      "needs_review": true
     },
     {
       "id": "lecture6-concept-15",
-      "name": "Reduction semantics with evaluation contexts"
+      "name": "Reduction semantics with evaluation contexts",
+      "needs_review": true
     },
     {
       "id": "lecture6-concept-16",
-      "name": "Abstract Machines, the chemical abstract machine"
+      "name": "Abstract Machines, the chemical abstract machine",
+      "needs_review": true
     },
     {
       "id": "lecture6-concept-17",
-      "name": "Axiomatic semantics"
+      "name": "Axiomatic semantics",
+      "needs_review": true
     },
     {
       "id": "lecture6-concept-18",
-      "name": "SOS was proposed by Plotkin in 1981"
+      "name": "SOS was proposed by Plotkin in 1981",
+      "needs_review": true
     },
     {
       "id": "lecture6-concept-19",
-      "name": "Simple framework to describe the behaviour of the"
+      "name": "Rules specify transitions between program configurations",
+      "needs_review": true
     },
     {
       "id": "lecture6-concept-20",
-      "name": "Rules specify transitions between program conﬁgurations"
+      "name": "Configurations are tuples of various kinds of data",
+      "needs_review": true
     }
   ],
   "algorithms": [
     {
       "id": "lecture6-algorithm-1",
-      "text": "language constructs as inference rules"
+      "text": "language constructs as inference rules",
+      "needs_review": true
     },
     {
       "id": "lecture6-algorithm-2",
-      "text": "▶ Big-step SOS for a PL: a set of inference rules"
+      "text": "▶ Big-step SOS for a PL: a set of inference rules",
+      "needs_review": true
     }
   ],
   "formulas": [
     {
       "id": "lecture6-formula-1",
-      "expression": "BIGSTEP -LOOKUP : ⟨x, σ⟩⇓⟨ σ(x)⟩ ifσ(x)̸=⊥"
+      "expression": "BIGSTEP -LOOKUP : ⟨x, σ⟩⇓⟨ σ(x)⟩ ifσ(x)̸=⊥",
+      "needs_review": true
     },
     {
       "id": "lecture6-formula-2",
-      "expression": "▶ A derivation example whereσ(n) = 10:"
+      "expression": "⟨x ::= a, σ⟩⇓⟨ σ[i/x]⟩ ifσ(x)̸=⊥",
+      "needs_review": true
     },
     {
       "id": "lecture6-formula-3",
-      "expression": "⟨x ::= a, σ⟩⇓⟨ σ[i/x]⟩ ifσ(x)̸=⊥"
+      "expression": "⟨while i<1 (i::=i+1),σ [0/i]⟩⇓⟨ (σ[0/i])[1/i]⟩ WHILE TRUE",
+      "needs_review": true
     },
     {
       "id": "lecture6-formula-4",
-      "expression": "⟨i::=0;;while i<1 (i::=i+1),σ⟩⇓⟨ (σ[0/i])[1/i]⟩."
+      "expression": "⟨i::=i+1⟩⇓⟨ (σ[0/i])[1/i]⟩ ASSIGN C",
+      "needs_review": true
     },
     {
       "id": "lecture6-formula-5",
-      "expression": "⟨i::=0,σ⟩⇓⟨ σ[0/i]⟩ ASSIGN A"
-    },
-    {
-      "id": "lecture6-formula-6",
-      "expression": "⟨i::=0;;while i<1 (i::=i+1),σ⟩⇓⟨ (σ[0/i])[1/i]⟩ SEQ"
-    },
-    {
-      "id": "lecture6-formula-7",
-      "expression": "⟨while i<1 (i::=i+1),σ [0/i]⟩⇓⟨ (σ[0/i])[1/i]⟩ WHILE TRUE"
-    },
-    {
-      "id": "lecture6-formula-8",
-      "expression": "⟨i::=i+1⟩⇓⟨ (σ[0/i])[1/i]⟩ ASSIGN C"
-    },
-    {
-      "id": "lecture6-formula-9",
-      "expression": "⟨i::=i+1;;while i<2 (i::=i+1),σ [0/i]⟩⇓⟨ (σ[0/i])[1/i]⟩ SEQ"
-    },
-    {
-      "id": "lecture6-formula-10",
-      "expression": "⟨while i<1 (i::=i+1), (σ[0/i])[1/i]⟩⇓⟨ (σ[0/i])[1/i]⟩ WHILE FALSE"
+      "expression": "⟨while i<1 (i::=i+1), (σ[0/i])[1/i]⟩⇓⟨ (σ[0/i])[1/i]⟩ WHILE FALSE",
+      "needs_review": true
     }
   ],
   "examples": [
     {
       "id": "lecture6-example-1",
-      "text": "Here is an example of a big-step rule for IMP:"
+      "text": "Here is an example of a big-step rule for IMP:",
+      "needs_review": true
     },
     {
       "id": "lecture6-example-2",
-      "text": "▶ A derivation example whereσ(n) = 10:"
+      "text": "▶ A derivation example whereσ(n) = 10:",
+      "needs_review": true
     },
     {
       "id": "lecture6-example-3",
-      "text": "Derivation example"
+      "text": "Derivation example",
+      "needs_review": true
     }
   ],
   "exercises": [
     {
       "id": "lecture6-exercise-1",
-      "text": "Exercise"
+      "text": "Exercise",
+      "needs_review": true
     }
   ],
   "prerequisites": [],
@@ -271,58 +310,68 @@
     {
       "id": "lecture6-lesson-1",
       "title": "Structural Operational Semantics",
-      "source_topic_id": "lecture6-topic-1"
+      "source_topic_id": "lecture6-topic-1",
+      "needs_review": true
     },
     {
       "id": "lecture6-lesson-2",
       "title": "Big-step SOS",
-      "source_topic_id": "lecture6-topic-2"
+      "source_topic_id": "lecture6-topic-2",
+      "needs_review": true
     },
     {
       "id": "lecture6-lesson-3",
-      "title": "Conﬁgurations",
-      "source_topic_id": "lecture6-topic-3"
+      "title": "Arithmetic expressions",
+      "source_topic_id": "lecture6-topic-3",
+      "needs_review": true
     },
     {
       "id": "lecture6-lesson-4",
-      "title": "Arithmetic expressions",
-      "source_topic_id": "lecture6-topic-4"
+      "title": "Boolean expressions",
+      "source_topic_id": "lecture6-topic-4",
+      "needs_review": true
     },
     {
       "id": "lecture6-lesson-5",
-      "title": "Boolean expressions",
-      "source_topic_id": "lecture6-topic-5"
+      "title": "Statements",
+      "source_topic_id": "lecture6-topic-5",
+      "needs_review": true
     },
     {
       "id": "lecture6-lesson-6",
-      "title": "Statements",
-      "source_topic_id": "lecture6-topic-6"
+      "title": "A language designer should understand the existing design",
+      "source_topic_id": "lecture6-topic-6",
+      "needs_review": true
     },
     {
       "id": "lecture6-lesson-7",
-      "title": "A language designer should understand the existing design",
-      "source_topic_id": "lecture6-topic-7"
+      "title": "Slide credits: prof. Grigore Rosu, UIUC",
+      "source_topic_id": "lecture6-topic-7",
+      "needs_review": true
     },
     {
       "id": "lecture6-lesson-8",
-      "title": "approaches:",
-      "source_topic_id": "lecture6-topic-8"
+      "title": "Structural Operational Semantics (SOS)",
+      "source_topic_id": "lecture6-topic-8",
+      "needs_review": true
     },
     {
       "id": "lecture6-lesson-9",
-      "title": "Slide credits: prof. Grigore Rosu, UIUC",
-      "source_topic_id": "lecture6-topic-9"
+      "title": "language constructs as inference rules",
+      "source_topic_id": "lecture6-topic-9",
+      "needs_review": true
     },
     {
       "id": "lecture6-lesson-10",
-      "title": "Structural Operational Semantics (SOS)",
-      "source_topic_id": "lecture6-topic-10"
+      "title": "structures (e.g., trees, sets, lists)",
+      "source_topic_id": "lecture6-topic-10",
+      "needs_review": true
     }
   ],
   "possible_unit_grouping": [
     {
       "id": "lecture6-unit-1",
-      "title": "lecture6",
+      "title": "Lectures 6: Big-step Structural Operational Semantics",
       "lesson_ids": [
         "lecture6-lesson-1",
         "lecture6-lesson-2",
@@ -334,7 +383,8 @@
         "lecture6-lesson-8",
         "lecture6-lesson-9",
         "lecture6-lesson-10"
-      ]
+      ],
+      "needs_review": true
     }
   ],
   "concept_relationships": [

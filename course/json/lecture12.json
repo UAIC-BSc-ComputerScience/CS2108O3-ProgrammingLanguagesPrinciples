@@ -3,251 +3,267 @@
   "source_file": "course/eng/lecture12.pdf",
   "source_filename": "lecture12.pdf",
   "parsing_status": "parsed",
-  "needs_review": false,
+  "needs_review": true,
+  "review_notes": [
+    "Automatically extracted from PDF; truncated or ambiguous entries may still require manual cleanup."
+  ],
   "course_title": "Principles of Programming Languages",
-  "lecture_title": "",
+  "lecture_title": "Lecture 12",
   "main_topics": [
     {
       "id": "lecture12-topic-1",
-      "name": "Paradigms"
+      "name": "Object-Oriented Programming",
+      "needs_review": true
     },
     {
       "id": "lecture12-topic-2",
-      "name": "Object-Oriented Programming"
+      "name": "Object-Oriented Programming: Motivation-1",
+      "needs_review": true
     },
     {
       "id": "lecture12-topic-3",
-      "name": "Conclusion"
+      "name": "1. User dissatisfaction with the final product",
+      "needs_review": true
     },
     {
       "id": "lecture12-topic-4",
-      "name": "Object-Oriented Programming: Motivation-1"
+      "name": "2. cost overruns",
+      "needs_review": true
     },
     {
       "id": "lecture12-topic-5",
-      "name": "1. User dissatisfaction with the ﬁnal product"
+      "name": "3. buggy software",
+      "needs_review": true
     },
     {
       "id": "lecture12-topic-6",
-      "name": "2. cost overruns"
+      "name": "4. brittle software",
+      "needs_review": true
     },
     {
       "id": "lecture12-topic-7",
-      "name": "3. buggy software"
+      "name": "How to fix all these?",
+      "needs_review": true
     },
     {
       "id": "lecture12-topic-8",
-      "name": "4. brittle software"
+      "name": "(hard to get when working in teams)",
+      "needs_review": true
     },
     {
       "id": "lecture12-topic-9",
-      "name": "Motivation-2"
+      "name": "1. solving very complex problems",
+      "needs_review": true
     },
     {
       "id": "lecture12-topic-10",
-      "name": "Main issues in large software projects:"
+      "name": "2. working in teams",
+      "needs_review": true
     }
   ],
   "subtopics": [
     {
       "id": "lecture12-subtopic-1",
-      "name": "Imperative Programming:"
+      "name": "Object Oriented Programming",
+      "needs_review": true
     },
     {
       "id": "lecture12-subtopic-2",
-      "name": "Object Oriented Programming"
+      "name": "Declarative programming",
+      "needs_review": true
     },
     {
       "id": "lecture12-subtopic-3",
-      "name": "Declarative programming"
+      "name": "Functional Programming",
+      "needs_review": true
     },
     {
       "id": "lecture12-subtopic-4",
-      "name": "Functional Programming"
+      "name": "Logic Programming",
+      "needs_review": true
     },
     {
       "id": "lecture12-subtopic-5",
-      "name": "Logic Programming"
+      "name": "Complex software",
+      "needs_review": true
     },
     {
       "id": "lecture12-subtopic-6",
-      "name": "Complex software"
+      "name": "NATO conference, 1968:software crisis",
+      "needs_review": true
     },
     {
       "id": "lecture12-subtopic-7",
-      "name": "NATO conference, 1968:software crisis"
+      "name": "Names: functions, variables, . . .",
+      "needs_review": true
     },
     {
       "id": "lecture12-subtopic-8",
-      "name": "Names: functions, variables, . . ."
+      "name": "Constraints: time and space complexity",
+      "needs_review": true
     },
     {
       "id": "lecture12-subtopic-9",
-      "name": "Constraints: time and space complexity"
+      "name": "Event-driven interfaces",
+      "needs_review": true
     },
     {
       "id": "lecture12-subtopic-10",
-      "name": "Memory management (garbage collection and address"
+      "name": "Extreme discipline",
+      "needs_review": true
     },
     {
       "id": "lecture12-subtopic-11",
-      "name": "Concurrency"
+      "name": "Extreme discipline (hard to get when working in teams)",
+      "needs_review": true
     },
     {
       "id": "lecture12-subtopic-12",
-      "name": "Event-driven interfaces"
+      "name": "Classes, objects, members (attributes + methods), access",
+      "needs_review": true
     },
     {
       "id": "lecture12-subtopic-13",
-      "name": "Extreme discipline"
+      "name": "Constructors, destructors",
+      "needs_review": true
     },
     {
       "id": "lecture12-subtopic-14",
-      "name": "Or a new paradigm that facilitates:"
+      "name": "Overloading, overriding, shadowing",
+      "needs_review": true
     },
     {
       "id": "lecture12-subtopic-15",
-      "name": "Extreme discipline (hard to get when working in teams)"
+      "name": "Encapsulation, information hidding",
+      "needs_review": true
     }
   ],
   "definitions": [],
   "key_concepts": [
     {
       "id": "lecture12-concept-1",
-      "name": "Paradigms"
+      "name": "Object-Oriented Programming",
+      "needs_review": true
     },
     {
       "id": "lecture12-concept-2",
-      "name": "Object-Oriented Programming"
+      "name": "Object-Oriented Programming: Motivation-1",
+      "needs_review": true
     },
     {
       "id": "lecture12-concept-3",
-      "name": "Conclusion"
+      "name": "1. User dissatisfaction with the final product",
+      "needs_review": true
     },
     {
       "id": "lecture12-concept-4",
-      "name": "Object-Oriented Programming: Motivation-1"
+      "name": "2. cost overruns",
+      "needs_review": true
     },
     {
       "id": "lecture12-concept-5",
-      "name": "1. User dissatisfaction with the ﬁnal product"
+      "name": "3. buggy software",
+      "needs_review": true
     },
     {
       "id": "lecture12-concept-6",
-      "name": "2. cost overruns"
+      "name": "4. brittle software",
+      "needs_review": true
     },
     {
       "id": "lecture12-concept-7",
-      "name": "3. buggy software"
+      "name": "How to fix all these?",
+      "needs_review": true
     },
     {
       "id": "lecture12-concept-8",
-      "name": "4. brittle software"
+      "name": "(hard to get when working in teams)",
+      "needs_review": true
     },
     {
       "id": "lecture12-concept-9",
-      "name": "Motivation-2"
+      "name": "1. solving very complex problems",
+      "needs_review": true
     },
     {
       "id": "lecture12-concept-10",
-      "name": "Main issues in large software projects:"
+      "name": "2. working in teams",
+      "needs_review": true
     },
     {
       "id": "lecture12-concept-11",
-      "name": "Imperative Programming:"
+      "name": "Object Oriented Programming",
+      "needs_review": true
     },
     {
       "id": "lecture12-concept-12",
-      "name": "Object Oriented Programming"
+      "name": "Declarative programming",
+      "needs_review": true
     },
     {
       "id": "lecture12-concept-13",
-      "name": "Declarative programming"
+      "name": "Functional Programming",
+      "needs_review": true
     },
     {
       "id": "lecture12-concept-14",
-      "name": "Functional Programming"
+      "name": "Logic Programming",
+      "needs_review": true
     },
     {
       "id": "lecture12-concept-15",
-      "name": "Logic Programming"
+      "name": "Complex software",
+      "needs_review": true
     },
     {
       "id": "lecture12-concept-16",
-      "name": "Complex software"
+      "name": "NATO conference, 1968:software crisis",
+      "needs_review": true
     },
     {
       "id": "lecture12-concept-17",
-      "name": "NATO conference, 1968:software crisis"
+      "name": "Names: functions, variables, . . .",
+      "needs_review": true
     },
     {
       "id": "lecture12-concept-18",
-      "name": "Names: functions, variables, . . ."
+      "name": "Constraints: time and space complexity",
+      "needs_review": true
     },
     {
       "id": "lecture12-concept-19",
-      "name": "Constraints: time and space complexity"
+      "name": "Event-driven interfaces",
+      "needs_review": true
     },
     {
       "id": "lecture12-concept-20",
-      "name": "Memory management (garbage collection and address"
+      "name": "Extreme discipline",
+      "needs_review": true
     }
   ],
   "algorithms": [],
   "formulas": [
     {
       "id": "lecture12-formula-1",
-      "expression": "▶ Class ="
+      "expression": "▶ Class =",
+      "needs_review": true
     },
     {
       "id": "lecture12-formula-2",
-      "expression": "▶ Object = an instance of a class; it has a state where its"
+      "expression": "▶ Class = a specification used to construct objects",
+      "needs_review": true
     },
     {
       "id": "lecture12-formula-3",
-      "expression": "▶ Class = a speciﬁcation used to construct objects"
-    },
-    {
-      "id": "lecture12-formula-4",
-      "expression": "▶ Object ="
-    },
-    {
-      "id": "lecture12-formula-5",
-      "expression": "Child child = new Child();"
-    },
-    {
-      "id": "lecture12-formula-6",
-      "expression": "SomeType t = foo(child);"
-    },
-    {
-      "id": "lecture12-formula-7",
-      "expression": "Child p = bar(child); // rejected by static type checker"
-    },
-    {
-      "id": "lecture12-formula-8",
-      "expression": "Child p = (Child) bar(child); // dynamic check"
-    },
-    {
-      "id": "lecture12-formula-9",
-      "expression": "Child p = bar(child);"
-    },
-    {
-      "id": "lecture12-formula-10",
-      "expression": "Child p = (Child) bar(child);"
-    },
-    {
-      "id": "lecture12-formula-11",
-      "expression": "int a = 0;"
-    },
-    {
-      "id": "lecture12-formula-12",
-      "expression": "void g() { a = 1; }"
+      "expression": "▶ Object =",
+      "needs_review": true
     }
   ],
   "examples": [
     {
       "id": "lecture12-example-1",
-      "text": "▶ Example: driving a car doesn’t require knowing the"
+      "text": "▶ Example: driving a car doesn't require knowing the",
+      "needs_review": true
     }
   ],
   "exercises": [],
@@ -256,59 +272,69 @@
   "possible_lesson_breakdown": [
     {
       "id": "lecture12-lesson-1",
-      "title": "Paradigms",
-      "source_topic_id": "lecture12-topic-1"
+      "title": "Object-Oriented Programming",
+      "source_topic_id": "lecture12-topic-1",
+      "needs_review": true
     },
     {
       "id": "lecture12-lesson-2",
-      "title": "Object-Oriented Programming",
-      "source_topic_id": "lecture12-topic-2"
+      "title": "Object-Oriented Programming: Motivation-1",
+      "source_topic_id": "lecture12-topic-2",
+      "needs_review": true
     },
     {
       "id": "lecture12-lesson-3",
-      "title": "Conclusion",
-      "source_topic_id": "lecture12-topic-3"
+      "title": "1. User dissatisfaction with the final product",
+      "source_topic_id": "lecture12-topic-3",
+      "needs_review": true
     },
     {
       "id": "lecture12-lesson-4",
-      "title": "Object-Oriented Programming: Motivation-1",
-      "source_topic_id": "lecture12-topic-4"
+      "title": "2. cost overruns",
+      "source_topic_id": "lecture12-topic-4",
+      "needs_review": true
     },
     {
       "id": "lecture12-lesson-5",
-      "title": "1. User dissatisfaction with the ﬁnal product",
-      "source_topic_id": "lecture12-topic-5"
+      "title": "3. buggy software",
+      "source_topic_id": "lecture12-topic-5",
+      "needs_review": true
     },
     {
       "id": "lecture12-lesson-6",
-      "title": "2. cost overruns",
-      "source_topic_id": "lecture12-topic-6"
+      "title": "4. brittle software",
+      "source_topic_id": "lecture12-topic-6",
+      "needs_review": true
     },
     {
       "id": "lecture12-lesson-7",
-      "title": "3. buggy software",
-      "source_topic_id": "lecture12-topic-7"
+      "title": "How to fix all these?",
+      "source_topic_id": "lecture12-topic-7",
+      "needs_review": true
     },
     {
       "id": "lecture12-lesson-8",
-      "title": "4. brittle software",
-      "source_topic_id": "lecture12-topic-8"
+      "title": "(hard to get when working in teams)",
+      "source_topic_id": "lecture12-topic-8",
+      "needs_review": true
     },
     {
       "id": "lecture12-lesson-9",
-      "title": "Motivation-2",
-      "source_topic_id": "lecture12-topic-9"
+      "title": "1. solving very complex problems",
+      "source_topic_id": "lecture12-topic-9",
+      "needs_review": true
     },
     {
       "id": "lecture12-lesson-10",
-      "title": "Main issues in large software projects:",
-      "source_topic_id": "lecture12-topic-10"
+      "title": "2. working in teams",
+      "source_topic_id": "lecture12-topic-10",
+      "needs_review": true
     }
   ],
   "possible_unit_grouping": [
     {
       "id": "lecture12-unit-1",
-      "title": "lecture12",
+      "title": "Lecture 12",
       "lesson_ids": [
         "lecture12-lesson-1",
         "lecture12-lesson-2",
@@ -320,7 +346,8 @@
         "lecture12-lesson-8",
         "lecture12-lesson-9",
         "lecture12-lesson-10"
-      ]
+      ],
+      "needs_review": true
     }
   ],
   "concept_relationships": [

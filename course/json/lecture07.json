@@ -3,263 +3,327 @@
   "source_file": "course/eng/lecture07.pdf",
   "source_filename": "lecture07.pdf",
   "parsing_status": "parsed",
-  "needs_review": false,
+  "needs_review": true,
+  "review_notes": [
+    "Automatically extracted from PDF; truncated or ambiguous entries may still require manual cleanup."
+  ],
   "course_title": "Principles of Programming Languages",
-  "lecture_title": "Lecture 7: Small-step Structural Operational",
+  "lecture_title": "Lecture 7: Small-step Structural Operational Semantics",
   "main_topics": [
     {
       "id": "lecture07-topic-1",
-      "name": "Small-step SOS"
+      "name": "Small-step SOS",
+      "needs_review": true
     },
     {
       "id": "lecture07-topic-2",
-      "name": "States, state operations, rule schemata (in part 1)"
+      "name": "States, state operations, rule schemata (in part 1)",
+      "needs_review": true
     },
     {
       "id": "lecture07-topic-3",
-      "name": "Difference w.r.t. Big-step SOS (in part 1)"
+      "name": "Difference w.r.t. Big-step SOS (in part 1)",
+      "needs_review": true
     },
     {
       "id": "lecture07-topic-4",
-      "name": "Rules"
+      "name": "Arithmetic expressions (in part 1)",
+      "needs_review": true
     },
     {
       "id": "lecture07-topic-5",
-      "name": "Arithmetic expressions (in part 1)"
+      "name": "Boolean expressions (in part 2)",
+      "needs_review": true
     },
     {
       "id": "lecture07-topic-6",
-      "name": "Boolean expressions (in part 2)"
+      "name": "Statements (in part 2)",
+      "needs_review": true
     },
     {
       "id": "lecture07-topic-7",
-      "name": "Statements (in part 2)"
+      "name": "Part 1",
+      "needs_review": true
     },
     {
       "id": "lecture07-topic-8",
-      "name": "Part 1"
+      "name": "Recall: states",
+      "needs_review": true
     },
     {
       "id": "lecture07-topic-9",
-      "name": "Recall: states"
+      "name": "Recall: state operations",
+      "needs_review": true
     },
     {
       "id": "lecture07-topic-10",
-      "name": "σ : Var⇁ Int"
+      "name": "_(_) : State× Var⇁ Int",
+      "needs_review": true
     }
   ],
   "subtopics": [
     {
       "id": "lecture07-subtopic-1",
-      "name": "The state is a partial ﬁnite-domain function:"
+      "name": "Example: σ = x↦→ 10, y↦→ 0",
+      "needs_review": true
     },
     {
       "id": "lecture07-subtopic-2",
-      "name": "Example: σ = x↦→ 10, y↦→ 0"
+      "name": "A small-step SOS transition encodes only one step",
+      "needs_review": true
     },
     {
       "id": "lecture07-subtopic-3",
-      "name": "Lookup"
+      "name": "A big-step SOS transition can be simulated using multiple",
+      "needs_review": true
     },
     {
       "id": "lecture07-subtopic-4",
-      "name": "Update"
+      "name": "Since big-step defines all computation steps in one",
+      "needs_review": true
     },
     {
       "id": "lecture07-subtopic-5",
-      "name": "A small-step SOS transition encodes only one step"
+      "name": "Direct control over what to execute and when",
+      "needs_review": true
     },
     {
       "id": "lecture07-subtopic-6",
-      "name": "A big-step SOS transition can be simulated using multiple"
+      "name": "Therefore, small-step SOS is finer-grain than big-step SOS",
+      "needs_review": true
     },
     {
       "id": "lecture07-subtopic-7",
-      "name": "Since big-step deﬁnes all computation steps in one"
+      "name": "Tuple containing semantic ingredients",
+      "needs_review": true
     },
     {
       "id": "lecture07-subtopic-8",
-      "name": "Direct control over what to execute and when"
+      "name": "Examples:⟨a,σ⟩,⟨b,σ⟩,⟨s,σ⟩,⟨p⟩, . . .",
+      "needs_review": true
     },
     {
       "id": "lecture07-subtopic-9",
-      "name": "Therefore, small-step SOS is ﬁner-grain than big-step SOS"
+      "name": "Sequent (or transition)",
+      "needs_review": true
     },
     {
       "id": "lecture07-subtopic-10",
-      "name": "Conﬁguration"
+      "name": "Pair of configurations, to bederived or proved",
+      "needs_review": true
     },
     {
       "id": "lecture07-subtopic-11",
-      "name": "Tuple containing semantic ingredients"
+      "name": "Examples:⟨a1,σ⟩→⟨ a′",
+      "needs_review": true
     },
     {
       "id": "lecture07-subtopic-12",
-      "name": "Examples:⟨a,σ⟩,⟨b,σ⟩,⟨s,σ⟩,⟨p⟩, . . ."
+      "name": "Note that we use \"→\" instead of \"⇓\" (as for Big-step)",
+      "needs_review": true
     },
     {
       "id": "lecture07-subtopic-13",
-      "name": "Sequent (or transition)"
+      "name": "Tells us how to derive sequents",
+      "needs_review": true
     },
     {
       "id": "lecture07-subtopic-14",
-      "name": "Pair of conﬁgurations, to bederived or proved"
+      "name": "Let us considerσ(x) = 10. Here is a derivation for sequent",
+      "needs_review": true
     },
     {
       "id": "lecture07-subtopic-15",
-      "name": "Examples:⟨a1,σ⟩→⟨ a′"
+      "name": "What about⟨2 + x,σ⟩→⟨ 12,σ⟩?",
+      "needs_review": true
     }
   ],
   "definitions": [],
   "key_concepts": [
     {
       "id": "lecture07-concept-1",
-      "name": "Small-step SOS"
+      "name": "Small-step SOS",
+      "needs_review": true
     },
     {
       "id": "lecture07-concept-2",
-      "name": "States, state operations, rule schemata (in part 1)"
+      "name": "States, state operations, rule schemata (in part 1)",
+      "needs_review": true
     },
     {
       "id": "lecture07-concept-3",
-      "name": "Difference w.r.t. Big-step SOS (in part 1)"
+      "name": "Difference w.r.t. Big-step SOS (in part 1)",
+      "needs_review": true
     },
     {
       "id": "lecture07-concept-4",
-      "name": "Rules"
+      "name": "Arithmetic expressions (in part 1)",
+      "needs_review": true
     },
     {
       "id": "lecture07-concept-5",
-      "name": "Arithmetic expressions (in part 1)"
+      "name": "Boolean expressions (in part 2)",
+      "needs_review": true
     },
     {
       "id": "lecture07-concept-6",
-      "name": "Boolean expressions (in part 2)"
+      "name": "Statements (in part 2)",
+      "needs_review": true
     },
     {
       "id": "lecture07-concept-7",
-      "name": "Statements (in part 2)"
+      "name": "Part 1",
+      "needs_review": true
     },
     {
       "id": "lecture07-concept-8",
-      "name": "Part 1"
+      "name": "Recall: states",
+      "needs_review": true
     },
     {
       "id": "lecture07-concept-9",
-      "name": "Recall: states"
+      "name": "Recall: state operations",
+      "needs_review": true
     },
     {
       "id": "lecture07-concept-10",
-      "name": "σ : Var⇁ Int"
+      "name": "_(_) : State× Var⇁ Int",
+      "needs_review": true
     },
     {
       "id": "lecture07-concept-11",
-      "name": "The state is a partial ﬁnite-domain function:"
+      "name": "Example: σ = x↦→ 10, y↦→ 0",
+      "needs_review": true
     },
     {
       "id": "lecture07-concept-12",
-      "name": "Example: σ = x↦→ 10, y↦→ 0"
+      "name": "A small-step SOS transition encodes only one step",
+      "needs_review": true
     },
     {
       "id": "lecture07-concept-13",
-      "name": "Lookup"
+      "name": "A big-step SOS transition can be simulated using multiple",
+      "needs_review": true
     },
     {
       "id": "lecture07-concept-14",
-      "name": "Update"
+      "name": "Since big-step defines all computation steps in one",
+      "needs_review": true
     },
     {
       "id": "lecture07-concept-15",
-      "name": "A small-step SOS transition encodes only one step"
+      "name": "Direct control over what to execute and when",
+      "needs_review": true
     },
     {
       "id": "lecture07-concept-16",
-      "name": "A big-step SOS transition can be simulated using multiple"
+      "name": "Therefore, small-step SOS is finer-grain than big-step SOS",
+      "needs_review": true
     },
     {
       "id": "lecture07-concept-17",
-      "name": "Since big-step deﬁnes all computation steps in one"
+      "name": "Tuple containing semantic ingredients",
+      "needs_review": true
     },
     {
       "id": "lecture07-concept-18",
-      "name": "Direct control over what to execute and when"
+      "name": "Examples:⟨a,σ⟩,⟨b,σ⟩,⟨s,σ⟩,⟨p⟩, . . .",
+      "needs_review": true
     },
     {
       "id": "lecture07-concept-19",
-      "name": "Therefore, small-step SOS is ﬁner-grain than big-step SOS"
+      "name": "Sequent (or transition)",
+      "needs_review": true
     },
     {
       "id": "lecture07-concept-20",
-      "name": "Conﬁguration"
+      "name": "Pair of configurations, to bederived or proved",
+      "needs_review": true
     }
   ],
   "algorithms": [],
   "formulas": [
     {
       "id": "lecture07-formula-1",
-      "expression": "▶ Example: σ = x↦→ 10, y↦→ 0"
+      "expression": "▶ Example: σ = x↦→ 10, y↦→ 0",
+      "needs_review": true
     },
     {
       "id": "lecture07-formula-2",
-      "expression": "_[_/_] : State× Int× Var→ State"
+      "expression": "_[_/_] : State× Int× Var→ State",
+      "needs_review": true
     },
     {
       "id": "lecture07-formula-3",
-      "expression": "▶ Examples:⟨a1,σ⟩→⟨ a′"
+      "expression": "▶ Examples:⟨a1,σ⟩→⟨ a′",
+      "needs_review": true
     },
     {
       "id": "lecture07-formula-4",
-      "expression": "1⟩,⟨a1 + a2,σ⟩→⟨ a′"
+      "expression": "1⟩,⟨a1 + a2,σ⟩→⟨ a′",
+      "needs_review": true
     },
     {
       "id": "lecture07-formula-5",
-      "expression": "▶ Note that we use “→” instead of “⇓” (as for Big-step)"
+      "expression": "▶ Note that we use \"→\" instead of \"⇓\" (as for Big-step)",
+      "needs_review": true
     },
     {
       "id": "lecture07-formula-6",
-      "expression": "⟨a1,σ⟩→⟨ a′"
+      "expression": "⟨a1,σ⟩→⟨ a′",
+      "needs_review": true
     },
     {
       "id": "lecture07-formula-7",
-      "expression": "⟨a1 + a2,σ⟩→⟨ a′"
+      "expression": "⟨a1 + a2,σ⟩→⟨ a′",
+      "needs_review": true
     },
     {
       "id": "lecture07-formula-8",
-      "expression": "C1→ C′"
+      "expression": "C1→ C′",
+      "needs_review": true
     },
     {
       "id": "lecture07-formula-9",
-      "expression": "1 C2→ C′"
+      "expression": "1 C2→ C′",
+      "needs_review": true
     },
     {
       "id": "lecture07-formula-10",
-      "expression": "2 ··· Cn→ C′"
+      "expression": "2 ··· Cn→ C′",
+      "needs_review": true
     },
     {
       "id": "lecture07-formula-11",
-      "expression": "C0→ C′"
+      "expression": "C0→ C′",
+      "needs_review": true
     },
     {
       "id": "lecture07-formula-12",
-      "expression": "SMALL STEP -LOOKUP : ⟨x, σ⟩→⟨ σ(x),σ⟩ ifσ(x)̸=⊥"
+      "expression": "SMALL STEP -LOOKUP : ⟨x, σ⟩→⟨ σ(x),σ⟩ ifσ(x)̸=⊥",
+      "needs_review": true
     }
   ],
   "examples": [
     {
       "id": "lecture07-example-1",
-      "text": "▶ Example: σ = x↦→ 10, y↦→ 0"
+      "text": "▶ Example: σ = x↦→ 10, y↦→ 0",
+      "needs_review": true
     },
     {
       "id": "lecture07-example-2",
-      "text": "▶ Example:"
+      "text": "▶ Example:",
+      "needs_review": true
     },
     {
       "id": "lecture07-example-3",
-      "text": "Derivation example"
+      "text": "Derivation example",
+      "needs_review": true
     },
     {
       "id": "lecture07-example-4",
-      "text": "Example"
+      "text": "Example",
+      "needs_review": true
     }
   ],
   "exercises": [],
@@ -269,58 +333,68 @@
     {
       "id": "lecture07-lesson-1",
       "title": "Small-step SOS",
-      "source_topic_id": "lecture07-topic-1"
+      "source_topic_id": "lecture07-topic-1",
+      "needs_review": true
     },
     {
       "id": "lecture07-lesson-2",
       "title": "States, state operations, rule schemata (in part 1)",
-      "source_topic_id": "lecture07-topic-2"
+      "source_topic_id": "lecture07-topic-2",
+      "needs_review": true
     },
     {
       "id": "lecture07-lesson-3",
       "title": "Difference w.r.t. Big-step SOS (in part 1)",
-      "source_topic_id": "lecture07-topic-3"
+      "source_topic_id": "lecture07-topic-3",
+      "needs_review": true
     },
     {
       "id": "lecture07-lesson-4",
-      "title": "Rules",
-      "source_topic_id": "lecture07-topic-4"
+      "title": "Arithmetic expressions (in part 1)",
+      "source_topic_id": "lecture07-topic-4",
+      "needs_review": true
     },
     {
       "id": "lecture07-lesson-5",
-      "title": "Arithmetic expressions (in part 1)",
-      "source_topic_id": "lecture07-topic-5"
+      "title": "Boolean expressions (in part 2)",
+      "source_topic_id": "lecture07-topic-5",
+      "needs_review": true
     },
     {
       "id": "lecture07-lesson-6",
-      "title": "Boolean expressions (in part 2)",
-      "source_topic_id": "lecture07-topic-6"
+      "title": "Statements (in part 2)",
+      "source_topic_id": "lecture07-topic-6",
+      "needs_review": true
     },
     {
       "id": "lecture07-lesson-7",
-      "title": "Statements (in part 2)",
-      "source_topic_id": "lecture07-topic-7"
+      "title": "Part 1",
+      "source_topic_id": "lecture07-topic-7",
+      "needs_review": true
     },
     {
       "id": "lecture07-lesson-8",
-      "title": "Part 1",
-      "source_topic_id": "lecture07-topic-8"
+      "title": "Recall: states",
+      "source_topic_id": "lecture07-topic-8",
+      "needs_review": true
     },
     {
       "id": "lecture07-lesson-9",
-      "title": "Recall: states",
-      "source_topic_id": "lecture07-topic-9"
+      "title": "Recall: state operations",
+      "source_topic_id": "lecture07-topic-9",
+      "needs_review": true
     },
     {
       "id": "lecture07-lesson-10",
-      "title": "σ : Var⇁ Int",
-      "source_topic_id": "lecture07-topic-10"
+      "title": "_(_) : State× Var⇁ Int",
+      "source_topic_id": "lecture07-topic-10",
+      "needs_review": true
     }
   ],
   "possible_unit_grouping": [
     {
       "id": "lecture07-unit-1",
-      "title": "Lecture 7: Small-step Structural Operational",
+      "title": "Lecture 7: Small-step Structural Operational Semantics",
       "lesson_ids": [
         "lecture07-lesson-1",
         "lecture07-lesson-2",
@@ -332,7 +406,8 @@
         "lecture07-lesson-8",
         "lecture07-lesson-9",
         "lecture07-lesson-10"
-      ]
+      ],
+      "needs_review": true
     }
   ],
   "concept_relationships": [

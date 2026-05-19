@@ -3,262 +3,326 @@
   "source_file": "course/eng/lecture04.pdf",
   "source_filename": "lecture04.pdf",
   "parsing_status": "parsed",
-  "needs_review": false,
+  "needs_review": true,
+  "review_notes": [
+    "Automatically extracted from PDF; truncated or ambiguous entries may still require manual cleanup."
+  ],
   "course_title": "Principles of Programming Languages",
   "lecture_title": "Lecture 4: Semantics",
   "main_topics": [
     {
       "id": "lecture04-topic-1",
-      "name": "Semantics: introduction"
+      "name": "Semantics: introduction",
+      "needs_review": true
     },
     {
       "id": "lecture04-topic-2",
-      "name": "A simple imperative language"
+      "name": "A simple imperative language",
+      "needs_review": true
     },
     {
       "id": "lecture04-topic-3",
-      "name": "Semantics: motivation"
+      "name": "Semantics: motivation",
+      "needs_review": true
     },
     {
       "id": "lecture04-topic-4",
-      "name": "-$ cat test.c"
+      "name": "GCC: 5.4.0-6 ubuntu",
+      "needs_review": true
     },
     {
       "id": "lecture04-topic-5",
-      "name": "int main()"
+      "name": "GCC: LLVM version 9.0.0 - clang",
+      "needs_review": true
     },
     {
       "id": "lecture04-topic-6",
-      "name": "int x;"
+      "name": "Semantics",
+      "needs_review": true
     },
     {
       "id": "lecture04-topic-7",
-      "name": "return (x=1) + (x=2);"
+      "name": "Semantic - informal",
+      "needs_review": true
     },
     {
       "id": "lecture04-topic-8",
-      "name": "-$ gcc test.c"
+      "name": "Informal semantics (examples): natural language",
+      "needs_review": true
     },
     {
       "id": "lecture04-topic-9",
-      "name": "-$ ./a.out ; echo $?"
+      "name": "Inexact! – could lead to undefined behavior in programs",
+      "needs_review": true
     },
     {
       "id": "lecture04-topic-10",
-      "name": "Java"
+      "name": "Semantic styles",
+      "needs_review": true
     }
   ],
   "subtopics": [
     {
       "id": "lecture04-subtopic-1",
-      "name": "out-of-lifetime.c"
+      "name": "Semantics is concerned with the meaning of language",
+      "needs_review": true
     },
     {
       "id": "lecture04-subtopic-2",
-      "name": "Semantics is concerned with the meaning of language"
+      "name": "Semantics must be unambiguous",
+      "needs_review": true
     },
     {
       "id": "lecture04-subtopic-3",
-      "name": "Semantics must be unambiguous"
+      "name": "Semantics must be flexible",
+      "needs_review": true
     },
     {
       "id": "lecture04-subtopic-4",
-      "name": "Semantics must be ﬂexible"
+      "name": "\"Trust the programmer\"",
+      "needs_review": true
     },
     {
       "id": "lecture04-subtopic-5",
-      "name": "“Trust the programmer”"
+      "name": "\"Keep the language small and simple\"",
+      "needs_review": true
     },
     {
       "id": "lecture04-subtopic-6",
-      "name": "“Don’t prevent the programmer from doing what needs to"
+      "name": "\"Provide only one way to do an operation\"",
+      "needs_review": true
     },
     {
       "id": "lecture04-subtopic-7",
-      "name": "“Keep the language small and simple”"
+      "name": "\"Make it fast, even if it is not guaranteed to be portable\"",
+      "needs_review": true
     },
     {
       "id": "lecture04-subtopic-8",
-      "name": "“Provide only one way to do an operation”"
+      "name": "variable = storage location at address + symbolic name",
+      "needs_review": true
     },
     {
       "id": "lecture04-subtopic-9",
-      "name": "“Make it fast, even if it is not guaranteed to be portable”"
+      "name": "variables can be accessed or modified",
+      "needs_review": true
     },
     {
       "id": "lecture04-subtopic-10",
-      "name": "operational"
+      "name": "depending on the language, they may only be able to store",
+      "needs_review": true
     },
     {
       "id": "lecture04-subtopic-11",
-      "name": "denotational"
+      "name": "Scope: global, local",
+      "needs_review": true
     },
     {
       "id": "lecture04-subtopic-12",
-      "name": "axiomatic"
+      "name": "Lifetime (extent)",
+      "needs_review": true
     },
     {
       "id": "lecture04-subtopic-13",
-      "name": "variables"
+      "name": "Environment + memory",
+      "needs_review": true
     },
     {
       "id": "lecture04-subtopic-14",
-      "name": "arithmetic expressions"
+      "name": "Environment: variables mapped to values",
+      "needs_review": true
     },
     {
       "id": "lecture04-subtopic-15",
-      "name": "boolean expressions"
+      "name": "The environment is a function!",
+      "needs_review": true
     }
   ],
   "definitions": [
     {
       "id": "lecture04-definition-1",
-      "text": "Definition var_eq (v1 v2 : Var) :="
+      "text": "Definition var_eq (v1 v2 : Var) :=",
+      "needs_review": true
     },
     {
       "id": "lecture04-definition-2",
-      "text": "Definition Env := Var -> nat."
+      "text": "Definition Env := Var -> nat.",
+      "needs_review": true
     },
     {
       "id": "lecture04-definition-3",
-      "text": "Definition env (var : Var) := if (var_eq var n)"
+      "text": "Definition env (var : Var) := if (var_eq var n)",
+      "needs_review": true
     },
     {
       "id": "lecture04-definition-4",
-      "text": "Definition update (x : Var)(v : nat)(env : Env) : Env :="
+      "text": "Definition update (x : Var)(v : nat)(env : Env) : Env :=",
+      "needs_review": true
     }
   ],
   "key_concepts": [
     {
       "id": "lecture04-concept-1",
-      "name": "Semantics: introduction"
+      "name": "Semantics: introduction",
+      "needs_review": true
     },
     {
       "id": "lecture04-concept-2",
-      "name": "A simple imperative language"
+      "name": "A simple imperative language",
+      "needs_review": true
     },
     {
       "id": "lecture04-concept-3",
-      "name": "Semantics: motivation"
+      "name": "Semantics: motivation",
+      "needs_review": true
     },
     {
       "id": "lecture04-concept-4",
-      "name": "-$ cat test.c"
+      "name": "GCC: 5.4.0-6 ubuntu",
+      "needs_review": true
     },
     {
       "id": "lecture04-concept-5",
-      "name": "int main()"
+      "name": "GCC: LLVM version 9.0.0 - clang",
+      "needs_review": true
     },
     {
       "id": "lecture04-concept-6",
-      "name": "int x;"
+      "name": "Semantics",
+      "needs_review": true
     },
     {
       "id": "lecture04-concept-7",
-      "name": "return (x=1) + (x=2);"
+      "name": "Semantic - informal",
+      "needs_review": true
     },
     {
       "id": "lecture04-concept-8",
-      "name": "-$ gcc test.c"
+      "name": "Informal semantics (examples): natural language",
+      "needs_review": true
     },
     {
       "id": "lecture04-concept-9",
-      "name": "-$ ./a.out ; echo $?"
+      "name": "Inexact! – could lead to undefined behavior in programs",
+      "needs_review": true
     },
     {
       "id": "lecture04-concept-10",
-      "name": "Java"
+      "name": "Semantic styles",
+      "needs_review": true
     },
     {
       "id": "lecture04-concept-11",
-      "name": "out-of-lifetime.c"
+      "name": "Semantics is concerned with the meaning of language",
+      "needs_review": true
     },
     {
       "id": "lecture04-concept-12",
-      "name": "Semantics is concerned with the meaning of language"
+      "name": "Semantics must be unambiguous",
+      "needs_review": true
     },
     {
       "id": "lecture04-concept-13",
-      "name": "Semantics must be unambiguous"
+      "name": "Semantics must be flexible",
+      "needs_review": true
     },
     {
       "id": "lecture04-concept-14",
-      "name": "Semantics must be ﬂexible"
+      "name": "\"Trust the programmer\"",
+      "needs_review": true
     },
     {
       "id": "lecture04-concept-15",
-      "name": "“Trust the programmer”"
+      "name": "\"Keep the language small and simple\"",
+      "needs_review": true
     },
     {
       "id": "lecture04-concept-16",
-      "name": "“Don’t prevent the programmer from doing what needs to"
+      "name": "\"Provide only one way to do an operation\"",
+      "needs_review": true
     },
     {
       "id": "lecture04-concept-17",
-      "name": "“Keep the language small and simple”"
+      "name": "\"Make it fast, even if it is not guaranteed to be portable\"",
+      "needs_review": true
     },
     {
       "id": "lecture04-concept-18",
-      "name": "“Provide only one way to do an operation”"
+      "name": "variable = storage location at address + symbolic name",
+      "needs_review": true
     },
     {
       "id": "lecture04-concept-19",
-      "name": "“Make it fast, even if it is not guaranteed to be portable”"
+      "name": "variables can be accessed or modified",
+      "needs_review": true
     },
     {
       "id": "lecture04-concept-20",
-      "name": "operational"
+      "name": "depending on the language, they may only be able to store",
+      "needs_review": true
     }
   ],
   "algorithms": [],
   "formulas": [
     {
       "id": "lecture04-formula-1",
-      "expression": "return (x=1) + (x=2);"
+      "expression": "while (i «= n) do",
+      "needs_review": true
     },
     {
       "id": "lecture04-formula-2",
-      "expression": "int x = 0;"
+      "expression": "i ::= i +' 1",
+      "needs_review": true
     },
     {
       "id": "lecture04-formula-3",
-      "expression": "println((x=1) + (x=2));"
+      "expression": "▶ variable = storage location at address + symbolic name",
+      "needs_review": true
     },
     {
       "id": "lecture04-formula-4",
-      "expression": "n ::= 10;;"
+      "expression": "▶ var_name ↦→ value",
+      "needs_review": true
     },
     {
       "id": "lecture04-formula-5",
-      "expression": "i ::= 1;;"
+      "expression": "Inductive Var := n | i | sum.",
+      "needs_review": true
     },
     {
       "id": "lecture04-formula-6",
-      "expression": "sum ::= 0;;"
+      "expression": "Definition var_eq (v1 v2 : Var) :=",
+      "needs_review": true
     },
     {
       "id": "lecture04-formula-7",
-      "expression": "while (i «= n) do"
+      "expression": "| n, n => true",
+      "needs_review": true
     },
     {
       "id": "lecture04-formula-8",
-      "expression": "sum ::= sum +’ i;;"
+      "expression": "| i, i => true",
+      "needs_review": true
     },
     {
       "id": "lecture04-formula-9",
-      "expression": "i ::= i +’ 1"
+      "expression": "| sum, sum => true",
+      "needs_review": true
     },
     {
       "id": "lecture04-formula-10",
-      "expression": "▶ variable = storage location at address + symbolic name"
+      "expression": "| _, _ => false",
+      "needs_review": true
     },
     {
       "id": "lecture04-formula-11",
-      "expression": "▶ var_name ↦→ value"
+      "expression": "Definition Env := Var -> nat.",
+      "needs_review": true
     },
     {
       "id": "lecture04-formula-12",
-      "expression": "Inductive Var := n | i | sum."
+      "expression": "Definition env (var : Var) := if (var_eq var n)",
+      "needs_review": true
     }
   ],
   "examples": [],
@@ -269,52 +333,62 @@
     {
       "id": "lecture04-lesson-1",
       "title": "Semantics: introduction",
-      "source_topic_id": "lecture04-topic-1"
+      "source_topic_id": "lecture04-topic-1",
+      "needs_review": true
     },
     {
       "id": "lecture04-lesson-2",
       "title": "A simple imperative language",
-      "source_topic_id": "lecture04-topic-2"
+      "source_topic_id": "lecture04-topic-2",
+      "needs_review": true
     },
     {
       "id": "lecture04-lesson-3",
       "title": "Semantics: motivation",
-      "source_topic_id": "lecture04-topic-3"
+      "source_topic_id": "lecture04-topic-3",
+      "needs_review": true
     },
     {
       "id": "lecture04-lesson-4",
-      "title": "-$ cat test.c",
-      "source_topic_id": "lecture04-topic-4"
+      "title": "GCC: 5.4.0-6 ubuntu",
+      "source_topic_id": "lecture04-topic-4",
+      "needs_review": true
     },
     {
       "id": "lecture04-lesson-5",
-      "title": "int main()",
-      "source_topic_id": "lecture04-topic-5"
+      "title": "GCC: LLVM version 9.0.0 - clang",
+      "source_topic_id": "lecture04-topic-5",
+      "needs_review": true
     },
     {
       "id": "lecture04-lesson-6",
-      "title": "int x;",
-      "source_topic_id": "lecture04-topic-6"
+      "title": "Semantics",
+      "source_topic_id": "lecture04-topic-6",
+      "needs_review": true
     },
     {
       "id": "lecture04-lesson-7",
-      "title": "return (x=1) + (x=2);",
-      "source_topic_id": "lecture04-topic-7"
+      "title": "Semantic - informal",
+      "source_topic_id": "lecture04-topic-7",
+      "needs_review": true
     },
     {
       "id": "lecture04-lesson-8",
-      "title": "-$ gcc test.c",
-      "source_topic_id": "lecture04-topic-8"
+      "title": "Informal semantics (examples): natural language",
+      "source_topic_id": "lecture04-topic-8",
+      "needs_review": true
     },
     {
       "id": "lecture04-lesson-9",
-      "title": "-$ ./a.out ; echo $?",
-      "source_topic_id": "lecture04-topic-9"
+      "title": "Inexact! – could lead to undefined behavior in programs",
+      "source_topic_id": "lecture04-topic-9",
+      "needs_review": true
     },
     {
       "id": "lecture04-lesson-10",
-      "title": "Java",
-      "source_topic_id": "lecture04-topic-10"
+      "title": "Semantic styles",
+      "source_topic_id": "lecture04-topic-10",
+      "needs_review": true
     }
   ],
   "possible_unit_grouping": [
@@ -332,7 +406,8 @@
         "lecture04-lesson-8",
         "lecture04-lesson-9",
         "lecture04-lesson-10"
-      ]
+      ],
+      "needs_review": true
     }
   ],
   "concept_relationships": [

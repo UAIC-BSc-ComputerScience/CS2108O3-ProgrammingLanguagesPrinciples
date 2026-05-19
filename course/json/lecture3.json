@@ -3,288 +3,373 @@
   "source_file": "course/eng/lecture3.pdf",
   "source_filename": "lecture3.pdf",
   "parsing_status": "parsed",
-  "needs_review": false,
+  "needs_review": true,
+  "review_notes": [
+    "Automatically extracted from PDF; truncated or ambiguous entries may still require manual cleanup."
+  ],
   "course_title": "Principles of Programming Languages",
-  "lecture_title": "Lecture 3: Polymorphism. Higher-order",
+  "lecture_title": "Lecture 3: Polymorphism. Higher-order functions. Logic in Coq.",
   "main_topics": [
     {
       "id": "lecture3-topic-1",
-      "name": "Induction revisited"
+      "name": "Induction revisited",
+      "needs_review": true
     },
     {
       "id": "lecture3-topic-2",
-      "name": "Polymorphism"
+      "name": "Higher-order functions",
+      "needs_review": true
     },
     {
       "id": "lecture3-topic-3",
-      "name": "Higher-order functions"
+      "name": "Logic in Coq",
+      "needs_review": true
     },
     {
       "id": "lecture3-topic-4",
-      "name": "Logic in Coq"
+      "name": "Inductive Nat := O : Nat | S : Nat -> Nat.",
+      "needs_review": true
     },
     {
       "id": "lecture3-topic-5",
-      "name": "Inductive Nat := O : Nat | S : Nat -> Nat."
+      "name": "le_Nat m n = true ->",
+      "needs_review": true
     },
     {
       "id": "lecture3-topic-6",
-      "name": "Lemma le_Trans :"
+      "name": "le_Nat n p = true ->",
+      "needs_review": true
     },
     {
       "id": "lecture3-topic-7",
-      "name": "forall m n p,"
+      "name": "le_Nat m p = true.",
+      "needs_review": true
     },
     {
       "id": "lecture3-topic-8",
-      "name": "le_Nat m n = true ->"
+      "name": "(* Demo *)",
+      "needs_review": true
     },
     {
       "id": "lecture3-topic-9",
-      "name": "le_Nat n p = true ->"
+      "name": "Inductive ListNat :=",
+      "needs_review": true
     },
     {
       "id": "lecture3-topic-10",
-      "name": "le_Nat m p = true."
+      "name": "| Nil : ListNat",
+      "needs_review": true
     }
   ],
   "subtopics": [
     {
       "id": "lecture3-subtopic-1",
-      "name": "Natural numbers"
+      "name": "Natural numbers",
+      "needs_review": true
     },
     {
       "id": "lecture3-subtopic-2",
-      "name": "Transitivity: strong vs. weak inductive hypothesis"
+      "name": "Transitivity: strong vs. weak inductive hypothesis",
+      "needs_review": true
     },
     {
       "id": "lecture3-subtopic-3",
-      "name": "Lists of natural numbers:"
+      "name": "They look very similar: code duplication!",
+      "needs_review": true
     },
     {
       "id": "lecture3-subtopic-4",
-      "name": "Lists of booleans:"
+      "name": "Code duplication again (DRY!?!)",
+      "needs_review": true
     },
     {
       "id": "lecture3-subtopic-5",
-      "name": "They look very similar: code duplication!"
+      "name": "Solution: polymorphism",
+      "needs_review": true
     },
     {
       "id": "lecture3-subtopic-6",
-      "name": "Length of lists of natural numbers:"
+      "name": "This is a similar definition of lists but this one is parametric",
+      "needs_review": true
     },
     {
       "id": "lecture3-subtopic-7",
-      "name": "Length of lists of booleans:"
+      "name": "List is a function from Types to inductive definitions!",
+      "needs_review": true
     },
     {
       "id": "lecture3-subtopic-8",
-      "name": "Code duplication again (DRY!?!)"
+      "name": "SinceList is a function from Types to inductive",
+      "needs_review": true
     },
     {
       "id": "lecture3-subtopic-9",
-      "name": "Solution: polymorphism"
+      "name": "The type is passed to the function and all the constructors",
+      "needs_review": true
     },
     {
       "id": "lecture3-subtopic-10",
-      "name": "Polymorphic lists in Coq:"
+      "name": "Solution: Implicit arguments",
+      "needs_review": true
     },
     {
       "id": "lecture3-subtopic-11",
-      "name": "This is a similar deﬁnition of lists but this one is parametric"
+      "name": "Higher-order functions: functions that manipulate other",
+      "needs_review": true
     },
     {
       "id": "lecture3-subtopic-12",
-      "name": "List is a function from Types to inductive deﬁnitions!"
+      "name": "Functions can take other functions as input parameters",
+      "needs_review": true
     },
     {
       "id": "lecture3-subtopic-13",
-      "name": "SinceList is a function from Types to inductive"
+      "name": "First, we need a functionf : T -> bool that is passed",
+      "needs_review": true
     },
     {
       "id": "lecture3-subtopic-14",
-      "name": "Here is the deﬁnition of lists of naturals:"
+      "name": "Second, pick an example of a list",
+      "needs_review": true
     },
     {
       "id": "lecture3-subtopic-15",
-      "name": "Here is the deﬁnition of lists of booleans:"
+      "name": "We can define functions \"on the fly\" without declaring them",
+      "needs_review": true
     }
   ],
   "definitions": [
     {
       "id": "lecture3-definition-1",
-      "text": "Definition ListNat := List Nat."
+      "text": "▶ This is a similar definition of lists but this one is parametric",
+      "needs_review": true
     },
     {
       "id": "lecture3-definition-2",
-      "text": "Definition ListBool := List bool."
+      "text": "▶ Here is the definition of lists of naturals:",
+      "needs_review": true
     },
     {
       "id": "lecture3-definition-3",
-      "text": "Definition has_one_digit (n : nat) := leb n 9."
+      "text": "Definition ListNat := List Nat.",
+      "needs_review": true
     },
     {
       "id": "lecture3-definition-4",
-      "text": "Definition compose {A : Type}"
+      "text": "▶ Here is the definition of lists of booleans:",
+      "needs_review": true
+    },
+    {
+      "id": "lecture3-definition-5",
+      "text": "Definition ListBool := List bool.",
+      "needs_review": true
+    },
+    {
+      "id": "lecture3-definition-6",
+      "text": "Definition has_one_digit (n : nat) := leb n 9.",
+      "needs_review": true
+    },
+    {
+      "id": "lecture3-definition-7",
+      "text": "Definition compose {A : Type}",
+      "needs_review": true
     }
   ],
   "key_concepts": [
     {
       "id": "lecture3-concept-1",
-      "name": "Induction revisited"
+      "name": "Induction revisited",
+      "needs_review": true
     },
     {
       "id": "lecture3-concept-2",
-      "name": "Polymorphism"
+      "name": "Higher-order functions",
+      "needs_review": true
     },
     {
       "id": "lecture3-concept-3",
-      "name": "Higher-order functions"
+      "name": "Logic in Coq",
+      "needs_review": true
     },
     {
       "id": "lecture3-concept-4",
-      "name": "Logic in Coq"
+      "name": "Inductive Nat := O : Nat | S : Nat -> Nat.",
+      "needs_review": true
     },
     {
       "id": "lecture3-concept-5",
-      "name": "Inductive Nat := O : Nat | S : Nat -> Nat."
+      "name": "le_Nat m n = true ->",
+      "needs_review": true
     },
     {
       "id": "lecture3-concept-6",
-      "name": "Lemma le_Trans :"
+      "name": "le_Nat n p = true ->",
+      "needs_review": true
     },
     {
       "id": "lecture3-concept-7",
-      "name": "forall m n p,"
+      "name": "le_Nat m p = true.",
+      "needs_review": true
     },
     {
       "id": "lecture3-concept-8",
-      "name": "le_Nat m n = true ->"
+      "name": "(* Demo *)",
+      "needs_review": true
     },
     {
       "id": "lecture3-concept-9",
-      "name": "le_Nat n p = true ->"
+      "name": "Inductive ListNat :=",
+      "needs_review": true
     },
     {
       "id": "lecture3-concept-10",
-      "name": "le_Nat m p = true."
+      "name": "| Nil : ListNat",
+      "needs_review": true
     },
     {
       "id": "lecture3-concept-11",
-      "name": "Natural numbers"
+      "name": "Natural numbers",
+      "needs_review": true
     },
     {
       "id": "lecture3-concept-12",
-      "name": "Transitivity: strong vs. weak inductive hypothesis"
+      "name": "Transitivity: strong vs. weak inductive hypothesis",
+      "needs_review": true
     },
     {
       "id": "lecture3-concept-13",
-      "name": "Lists of natural numbers:"
+      "name": "They look very similar: code duplication!",
+      "needs_review": true
     },
     {
       "id": "lecture3-concept-14",
-      "name": "Lists of booleans:"
+      "name": "Code duplication again (DRY!?!)",
+      "needs_review": true
     },
     {
       "id": "lecture3-concept-15",
-      "name": "They look very similar: code duplication!"
+      "name": "Solution: polymorphism",
+      "needs_review": true
     },
     {
       "id": "lecture3-concept-16",
-      "name": "Length of lists of natural numbers:"
+      "name": "This is a similar definition of lists but this one is parametric",
+      "needs_review": true
     },
     {
       "id": "lecture3-concept-17",
-      "name": "Length of lists of booleans:"
+      "name": "List is a function from Types to inductive definitions!",
+      "needs_review": true
     },
     {
       "id": "lecture3-concept-18",
-      "name": "Code duplication again (DRY!?!)"
+      "name": "SinceList is a function from Types to inductive",
+      "needs_review": true
     },
     {
       "id": "lecture3-concept-19",
-      "name": "Solution: polymorphism"
+      "name": "The type is passed to the function and all the constructors",
+      "needs_review": true
     },
     {
       "id": "lecture3-concept-20",
-      "name": "Polymorphic lists in Coq:"
+      "name": "Solution: Implicit arguments",
+      "needs_review": true
     }
   ],
   "algorithms": [],
   "formulas": [
     {
       "id": "lecture3-formula-1",
-      "expression": "Inductive Nat := O : Nat | S : Nat -> Nat."
+      "expression": "Inductive Nat := O : Nat | S : Nat -> Nat.",
+      "needs_review": true
     },
     {
       "id": "lecture3-formula-2",
-      "expression": "le_Nat m n = true ->"
+      "expression": "le_Nat m n = true ->",
+      "needs_review": true
     },
     {
       "id": "lecture3-formula-3",
-      "expression": "le_Nat n p = true ->"
+      "expression": "le_Nat n p = true ->",
+      "needs_review": true
     },
     {
       "id": "lecture3-formula-4",
-      "expression": "le_Nat m p = true."
+      "expression": "le_Nat m p = true.",
+      "needs_review": true
     },
     {
       "id": "lecture3-formula-5",
-      "expression": "Inductive ListNat :="
+      "expression": "Inductive ListNat :=",
+      "needs_review": true
     },
     {
       "id": "lecture3-formula-6",
-      "expression": "Inductive ListBool :="
+      "expression": "Inductive ListBool :=",
+      "needs_review": true
     },
     {
       "id": "lecture3-formula-7",
-      "expression": "Fixpoint length(l : ListNat) :="
+      "expression": "Fixpoint length(l : ListNat) :=",
+      "needs_review": true
     },
     {
       "id": "lecture3-formula-8",
-      "expression": "| Nil => O"
+      "expression": "| Nil => O",
+      "needs_review": true
     },
     {
       "id": "lecture3-formula-9",
-      "expression": "| Cons _ l' => S (length l')"
+      "expression": "| Cons _ l' => S (length l')",
+      "needs_review": true
     },
     {
       "id": "lecture3-formula-10",
-      "expression": "Fixpoint length(l : ListBool) :="
+      "expression": "Fixpoint length(l : ListBool) :=",
+      "needs_review": true
     },
     {
       "id": "lecture3-formula-11",
-      "expression": "Inductive List (T : Type) : Type :="
+      "expression": "Inductive List (T : Type) : Type :=",
+      "needs_review": true
     },
     {
       "id": "lecture3-formula-12",
-      "expression": "Definition ListNat := List Nat."
+      "expression": "Definition ListNat := List Nat.",
+      "needs_review": true
     }
   ],
   "examples": [
     {
       "id": "lecture3-example-1",
-      "text": "▶ Example: ﬁlter a list usingf : T -> bool:"
+      "text": "▶ Example: filter a list usingf : T -> bool:",
+      "needs_review": true
     },
     {
       "id": "lecture3-example-2",
-      "text": "▶ Second, pick an example of a list"
+      "text": "▶ Second, pick an example of a list",
+      "needs_review": true
     },
     {
       "id": "lecture3-example-3",
-      "text": "Example num_list :="
+      "text": "Example num_list :=",
+      "needs_review": true
     },
     {
       "id": "lecture3-example-4",
-      "text": "▶ Example: an anonymous function having the same"
+      "text": "▶ Example: an anonymous function having the same",
+      "needs_review": true
     },
     {
       "id": "lecture3-example-5",
-      "text": "▶ Our previous example of a list was:"
+      "text": "▶ Our previous example of a list was:",
+      "needs_review": true
     },
     {
       "id": "lecture3-example-6",
-      "text": "▶ Classical example: function composition"
+      "text": "▶ Classical example: function composition",
+      "needs_review": true
     }
   ],
   "exercises": [],
@@ -292,73 +377,81 @@
   "learning_objectives": [
     {
       "id": "lecture3-objective-1",
-      "text": "Lemma forall_hyp':"
+      "text": "(* here the conclusion of H matches the goal *)",
+      "needs_review": true
     },
     {
       "id": "lecture3-objective-2",
-      "text": "(* here the conclusion of H matches the goal *)"
-    },
-    {
-      "id": "lecture3-objective-3",
-      "text": "apply H."
+      "text": "(* the precondition of H needs to be proved *)",
+      "needs_review": true
     }
   ],
   "possible_lesson_breakdown": [
     {
       "id": "lecture3-lesson-1",
       "title": "Induction revisited",
-      "source_topic_id": "lecture3-topic-1"
+      "source_topic_id": "lecture3-topic-1",
+      "needs_review": true
     },
     {
       "id": "lecture3-lesson-2",
-      "title": "Polymorphism",
-      "source_topic_id": "lecture3-topic-2"
+      "title": "Higher-order functions",
+      "source_topic_id": "lecture3-topic-2",
+      "needs_review": true
     },
     {
       "id": "lecture3-lesson-3",
-      "title": "Higher-order functions",
-      "source_topic_id": "lecture3-topic-3"
+      "title": "Logic in Coq",
+      "source_topic_id": "lecture3-topic-3",
+      "needs_review": true
     },
     {
       "id": "lecture3-lesson-4",
-      "title": "Logic in Coq",
-      "source_topic_id": "lecture3-topic-4"
+      "title": "Inductive Nat := O : Nat | S : Nat -> Nat.",
+      "source_topic_id": "lecture3-topic-4",
+      "needs_review": true
     },
     {
       "id": "lecture3-lesson-5",
-      "title": "Inductive Nat := O : Nat | S : Nat -> Nat.",
-      "source_topic_id": "lecture3-topic-5"
+      "title": "le_Nat m n = true ->",
+      "source_topic_id": "lecture3-topic-5",
+      "needs_review": true
     },
     {
       "id": "lecture3-lesson-6",
-      "title": "Lemma le_Trans :",
-      "source_topic_id": "lecture3-topic-6"
+      "title": "le_Nat n p = true ->",
+      "source_topic_id": "lecture3-topic-6",
+      "needs_review": true
     },
     {
       "id": "lecture3-lesson-7",
-      "title": "forall m n p,",
-      "source_topic_id": "lecture3-topic-7"
+      "title": "le_Nat m p = true.",
+      "source_topic_id": "lecture3-topic-7",
+      "needs_review": true
     },
     {
       "id": "lecture3-lesson-8",
-      "title": "le_Nat m n = true ->",
-      "source_topic_id": "lecture3-topic-8"
+      "title": "(* Demo *)",
+      "source_topic_id": "lecture3-topic-8",
+      "needs_review": true
     },
     {
       "id": "lecture3-lesson-9",
-      "title": "le_Nat n p = true ->",
-      "source_topic_id": "lecture3-topic-9"
+      "title": "Inductive ListNat :=",
+      "source_topic_id": "lecture3-topic-9",
+      "needs_review": true
     },
     {
       "id": "lecture3-lesson-10",
-      "title": "le_Nat m p = true.",
-      "source_topic_id": "lecture3-topic-10"
+      "title": "| Nil : ListNat",
+      "source_topic_id": "lecture3-topic-10",
+      "needs_review": true
     }
   ],
   "possible_unit_grouping": [
     {
       "id": "lecture3-unit-1",
-      "title": "Lecture 3: Polymorphism. Higher-order",
+      "title": "Lecture 3: Polymorphism. Higher-order functions. Logic in Coq.",
       "lesson_ids": [
         "lecture3-lesson-1",
         "lecture3-lesson-2",
@@ -370,7 +463,8 @@
         "lecture3-lesson-8",
         "lecture3-lesson-9",
         "lecture3-lesson-10"
-      ]
+      ],
+      "needs_review": true
     }
   ],
   "concept_relationships": [

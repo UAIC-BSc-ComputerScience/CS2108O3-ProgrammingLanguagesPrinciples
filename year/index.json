@@ -1,0 +1,27 @@
+{
+  "id": "year-index",
+  "needs_review": true,
+  "source": "course/json/*.json",
+  "year_files": [],
+  "linked_course_files": [
+    "course/json/lecture01.json",
+    "course/json/lecture02.json",
+    "course/json/lecture03.json",
+    "course/json/lecture04.json",
+    "course/json/lecture05.json",
+    "course/json/lecture07.json",
+    "course/json/lecture1.json",
+    "course/json/lecture10.json",
+    "course/json/lecture11.json",
+    "course/json/lecture12.json",
+    "course/json/lecture13.json",
+    "course/json/lecture14.json",
+    "course/json/lecture2.json",
+    "course/json/lecture3.json",
+    "course/json/lecture4.json",
+    "course/json/lecture5.json",
+    "course/json/lecture6.json",
+    "course/json/lecture7.json"
+  ],
+  "note": "Year grouping requires manual confirmation against official academic planning."
+}

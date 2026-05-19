@@ -3,260 +3,323 @@
   "source_file": "course/eng/lecture7.pdf",
   "source_filename": "lecture7.pdf",
   "parsing_status": "parsed",
-  "needs_review": false,
+  "needs_review": true,
+  "review_notes": [
+    "Automatically extracted from PDF; truncated or ambiguous entries may still require manual cleanup."
+  ],
   "course_title": "Principles of Programming Languages",
-  "lecture_title": "Lecture 7: Small-step Structural Operational",
+  "lecture_title": "Lecture 7: Small-step Structural Operational Semantics",
   "main_topics": [
     {
       "id": "lecture7-topic-1",
-      "name": "Small-step SOS"
+      "name": "Small-step SOS",
+      "needs_review": true
     },
     {
       "id": "lecture7-topic-2",
-      "name": "Conﬁgurations"
+      "name": "Arithmetic expressions",
+      "needs_review": true
     },
     {
       "id": "lecture7-topic-3",
-      "name": "Arithmetic expressions"
+      "name": "Boolean expressions",
+      "needs_review": true
     },
     {
       "id": "lecture7-topic-4",
-      "name": "Boolean expressions"
+      "name": "Statements",
+      "needs_review": true
     },
     {
       "id": "lecture7-topic-5",
-      "name": "Statements"
+      "name": "Structural Operational Semantics",
+      "needs_review": true
     },
     {
       "id": "lecture7-topic-6",
-      "name": "Structural Operational Semantics"
+      "name": "A language designer should understand the existing design",
+      "needs_review": true
     },
     {
       "id": "lecture7-topic-7",
-      "name": "A language designer should understand the existing design"
+      "name": "Structural Operational Semantics (SOS)",
+      "needs_review": true
     },
     {
       "id": "lecture7-topic-8",
-      "name": "approaches:"
+      "name": "language constructs as inference rules",
+      "needs_review": true
     },
     {
       "id": "lecture7-topic-9",
-      "name": "week)"
+      "name": "structures (e.g., trees, sets, lists)",
+      "needs_review": true
     },
     {
       "id": "lecture7-topic-10",
-      "name": "Structural Operational Semantics (SOS)"
+      "name": "(environment, memory, stacks, registers, etc.)",
+      "needs_review": true
     }
   ],
   "subtopics": [
     {
       "id": "lecture7-subtopic-1",
-      "name": "Big-step structural operational semantics (discussed last"
+      "name": "Small-step structural operational semantics",
+      "needs_review": true
     },
     {
       "id": "lecture7-subtopic-2",
-      "name": "Small-step structural operational semantics"
+      "name": "Denotational Semantics",
+      "needs_review": true
     },
     {
       "id": "lecture7-subtopic-3",
-      "name": "Denotational Semantics"
+      "name": "Modular operational semantics",
+      "needs_review": true
     },
     {
       "id": "lecture7-subtopic-4",
-      "name": "Modular operational semantics"
+      "name": "Reduction semantics with evaluation contexts",
+      "needs_review": true
     },
     {
       "id": "lecture7-subtopic-5",
-      "name": "Reduction semantics with evaluation contexts"
+      "name": "Abstract Machines, the chemical abstract machine",
+      "needs_review": true
     },
     {
       "id": "lecture7-subtopic-6",
-      "name": "Abstract Machines, the chemical abstract machine"
+      "name": "Axiomatic semantics",
+      "needs_review": true
     },
     {
       "id": "lecture7-subtopic-7",
-      "name": "Axiomatic semantics"
+      "name": "SOS was proposed by Plotkin in 1981",
+      "needs_review": true
     },
     {
       "id": "lecture7-subtopic-8",
-      "name": "SOS was proposed by Plotkin in 1981"
+      "name": "Rules specify transitions between program configurations",
+      "needs_review": true
     },
     {
       "id": "lecture7-subtopic-9",
-      "name": "Simple framework to describe the behaviour of the"
+      "name": "Configurations are tuples of various kinds of data",
+      "needs_review": true
     },
     {
       "id": "lecture7-subtopic-10",
-      "name": "Rules specify transitions between program conﬁgurations"
+      "name": "capture various components of program states",
+      "needs_review": true
     },
     {
       "id": "lecture7-subtopic-11",
-      "name": "Conﬁgurations are tuples of various kinds of data"
+      "name": "A variant of SOS that captures the notion of one",
+      "needs_review": true
     },
     {
       "id": "lecture7-subtopic-12",
-      "name": "capture various components of program states"
+      "name": "A.k.a. reduction semantics, transition semantics, one-step",
+      "needs_review": true
     },
     {
       "id": "lecture7-subtopic-13",
-      "name": "A variant of SOS that captures the notion of one"
+      "name": "Small-step SOS for a PL: a set of small-step inference",
+      "needs_review": true
     },
     {
       "id": "lecture7-subtopic-14",
-      "name": "A.k.a. reduction semantics, transition semantics, one-step"
+      "name": "The transitions between small-step configurations is",
+      "needs_review": true
     },
     {
       "id": "lecture7-subtopic-15",
-      "name": "Small-step SOS for a PL: a set of small-step inference"
+      "name": "cannot naturally define the evaluation of expressions like2",
+      "needs_review": true
     }
   ],
   "definitions": [],
   "key_concepts": [
     {
       "id": "lecture7-concept-1",
-      "name": "Small-step SOS"
+      "name": "Small-step SOS",
+      "needs_review": true
     },
     {
       "id": "lecture7-concept-2",
-      "name": "Conﬁgurations"
+      "name": "Arithmetic expressions",
+      "needs_review": true
     },
     {
       "id": "lecture7-concept-3",
-      "name": "Arithmetic expressions"
+      "name": "Boolean expressions",
+      "needs_review": true
     },
     {
       "id": "lecture7-concept-4",
-      "name": "Boolean expressions"
+      "name": "Statements",
+      "needs_review": true
     },
     {
       "id": "lecture7-concept-5",
-      "name": "Statements"
+      "name": "Structural Operational Semantics",
+      "needs_review": true
     },
     {
       "id": "lecture7-concept-6",
-      "name": "Structural Operational Semantics"
+      "name": "A language designer should understand the existing design",
+      "needs_review": true
     },
     {
       "id": "lecture7-concept-7",
-      "name": "A language designer should understand the existing design"
+      "name": "Structural Operational Semantics (SOS)",
+      "needs_review": true
     },
     {
       "id": "lecture7-concept-8",
-      "name": "approaches:"
+      "name": "language constructs as inference rules",
+      "needs_review": true
     },
     {
       "id": "lecture7-concept-9",
-      "name": "week)"
+      "name": "structures (e.g., trees, sets, lists)",
+      "needs_review": true
     },
     {
       "id": "lecture7-concept-10",
-      "name": "Structural Operational Semantics (SOS)"
+      "name": "(environment, memory, stacks, registers, etc.)",
+      "needs_review": true
     },
     {
       "id": "lecture7-concept-11",
-      "name": "Big-step structural operational semantics (discussed last"
+      "name": "Small-step structural operational semantics",
+      "needs_review": true
     },
     {
       "id": "lecture7-concept-12",
-      "name": "Small-step structural operational semantics"
+      "name": "Denotational Semantics",
+      "needs_review": true
     },
     {
       "id": "lecture7-concept-13",
-      "name": "Denotational Semantics"
+      "name": "Modular operational semantics",
+      "needs_review": true
     },
     {
       "id": "lecture7-concept-14",
-      "name": "Modular operational semantics"
+      "name": "Reduction semantics with evaluation contexts",
+      "needs_review": true
     },
     {
       "id": "lecture7-concept-15",
-      "name": "Reduction semantics with evaluation contexts"
+      "name": "Abstract Machines, the chemical abstract machine",
+      "needs_review": true
     },
     {
       "id": "lecture7-concept-16",
-      "name": "Abstract Machines, the chemical abstract machine"
+      "name": "Axiomatic semantics",
+      "needs_review": true
     },
     {
       "id": "lecture7-concept-17",
-      "name": "Axiomatic semantics"
+      "name": "SOS was proposed by Plotkin in 1981",
+      "needs_review": true
     },
     {
       "id": "lecture7-concept-18",
-      "name": "SOS was proposed by Plotkin in 1981"
+      "name": "Rules specify transitions between program configurations",
+      "needs_review": true
     },
     {
       "id": "lecture7-concept-19",
-      "name": "Simple framework to describe the behaviour of the"
+      "name": "Configurations are tuples of various kinds of data",
+      "needs_review": true
     },
     {
       "id": "lecture7-concept-20",
-      "name": "Rules specify transitions between program conﬁgurations"
+      "name": "capture various components of program states",
+      "needs_review": true
     }
   ],
   "algorithms": [
     {
       "id": "lecture7-algorithm-1",
-      "text": "language constructs as inference rules"
+      "text": "language constructs as inference rules",
+      "needs_review": true
     }
   ],
   "formulas": [
     {
       "id": "lecture7-formula-1",
-      "expression": "denoted by a simple arrow “→’: it captures only one"
+      "expression": "▶ C→ C′: the configurationC′ is obtained from C after one",
+      "needs_review": true
     },
     {
       "id": "lecture7-formula-2",
-      "expression": "int x = 1;"
+      "expression": "C1→ C′",
+      "needs_review": true
     },
     {
       "id": "lecture7-formula-3",
-      "expression": "return (x = 1) + (x = 2);"
+      "expression": "1 C2→ C′",
+      "needs_review": true
     },
     {
       "id": "lecture7-formula-4",
-      "expression": "conﬁgurations:C→ C′"
+      "expression": "2 ··· Cn→ C′",
+      "needs_review": true
     },
     {
       "id": "lecture7-formula-5",
-      "expression": "▶ C→ C′: the conﬁgurationC′ is obtained from C after one"
+      "expression": "C0→ C′",
+      "needs_review": true
     },
     {
       "id": "lecture7-formula-6",
-      "expression": "C1→ C′"
+      "expression": "second argument→ two rules - one for each operand",
+      "needs_review": true
     },
     {
       "id": "lecture7-formula-7",
-      "expression": "1 C2→ C′"
+      "expression": "SMALL STEP -LOOKUP : ⟨x, σ⟩→⟨ σ(x),σ⟩ ifσ(x)̸=⊥",
+      "needs_review": true
     },
     {
       "id": "lecture7-formula-8",
-      "expression": "2 ··· Cn→ C′"
+      "expression": "⟨a1, σ⟩→⟨ a′",
+      "needs_review": true
     },
     {
       "id": "lecture7-formula-9",
-      "expression": "C0→ C′"
+      "expression": "⟨a1 +' a2, σ⟩→⟨ a′",
+      "needs_review": true
     },
     {
       "id": "lecture7-formula-10",
-      "expression": "relation⟨a,σ⟩→⟨ a′,σ⟩."
+      "expression": "⟨a2, σ⟩→⟨ a′",
+      "needs_review": true
     },
     {
       "id": "lecture7-formula-11",
-      "expression": "second argument→ two rules - one for each operand"
+      "expression": "⟨a1 +' a2, σ⟩→⟨ a1 +' a′",
+      "needs_review": true
     },
     {
       "id": "lecture7-formula-12",
-      "expression": "SMALL STEP -LOOKUP : ⟨x, σ⟩→⟨ σ(x),σ⟩ ifσ(x)̸=⊥"
+      "expression": "SMALL STEP -ADD: ⟨i1 +' i2,σ⟩→⟨ i1 +nat i2,σ⟩",
+      "needs_review": true
     }
   ],
   "examples": [
     {
       "id": "lecture7-example-1",
-      "text": "Derivation example"
+      "text": "Derivation example",
+      "needs_review": true
     },
     {
       "id": "lecture7-example-2",
-      "text": "We show here a derivation example for the sequent"
+      "text": "We show here a derivation example for the sequent",
+      "needs_review": true
     }
   ],
   "exercises": [],
@@ -266,58 +329,68 @@
     {
       "id": "lecture7-lesson-1",
       "title": "Small-step SOS",
-      "source_topic_id": "lecture7-topic-1"
+      "source_topic_id": "lecture7-topic-1",
+      "needs_review": true
     },
     {
       "id": "lecture7-lesson-2",
-      "title": "Conﬁgurations",
-      "source_topic_id": "lecture7-topic-2"
+      "title": "Arithmetic expressions",
+      "source_topic_id": "lecture7-topic-2",
+      "needs_review": true
     },
     {
       "id": "lecture7-lesson-3",
-      "title": "Arithmetic expressions",
-      "source_topic_id": "lecture7-topic-3"
+      "title": "Boolean expressions",
+      "source_topic_id": "lecture7-topic-3",
+      "needs_review": true
     },
     {
       "id": "lecture7-lesson-4",
-      "title": "Boolean expressions",
-      "source_topic_id": "lecture7-topic-4"
+      "title": "Statements",
+      "source_topic_id": "lecture7-topic-4",
+      "needs_review": true
     },
     {
       "id": "lecture7-lesson-5",
-      "title": "Statements",
-      "source_topic_id": "lecture7-topic-5"
+      "title": "Structural Operational Semantics",
+      "source_topic_id": "lecture7-topic-5",
+      "needs_review": true
     },
     {
       "id": "lecture7-lesson-6",
-      "title": "Structural Operational Semantics",
-      "source_topic_id": "lecture7-topic-6"
+      "title": "A language designer should understand the existing design",
+      "source_topic_id": "lecture7-topic-6",
+      "needs_review": true
     },
     {
       "id": "lecture7-lesson-7",
-      "title": "A language designer should understand the existing design",
-      "source_topic_id": "lecture7-topic-7"
+      "title": "Structural Operational Semantics (SOS)",
+      "source_topic_id": "lecture7-topic-7",
+      "needs_review": true
     },
     {
       "id": "lecture7-lesson-8",
-      "title": "approaches:",
-      "source_topic_id": "lecture7-topic-8"
+      "title": "language constructs as inference rules",
+      "source_topic_id": "lecture7-topic-8",
+      "needs_review": true
     },
     {
       "id": "lecture7-lesson-9",
-      "title": "week)",
-      "source_topic_id": "lecture7-topic-9"
+      "title": "structures (e.g., trees, sets, lists)",
+      "source_topic_id": "lecture7-topic-9",
+      "needs_review": true
     },
     {
       "id": "lecture7-lesson-10",
-      "title": "Structural Operational Semantics (SOS)",
-      "source_topic_id": "lecture7-topic-10"
+      "title": "(environment, memory, stacks, registers, etc.)",
+      "source_topic_id": "lecture7-topic-10",
+      "needs_review": true
     }
   ],
   "possible_unit_grouping": [
     {
       "id": "lecture7-unit-1",
-      "title": "Lecture 7: Small-step Structural Operational",
+      "title": "Lecture 7: Small-step Structural Operational Semantics",
       "lesson_ids": [
         "lecture7-lesson-1",
         "lecture7-lesson-2",
@@ -329,7 +402,8 @@
         "lecture7-lesson-8",
         "lecture7-lesson-9",
         "lecture7-lesson-10"
-      ]
+      ],
+      "needs_review": true
     }
   ],
   "concept_relationships": [

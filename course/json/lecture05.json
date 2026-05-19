@@ -3,284 +3,347 @@
   "source_file": "course/eng/lecture05.pdf",
   "source_filename": "lecture05.pdf",
   "parsing_status": "parsed",
-  "needs_review": false,
+  "needs_review": true,
+  "review_notes": [
+    "Automatically extracted from PDF; truncated or ambiguous entries may still require manual cleanup."
+  ],
   "course_title": "Principles of Programming Languages",
-  "lecture_title": "",
+  "lecture_title": "Lectures 5-6: Big-step Structural Operational Semantics",
   "main_topics": [
     {
       "id": "lecture05-topic-1",
-      "name": "Transition systems"
+      "name": "Transition systems",
+      "needs_review": true
     },
     {
       "id": "lecture05-topic-2",
-      "name": "Big-step SOS"
+      "name": "Big-step SOS",
+      "needs_review": true
     },
     {
       "id": "lecture05-topic-3",
-      "name": "Arithmetic expressions"
+      "name": "Arithmetic expressions",
+      "needs_review": true
     },
     {
       "id": "lecture05-topic-4",
-      "name": "Boolean expressions"
+      "name": "Boolean expressions",
+      "needs_review": true
     },
     {
       "id": "lecture05-topic-5",
-      "name": "Statements"
+      "name": "Statements",
+      "needs_review": true
     },
     {
       "id": "lecture05-topic-6",
-      "name": "Part 1"
+      "name": "Part 1",
+      "needs_review": true
     },
     {
       "id": "lecture05-topic-7",
-      "name": "Transitions systems"
+      "name": "Transitions systems",
+      "needs_review": true
     },
     {
       "id": "lecture05-topic-8",
-      "name": "executed"
+      "name": "step-by-step process of executing a program",
+      "needs_review": true
     },
     {
       "id": "lecture05-topic-9",
-      "name": "step-by-step process of executing a program"
+      "name": "1. a set of states denoted T (S) or S when T is understood",
+      "needs_review": true
     },
     {
       "id": "lecture05-topic-10",
-      "name": "behavior"
+      "name": "4. a transition relation R⊆ T (S)× T (S)",
+      "needs_review": true
     }
   ],
   "subtopics": [
     {
       "id": "lecture05-subtopic-1",
-      "name": "Operational semantics speciﬁes how programs are"
+      "name": "Operational semantics specifies how programs are",
+      "needs_review": true
     },
     {
       "id": "lecture05-subtopic-2",
-      "name": "How to deﬁne the operational semantics?"
+      "name": "How to define the operational semantics?",
+      "needs_review": true
     },
     {
       "id": "lecture05-subtopic-3",
-      "name": "deﬁne a transition system which inductively speciﬁes the"
+      "name": "Transition systems are commonly used to model programs",
+      "needs_review": true
     },
     {
       "id": "lecture05-subtopic-4",
-      "name": "Transition systems are commonly used to model programs"
+      "name": "Common notations and definitions",
+      "needs_review": true
     },
     {
       "id": "lecture05-subtopic-5",
-      "name": "A transition system T is deﬁned by:"
+      "name": "Example: σ = x↦→ 10, y↦→ 1",
+      "needs_review": true
     },
     {
       "id": "lecture05-subtopic-6",
-      "name": "Common notations and deﬁnitions"
+      "name": "Tuple containing semantic ingredients",
+      "needs_review": true
     },
     {
       "id": "lecture05-subtopic-7",
-      "name": "The state is a partial ﬁnite-domain function:"
+      "name": "Examples:⟨a1,σ⟩,⟨a1 + a2,σ⟩,⟨i1⟩,⟨i1 +nat i2⟩, . . .",
+      "needs_review": true
     },
     {
       "id": "lecture05-subtopic-8",
-      "name": "Example: σ = x↦→ 10, y↦→ 1"
+      "name": "Pair of configurations, to bederived or proved",
+      "needs_review": true
     },
     {
       "id": "lecture05-subtopic-9",
-      "name": "Lookup"
+      "name": "Examples:⟨a1,σ⟩⇓⟨ i1⟩,⟨a1 + a2,σ⟩⇓⟨ i1 +nat i2⟩, . . .",
+      "needs_review": true
     },
     {
       "id": "lecture05-subtopic-10",
-      "name": "Update"
+      "name": "Tells us how to derive sequents",
+      "needs_review": true
     },
     {
       "id": "lecture05-subtopic-11",
-      "name": "Conﬁguration"
+      "name": "Example: premises and conclusion",
+      "needs_review": true
     },
     {
       "id": "lecture05-subtopic-12",
-      "name": "Tuple containing semantic ingredients"
+      "name": "Y ou may also have met this terminology: inference rules,",
+      "needs_review": true
     },
     {
       "id": "lecture05-subtopic-13",
-      "name": "Examples:⟨a1,σ⟩,⟨a1 + a2,σ⟩,⟨i1⟩,⟨i1 +nat i2⟩, . . ."
+      "name": "What about the following?",
+      "needs_review": true
     },
     {
       "id": "lecture05-subtopic-14",
-      "name": "Sequent"
+      "name": "Is the following instance correct w.r.t. BIGSTEP -DIV?",
+      "needs_review": true
     },
     {
       "id": "lecture05-subtopic-15",
-      "name": "Pair of conﬁgurations, to bederived or proved"
+      "name": "Answer: no",
+      "needs_review": true
     }
   ],
   "definitions": [],
   "key_concepts": [
     {
       "id": "lecture05-concept-1",
-      "name": "Transition systems"
+      "name": "Transition systems",
+      "needs_review": true
     },
     {
       "id": "lecture05-concept-2",
-      "name": "Big-step SOS"
+      "name": "Big-step SOS",
+      "needs_review": true
     },
     {
       "id": "lecture05-concept-3",
-      "name": "Arithmetic expressions"
+      "name": "Arithmetic expressions",
+      "needs_review": true
     },
     {
       "id": "lecture05-concept-4",
-      "name": "Boolean expressions"
+      "name": "Boolean expressions",
+      "needs_review": true
     },
     {
       "id": "lecture05-concept-5",
-      "name": "Statements"
+      "name": "Statements",
+      "needs_review": true
     },
     {
       "id": "lecture05-concept-6",
-      "name": "Part 1"
+      "name": "Part 1",
+      "needs_review": true
     },
     {
       "id": "lecture05-concept-7",
-      "name": "Transitions systems"
+      "name": "Transitions systems",
+      "needs_review": true
     },
     {
       "id": "lecture05-concept-8",
-      "name": "executed"
+      "name": "step-by-step process of executing a program",
+      "needs_review": true
     },
     {
       "id": "lecture05-concept-9",
-      "name": "step-by-step process of executing a program"
+      "name": "1. a set of states denoted T (S) or S when T is understood",
+      "needs_review": true
     },
     {
       "id": "lecture05-concept-10",
-      "name": "behavior"
+      "name": "4. a transition relation R⊆ T (S)× T (S)",
+      "needs_review": true
     },
     {
       "id": "lecture05-concept-11",
-      "name": "Operational semantics speciﬁes how programs are"
+      "name": "Operational semantics specifies how programs are",
+      "needs_review": true
     },
     {
       "id": "lecture05-concept-12",
-      "name": "How to deﬁne the operational semantics?"
+      "name": "How to define the operational semantics?",
+      "needs_review": true
     },
     {
       "id": "lecture05-concept-13",
-      "name": "deﬁne a transition system which inductively speciﬁes the"
+      "name": "Transition systems are commonly used to model programs",
+      "needs_review": true
     },
     {
       "id": "lecture05-concept-14",
-      "name": "Transition systems are commonly used to model programs"
+      "name": "Common notations and definitions",
+      "needs_review": true
     },
     {
       "id": "lecture05-concept-15",
-      "name": "A transition system T is deﬁned by:"
+      "name": "Example: σ = x↦→ 10, y↦→ 1",
+      "needs_review": true
     },
     {
       "id": "lecture05-concept-16",
-      "name": "Common notations and deﬁnitions"
+      "name": "Tuple containing semantic ingredients",
+      "needs_review": true
     },
     {
       "id": "lecture05-concept-17",
-      "name": "The state is a partial ﬁnite-domain function:"
+      "name": "Examples:⟨a1,σ⟩,⟨a1 + a2,σ⟩,⟨i1⟩,⟨i1 +nat i2⟩, . . .",
+      "needs_review": true
     },
     {
       "id": "lecture05-concept-18",
-      "name": "Example: σ = x↦→ 10, y↦→ 1"
+      "name": "Pair of configurations, to bederived or proved",
+      "needs_review": true
     },
     {
       "id": "lecture05-concept-19",
-      "name": "Lookup"
+      "name": "Examples:⟨a1,σ⟩⇓⟨ i1⟩,⟨a1 + a2,σ⟩⇓⟨ i1 +nat i2⟩, . . .",
+      "needs_review": true
     },
     {
       "id": "lecture05-concept-20",
-      "name": "Update"
+      "name": "Tells us how to derive sequents",
+      "needs_review": true
     }
   ],
   "algorithms": [
     {
       "id": "lecture05-algorithm-1",
-      "text": "▶ Y ou may also have met this terminology: inference rules,"
+      "text": "▶ Y ou may also have met this terminology: inference rules,",
+      "needs_review": true
     }
   ],
   "formulas": [
     {
       "id": "lecture05-formula-1",
-      "expression": "▶ Example: σ = x↦→ 10, y↦→ 1"
+      "expression": "▶ Example: σ = x↦→ 10, y↦→ 1",
+      "needs_review": true
     },
     {
       "id": "lecture05-formula-2",
-      "expression": "_[_/_] : State× nat× Var→ State"
+      "expression": "_[_/_] : State× nat× Var→ State",
+      "needs_review": true
     },
     {
       "id": "lecture05-formula-3",
-      "expression": "BIGSTEP -LOOKUP : ⟨x, σ⟩⇓⟨ σ(x)⟩ ifσ(x)̸=⊥"
+      "expression": "BIGSTEP -LOOKUP : ⟨x, σ⟩⇓⟨ σ(x)⟩ ifσ(x)̸=⊥",
+      "needs_review": true
     },
     {
       "id": "lecture05-formula-4",
-      "expression": "▶ A derivation example whereσ(n) = 10:"
+      "expression": "⟨a1 <= a2,σ⟩⇓⟨i1≤nat i2⟩",
+      "needs_review": true
     },
     {
       "id": "lecture05-formula-5",
-      "expression": "⟨a1 <= a2,σ⟩⇓⟨i1≤nat i2⟩"
+      "expression": "⟨a1/a2, σ⟩⇓⟨ i1/nati2⟩ if i2̸= 0",
+      "needs_review": true
     },
     {
       "id": "lecture05-formula-6",
-      "expression": "⟨x=a;,σ⟩⇓⟨σ[i/x]⟩ ifσ(x)̸=⊥"
+      "expression": "⟨x, (x↦→ 10, y↦→ 0)⟩⇓⟨ 10⟩ ⟨ 2, (x↦→ 10, y↦→ 0)⟩⇓⟨ 2⟩",
+      "needs_review": true
     },
     {
       "id": "lecture05-formula-7",
-      "expression": "⟨a1/a2, σ⟩⇓⟨ i1/nati2⟩ if i2̸= 0"
+      "expression": "⟨x/2, (x↦→ 10, y↦→ 0)⟩⇓⟨ 5⟩",
+      "needs_review": true
     },
     {
       "id": "lecture05-formula-8",
-      "expression": "⟨x, (x↦→ 10, y↦→ 0)⟩⇓⟨ 10⟩ ⟨ 2, (x↦→ 10, y↦→ 0)⟩⇓⟨ 2⟩"
+      "expression": "⟨x, (x↦→ 10, y↦→ 0)⟩⇓⟨ 8⟩ ⟨ 2, (x↦→ 10, y↦→ 0)⟩⇓⟨ 2⟩",
+      "needs_review": true
     },
     {
       "id": "lecture05-formula-9",
-      "expression": "⟨x/2, (x↦→ 10, y↦→ 0)⟩⇓⟨ 5⟩"
+      "expression": "⟨x/2, (x↦→ 10, y↦→ 0)⟩⇓⟨ 4⟩",
+      "needs_review": true
     },
     {
       "id": "lecture05-formula-10",
-      "expression": "⟨x, (x↦→ 10, y↦→ 0)⟩⇓⟨ 8⟩ ⟨ 2, (x↦→ 10, y↦→ 0)⟩⇓⟨ 2⟩"
+      "expression": "⟨x, (x↦→ 10, y↦→ 0)⟩⇓⟨ 10⟩ ⟨ y, (x↦→ 10, y↦→ 0)⟩⇓⟨ 0⟩",
+      "needs_review": true
     },
     {
       "id": "lecture05-formula-11",
-      "expression": "⟨x/2, (x↦→ 10, y↦→ 0)⟩⇓⟨ 4⟩"
-    },
-    {
-      "id": "lecture05-formula-12",
-      "expression": "⟨x, (x↦→ 10, y↦→ 0)⟩⇓⟨ 10⟩ ⟨ y, (x↦→ 10, y↦→ 0)⟩⇓⟨ 0⟩"
+      "expression": "⟨x/y, (x↦→ 10, y↦→ 0)⟩⇓⟨ ?⟩",
+      "needs_review": true
     }
   ],
   "examples": [
     {
       "id": "lecture05-example-1",
-      "text": "▶ Example: σ = x↦→ 10, y↦→ 1"
+      "text": "▶ Example: σ = x↦→ 10, y↦→ 1",
+      "needs_review": true
     },
     {
       "id": "lecture05-example-2",
-      "text": "▶ Example: premises and conclusion"
+      "text": "▶ Example: premises and conclusion",
+      "needs_review": true
     },
     {
       "id": "lecture05-example-3",
-      "text": "▶ Example: premises, conclusion, and evaluates to"
+      "text": "▶ Example: premises, conclusion, and evaluates to",
+      "needs_review": true
     },
     {
       "id": "lecture05-example-4",
-      "text": "▶ A derivation example whereσ(n) = 10:"
+      "text": "▶ A derivation example whereσ(n) = 10:",
+      "needs_review": true
     },
     {
       "id": "lecture05-example-5",
-      "text": "Derivation example"
+      "text": "Derivation example",
+      "needs_review": true
     }
   ],
   "exercises": [
     {
       "id": "lecture05-exercise-1",
-      "text": "Exercise: add rule for division"
+      "text": "Exercise: add rule for division",
+      "needs_review": true
     }
   ],
   "prerequisites": [
     {
       "id": "lecture05-prerequisite-1",
-      "text": "Prerequisites: states"
+      "text": "Prerequisites: states",
+      "needs_review": true
     }
   ],
   "learning_objectives": [],
@@ -288,58 +351,68 @@
     {
       "id": "lecture05-lesson-1",
       "title": "Transition systems",
-      "source_topic_id": "lecture05-topic-1"
+      "source_topic_id": "lecture05-topic-1",
+      "needs_review": true
     },
     {
       "id": "lecture05-lesson-2",
       "title": "Big-step SOS",
-      "source_topic_id": "lecture05-topic-2"
+      "source_topic_id": "lecture05-topic-2",
+      "needs_review": true
     },
     {
       "id": "lecture05-lesson-3",
       "title": "Arithmetic expressions",
-      "source_topic_id": "lecture05-topic-3"
+      "source_topic_id": "lecture05-topic-3",
+      "needs_review": true
     },
     {
       "id": "lecture05-lesson-4",
       "title": "Boolean expressions",
-      "source_topic_id": "lecture05-topic-4"
+      "source_topic_id": "lecture05-topic-4",
+      "needs_review": true
     },
     {
       "id": "lecture05-lesson-5",
       "title": "Statements",
-      "source_topic_id": "lecture05-topic-5"
+      "source_topic_id": "lecture05-topic-5",
+      "needs_review": true
     },
     {
       "id": "lecture05-lesson-6",
       "title": "Part 1",
-      "source_topic_id": "lecture05-topic-6"
+      "source_topic_id": "lecture05-topic-6",
+      "needs_review": true
     },
     {
       "id": "lecture05-lesson-7",
       "title": "Transitions systems",
-      "source_topic_id": "lecture05-topic-7"
+      "source_topic_id": "lecture05-topic-7",
+      "needs_review": true
     },
     {
       "id": "lecture05-lesson-8",
-      "title": "executed",
-      "source_topic_id": "lecture05-topic-8"
+      "title": "step-by-step process of executing a program",
+      "source_topic_id": "lecture05-topic-8",
+      "needs_review": true
     },
     {
       "id": "lecture05-lesson-9",
-      "title": "step-by-step process of executing a program",
-      "source_topic_id": "lecture05-topic-9"
+      "title": "1. a set of states denoted T (S) or S when T is understood",
+      "source_topic_id": "lecture05-topic-9",
+      "needs_review": true
     },
     {
       "id": "lecture05-lesson-10",
-      "title": "behavior",
-      "source_topic_id": "lecture05-topic-10"
+      "title": "4. a transition relation R⊆ T (S)× T (S)",
+      "source_topic_id": "lecture05-topic-10",
+      "needs_review": true
     }
   ],
   "possible_unit_grouping": [
     {
       "id": "lecture05-unit-1",
-      "title": "lecture05",
+      "title": "Lectures 5-6: Big-step Structural Operational Semantics",
       "lesson_ids": [
         "lecture05-lesson-1",
         "lecture05-lesson-2",
@@ -351,7 +424,8 @@
         "lecture05-lesson-8",
         "lecture05-lesson-9",
         "lecture05-lesson-10"
-      ]
+      ],
+      "needs_review": true
     }
   ],
   "concept_relationships": [

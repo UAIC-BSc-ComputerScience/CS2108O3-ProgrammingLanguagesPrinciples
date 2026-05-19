@@ -3,303 +3,396 @@
   "source_file": "course/eng/lecture2.pdf",
   "source_filename": "lecture2.pdf",
   "parsing_status": "parsed",
-  "needs_review": false,
+  "needs_review": true,
+  "review_notes": [
+    "Automatically extracted from PDF; truncated or ambiguous entries may still require manual cleanup."
+  ],
   "course_title": "Principles of Programming Languages",
-  "lecture_title": "Lecture 2: Algebraic Data Types. Functions.",
+  "lecture_title": "Lecture 2: Algebraic Data Types. Functions. Induction. Proofs.",
   "main_topics": [
     {
       "id": "lecture2-topic-1",
-      "name": "ADTs and Functions"
+      "name": "ADTs and Functions",
+      "needs_review": true
     },
     {
       "id": "lecture2-topic-2",
-      "name": "Inference rules"
+      "name": "Inference rules",
+      "needs_review": true
     },
     {
       "id": "lecture2-topic-3",
-      "name": "Derivations"
+      "name": "Proofs",
+      "needs_review": true
     },
     {
       "id": "lecture2-topic-4",
-      "name": "Proofs"
+      "name": "Induction Principles",
+      "needs_review": true
     },
     {
       "id": "lecture2-topic-5",
-      "name": "Induction Principles"
+      "name": "Proofs by Induction",
+      "needs_review": true
     },
     {
       "id": "lecture2-topic-6",
-      "name": "Proofs by Induction"
+      "name": "Inductive Season :=",
+      "needs_review": true
     },
     {
       "id": "lecture2-topic-7",
-      "name": "ADTs"
+      "name": "| Winter",
+      "needs_review": true
     },
     {
       "id": "lecture2-topic-8",
-      "name": "Inductive Season :="
+      "name": "| Spring",
+      "needs_review": true
     },
     {
       "id": "lecture2-topic-9",
-      "name": "| Winter"
+      "name": "| Summer",
+      "needs_review": true
     },
     {
       "id": "lecture2-topic-10",
-      "name": "| Spring"
+      "name": "| Fall.",
+      "needs_review": true
     }
   ],
   "subtopics": [
     {
       "id": "lecture2-subtopic-1",
-      "name": "ADT: Algebraic Data Type"
+      "name": "ADT: Algebraic Data Type",
+      "needs_review": true
     },
     {
       "id": "lecture2-subtopic-2",
-      "name": "ADT = data types that are formed using other types"
+      "name": "ADT = data types that are formed using other types",
+      "needs_review": true
     },
     {
       "id": "lecture2-subtopic-3",
-      "name": "Enumerated type example:"
+      "name": "This is a type with only four possible values",
+      "needs_review": true
     },
     {
       "id": "lecture2-subtopic-4",
-      "name": "This is a type with only four possible values"
+      "name": "The values are grouped into several classes (variants)",
+      "needs_review": true
     },
     {
       "id": "lecture2-subtopic-5",
-      "name": "The values are grouped into several classes (variants)"
+      "name": "Each variant has its own constructor",
+      "needs_review": true
     },
     {
       "id": "lecture2-subtopic-6",
-      "name": "Each variant has its own constructor"
+      "name": "Inference rules = rule schemes",
+      "needs_review": true
     },
     {
       "id": "lecture2-subtopic-7",
-      "name": "Inference rules = rule schemes"
+      "name": "Example: natural numbers",
+      "needs_review": true
     },
     {
       "id": "lecture2-subtopic-8",
-      "name": "Example: natural numbers"
+      "name": "Inference rules can be used to define infinite sets",
+      "needs_review": true
     },
     {
       "id": "lecture2-subtopic-9",
-      "name": "Inference rules can be used to deﬁne inﬁnite sets"
+      "name": "The first constructor takes no arguments",
+      "needs_review": true
     },
     {
       "id": "lecture2-subtopic-10",
-      "name": "We will use them to deﬁne the syntax and the semantics of"
+      "name": "The second constructor has arguments",
+      "needs_review": true
     },
     {
       "id": "lecture2-subtopic-11",
-      "name": "The syntax of natural numbers:"
+      "name": "There is an infinite number of elements of this type",
+      "needs_review": true
     },
     {
       "id": "lecture2-subtopic-12",
-      "name": "In Coq:"
+      "name": "What is a proof by induction in this case?",
+      "needs_review": true
     },
     {
       "id": "lecture2-subtopic-13",
-      "name": "The ﬁrst constructor takes no arguments"
+      "name": "Suppose that we want to prove P(n) where n∈ N and P is",
+      "needs_review": true
     },
     {
       "id": "lecture2-subtopic-14",
-      "name": "The second constructor has arguments"
+      "name": "P(0) holds - this corresponds to zero",
+      "needs_review": true
     },
     {
       "id": "lecture2-subtopic-15",
-      "name": "There is an inﬁnite number of elements of this type"
+      "name": "P(n) implies P(n + 1) - which corresponds to succ",
+      "needs_review": true
     }
   ],
   "definitions": [
     {
       "id": "lecture2-definition-1",
-      "text": "using the definition of plus: we"
+      "text": "▶ Definition:",
+      "needs_review": true
+    },
+    {
+      "id": "lecture2-definition-2",
+      "text": "using the definition of plus: we",
+      "needs_review": true
+    },
+    {
+      "id": "lecture2-definition-3",
+      "text": "▶ Recall the inductive definition forN:",
+      "needs_review": true
+    },
+    {
+      "id": "lecture2-definition-4",
+      "text": "▶ Recall the Coq definition of naturals:",
+      "needs_review": true
+    },
+    {
+      "id": "lecture2-definition-5",
+      "text": "▶ When the definition is processed, Coq generates (among",
+      "needs_review": true
     }
   ],
   "key_concepts": [
     {
       "id": "lecture2-concept-1",
-      "name": "ADTs and Functions"
+      "name": "ADTs and Functions",
+      "needs_review": true
     },
     {
       "id": "lecture2-concept-2",
-      "name": "Inference rules"
+      "name": "Inference rules",
+      "needs_review": true
     },
     {
       "id": "lecture2-concept-3",
-      "name": "Derivations"
+      "name": "Proofs",
+      "needs_review": true
     },
     {
       "id": "lecture2-concept-4",
-      "name": "Proofs"
+      "name": "Induction Principles",
+      "needs_review": true
     },
     {
       "id": "lecture2-concept-5",
-      "name": "Induction Principles"
+      "name": "Proofs by Induction",
+      "needs_review": true
     },
     {
       "id": "lecture2-concept-6",
-      "name": "Proofs by Induction"
+      "name": "Inductive Season :=",
+      "needs_review": true
     },
     {
       "id": "lecture2-concept-7",
-      "name": "ADTs"
+      "name": "| Winter",
+      "needs_review": true
     },
     {
       "id": "lecture2-concept-8",
-      "name": "Inductive Season :="
+      "name": "| Spring",
+      "needs_review": true
     },
     {
       "id": "lecture2-concept-9",
-      "name": "| Winter"
+      "name": "| Summer",
+      "needs_review": true
     },
     {
       "id": "lecture2-concept-10",
-      "name": "| Spring"
+      "name": "| Fall.",
+      "needs_review": true
     },
     {
       "id": "lecture2-concept-11",
-      "name": "ADT: Algebraic Data Type"
+      "name": "ADT: Algebraic Data Type",
+      "needs_review": true
     },
     {
       "id": "lecture2-concept-12",
-      "name": "ADT = data types that are formed using other types"
+      "name": "ADT = data types that are formed using other types",
+      "needs_review": true
     },
     {
       "id": "lecture2-concept-13",
-      "name": "Enumerated type example:"
+      "name": "This is a type with only four possible values",
+      "needs_review": true
     },
     {
       "id": "lecture2-concept-14",
-      "name": "This is a type with only four possible values"
+      "name": "The values are grouped into several classes (variants)",
+      "needs_review": true
     },
     {
       "id": "lecture2-concept-15",
-      "name": "The values are grouped into several classes (variants)"
+      "name": "Each variant has its own constructor",
+      "needs_review": true
     },
     {
       "id": "lecture2-concept-16",
-      "name": "Each variant has its own constructor"
+      "name": "Inference rules = rule schemes",
+      "needs_review": true
     },
     {
       "id": "lecture2-concept-17",
-      "name": "Inference rules = rule schemes"
+      "name": "Example: natural numbers",
+      "needs_review": true
     },
     {
       "id": "lecture2-concept-18",
-      "name": "Example: natural numbers"
+      "name": "Inference rules can be used to define infinite sets",
+      "needs_review": true
     },
     {
       "id": "lecture2-concept-19",
-      "name": "Inference rules can be used to deﬁne inﬁnite sets"
+      "name": "The first constructor takes no arguments",
+      "needs_review": true
     },
     {
       "id": "lecture2-concept-20",
-      "name": "We will use them to deﬁne the syntax and the semantics of"
+      "name": "The second constructor has arguments",
+      "needs_review": true
     }
   ],
   "algorithms": [
     {
       "id": "lecture2-algorithm-1",
-      "text": "Inference rules"
+      "text": "Inference rules",
+      "needs_review": true
     },
     {
       "id": "lecture2-algorithm-2",
-      "text": "▶ Inference rules = rule schemes"
+      "text": "▶ Inference rules = rule schemes",
+      "needs_review": true
     },
     {
       "id": "lecture2-algorithm-3",
-      "text": "▶ Inference rules can be used to deﬁne inﬁnite sets"
+      "text": "▶ Inference rules can be used to define infinite sets",
+      "needs_review": true
     }
   ],
   "formulas": [
     {
       "id": "lecture2-formula-1",
-      "expression": "▶ ADT = data types that are formed using other types"
+      "expression": "▶ ADT = data types that are formed using other types",
+      "needs_review": true
     },
     {
       "id": "lecture2-formula-2",
-      "expression": "Inductive Season :="
+      "expression": "Inductive Season :=",
+      "needs_review": true
     },
     {
       "id": "lecture2-formula-3",
-      "expression": "▶ Inference rules = rule schemes"
+      "expression": "▶ Inference rules = rule schemes",
+      "needs_review": true
     },
     {
       "id": "lecture2-formula-4",
-      "expression": "Inductive Nat := O : Nat"
+      "expression": "Inductive Nat := O : Nat",
+      "needs_review": true
     },
     {
       "id": "lecture2-formula-5",
-      "expression": "0 + m = m S n + m = S (n + m)"
+      "expression": "0 + m = m S n + m = S (n + m)",
+      "needs_review": true
     },
     {
       "id": "lecture2-formula-6",
-      "expression": "Fixpoint plus (n m : Nat) : nat :="
+      "expression": "Fixpoint plus (n m : Nat) : nat :=",
+      "needs_review": true
     },
     {
       "id": "lecture2-formula-7",
-      "expression": "| 0 => m"
+      "expression": "| 0 => m",
+      "needs_review": true
     },
     {
       "id": "lecture2-formula-8",
-      "expression": "| S n' => S (plus n' m)"
+      "expression": "| S n' => S (plus n' m)",
+      "needs_review": true
     },
     {
       "id": "lecture2-formula-9",
-      "expression": "= O"
+      "expression": "= O",
+      "needs_review": true
     },
     {
       "id": "lecture2-formula-10",
-      "expression": "= S O"
+      "expression": "= S O",
+      "needs_review": true
     },
     {
       "id": "lecture2-formula-11",
-      "expression": "= S (S O)"
+      "expression": "= S (S O)",
+      "needs_review": true
     },
     {
       "id": "lecture2-formula-12",
-      "expression": "= S (S (S (S O)))"
+      "expression": "= S (S (S (S O)))",
+      "needs_review": true
     }
   ],
   "examples": [
     {
       "id": "lecture2-example-1",
-      "text": "▶ Enumerated type example:"
+      "text": "▶ Enumerated type example:",
+      "needs_review": true
     },
     {
       "id": "lecture2-example-2",
-      "text": "▶ Example: natural numbers"
+      "text": "▶ Example: natural numbers",
+      "needs_review": true
     },
     {
       "id": "lecture2-example-3",
-      "text": "▶ Derivation example for S (S O )∈ N:"
+      "text": "▶ Derivation example for S (S O )∈ N:",
+      "needs_review": true
     },
     {
       "id": "lecture2-example-4",
-      "text": "Proofs by induction: example 1"
+      "text": "Proofs by induction: example 1",
+      "needs_review": true
     },
     {
       "id": "lecture2-example-5",
-      "text": "Proof by induction: example 1"
+      "text": "Proof by induction: example 1",
+      "needs_review": true
     },
     {
       "id": "lecture2-example-6",
-      "text": "Proof by induction: example 2"
+      "text": "Proof by induction: example 2",
+      "needs_review": true
     },
     {
       "id": "lecture2-example-7",
-      "text": "Example: ASTs"
+      "text": "Example: ASTs",
+      "needs_review": true
     },
     {
       "id": "lecture2-example-8",
-      "text": "Example: arithmetic expressions"
+      "text": "Example: arithmetic expressions",
+      "needs_review": true
     }
   ],
   "exercises": [
     {
       "id": "lecture2-exercise-1",
-      "text": "(* Exercise: why this does not work by simplification? *)"
+      "text": "(* Exercise: why this does not work by simplification? *)",
+      "needs_review": true
     }
   ],
   "prerequisites": [],
@@ -308,58 +401,68 @@
     {
       "id": "lecture2-lesson-1",
       "title": "ADTs and Functions",
-      "source_topic_id": "lecture2-topic-1"
+      "source_topic_id": "lecture2-topic-1",
+      "needs_review": true
     },
     {
       "id": "lecture2-lesson-2",
       "title": "Inference rules",
-      "source_topic_id": "lecture2-topic-2"
+      "source_topic_id": "lecture2-topic-2",
+      "needs_review": true
     },
     {
       "id": "lecture2-lesson-3",
-      "title": "Derivations",
-      "source_topic_id": "lecture2-topic-3"
+      "title": "Proofs",
+      "source_topic_id": "lecture2-topic-3",
+      "needs_review": true
     },
     {
       "id": "lecture2-lesson-4",
-      "title": "Proofs",
-      "source_topic_id": "lecture2-topic-4"
+      "title": "Induction Principles",
+      "source_topic_id": "lecture2-topic-4",
+      "needs_review": true
     },
     {
       "id": "lecture2-lesson-5",
-      "title": "Induction Principles",
-      "source_topic_id": "lecture2-topic-5"
+      "title": "Proofs by Induction",
+      "source_topic_id": "lecture2-topic-5",
+      "needs_review": true
     },
     {
       "id": "lecture2-lesson-6",
-      "title": "Proofs by Induction",
-      "source_topic_id": "lecture2-topic-6"
+      "title": "Inductive Season :=",
+      "source_topic_id": "lecture2-topic-6",
+      "needs_review": true
     },
     {
       "id": "lecture2-lesson-7",
-      "title": "ADTs",
-      "source_topic_id": "lecture2-topic-7"
+      "title": "| Winter",
+      "source_topic_id": "lecture2-topic-7",
+      "needs_review": true
     },
     {
       "id": "lecture2-lesson-8",
-      "title": "Inductive Season :=",
-      "source_topic_id": "lecture2-topic-8"
+      "title": "| Spring",
+      "source_topic_id": "lecture2-topic-8",
+      "needs_review": true
     },
     {
       "id": "lecture2-lesson-9",
-      "title": "| Winter",
-      "source_topic_id": "lecture2-topic-9"
+      "title": "| Summer",
+      "source_topic_id": "lecture2-topic-9",
+      "needs_review": true
     },
     {
       "id": "lecture2-lesson-10",
-      "title": "| Spring",
-      "source_topic_id": "lecture2-topic-10"
+      "title": "| Fall.",
+      "source_topic_id": "lecture2-topic-10",
+      "needs_review": true
     }
   ],
   "possible_unit_grouping": [
     {
       "id": "lecture2-unit-1",
-      "title": "Lecture 2: Algebraic Data Types. Functions.",
+      "title": "Lecture 2: Algebraic Data Types. Functions. Induction. Proofs.",
       "lesson_ids": [
         "lecture2-lesson-1",
         "lecture2-lesson-2",
@@ -371,7 +474,8 @@
         "lecture2-lesson-8",
         "lecture2-lesson-9",
         "lecture2-lesson-10"
-      ]
+      ],
+      "needs_review": true
     }
   ],
   "concept_relationships": [

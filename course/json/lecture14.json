@@ -3,272 +3,323 @@
   "source_file": "course/eng/lecture14.pdf",
   "source_filename": "lecture14.pdf",
   "parsing_status": "parsed",
-  "needs_review": false,
+  "needs_review": true,
+  "review_notes": [
+    "Automatically extracted from PDF; truncated or ambiguous entries may still require manual cleanup."
+  ],
   "course_title": "Principles of Programming Languages",
-  "lecture_title": "",
+  "lecture_title": "Lecture 14",
   "main_topics": [
     {
       "id": "lecture14-topic-1",
-      "name": "Paradigms"
+      "name": "Logic Programming",
+      "needs_review": true
     },
     {
       "id": "lecture14-topic-2",
-      "name": "Logic Programming"
+      "name": "General facts about PLs",
+      "needs_review": true
     },
     {
       "id": "lecture14-topic-3",
-      "name": "General facts about PLs"
+      "name": "Are there other approaches?",
+      "needs_review": true
     },
     {
       "id": "lecture14-topic-4",
-      "name": "We have seen PLs where the computations are based on:"
+      "name": ": Logic programming",
+      "needs_review": true
     },
     {
       "id": "lecture14-topic-5",
-      "name": "Are there other approaches?"
+      "name": "Computation vs. Deduction",
+      "needs_review": true
     },
     {
       "id": "lecture14-topic-6",
-      "name": ": Logic programming"
+      "name": "i.e., n + 0 = 0)",
+      "needs_review": true
     },
     {
       "id": "lecture14-topic-7",
-      "name": "Computation vs. Deduction"
+      "name": "rules, i.e., needs human ingenuity to complete",
+      "needs_review": true
     },
     {
       "id": "lecture14-topic-8",
-      "name": "i.e., n + 0 = 0)"
+      "name": "It took 358 years until it was proved!",
+      "needs_review": true
     },
     {
       "id": "lecture14-topic-9",
-      "name": "rules, i.e., needs human ingenuity to complete"
+      "name": ", i.e., needs human ingenuity to complete",
+      "needs_review": true
     },
     {
       "id": "lecture14-topic-10",
-      "name": "It took 358 years until it was proved!"
+      "name": "... Pythagoras→ first proof",
+      "needs_review": true
     }
   ],
   "subtopics": [
     {
       "id": "lecture14-subtopic-1",
-      "name": "Imperative Programming:"
+      "name": "Logic Programming",
+      "needs_review": true
     },
     {
       "id": "lecture14-subtopic-2",
-      "name": "Object Oriented Programming:"
+      "name": "state + modifiable variable + assignment",
+      "needs_review": true
     },
     {
       "id": "lecture14-subtopic-3",
-      "name": "Functional Programming:"
+      "name": "Lambda calculus + higher-order functions + recursion",
+      "needs_review": true
     },
     {
       "id": "lecture14-subtopic-4",
-      "name": "Logic Programming"
+      "name": "Y es: Logic programming",
+      "needs_review": true
     },
     {
       "id": "lecture14-subtopic-5",
-      "name": "state + modiﬁable variable + assignment"
+      "name": "Y es",
+      "needs_review": true
     },
     {
       "id": "lecture14-subtopic-6",
-      "name": "Lambda calculus + higher-order functions + recursion"
+      "name": "Example: a2 + b2 = c2 ... Pythagoras→ first proof",
+      "needs_review": true
     },
     {
       "id": "lecture14-subtopic-7",
-      "name": "Y es: Logic programming"
+      "name": "Another example: an + bn̸= cn, n> 2 (Fermat's last thm)",
+      "needs_review": true
     },
     {
       "id": "lecture14-subtopic-8",
-      "name": "Y es"
+      "name": "Example: a2 + b2 = c2",
+      "needs_review": true
     },
     {
       "id": "lecture14-subtopic-9",
-      "name": "Computation: 10 + 0 = 10 (using some predeﬁned rules,"
+      "name": "Is there a way to unify computation and deduction?",
+      "needs_review": true
     },
     {
       "id": "lecture14-subtopic-10",
-      "name": "Deduction: requires more than automatic application of"
+      "name": "However, the undecidability results in 20th century implies",
+      "needs_review": true
     },
     {
       "id": "lecture14-subtopic-11",
-      "name": "Example: a2 + b2 = c2 ... Pythagoras→ ﬁrst proof"
+      "name": "The latter idea is the foundation of logic programming",
+      "needs_review": true
     },
     {
       "id": "lecture14-subtopic-12",
-      "name": "Another example: an + bn̸= cn, n> 2 (Fermat’s last thm)"
+      "name": "f (t1,..., tn) – where f has arity n, and can contain variables",
+      "needs_review": true
     },
     {
       "id": "lecture14-subtopic-13",
-      "name": "Example: a2 + b2 = c2"
+      "name": "Predicates: p(t1,..., tn) – where p is a predicate of arity n",
+      "needs_review": true
     },
     {
       "id": "lecture14-subtopic-14",
-      "name": "Is there a way to unify computation and deduction?"
+      "name": "Formulas: φ := p(t1,..., tn)|¬φ|φ∧φ|∃ x.φ",
+      "needs_review": true
     },
     {
       "id": "lecture14-subtopic-15",
-      "name": "G. Boole reduced a certain class of logical reasoning to"
+      "name": "Proof strategies: goal-directed vs. forward-reasoning",
+      "needs_review": true
     }
   ],
   "definitions": [],
   "key_concepts": [
     {
       "id": "lecture14-concept-1",
-      "name": "Paradigms"
+      "name": "Logic Programming",
+      "needs_review": true
     },
     {
       "id": "lecture14-concept-2",
-      "name": "Logic Programming"
+      "name": "General facts about PLs",
+      "needs_review": true
     },
     {
       "id": "lecture14-concept-3",
-      "name": "General facts about PLs"
+      "name": "Are there other approaches?",
+      "needs_review": true
     },
     {
       "id": "lecture14-concept-4",
-      "name": "We have seen PLs where the computations are based on:"
+      "name": ": Logic programming",
+      "needs_review": true
     },
     {
       "id": "lecture14-concept-5",
-      "name": "Are there other approaches?"
+      "name": "Computation vs. Deduction",
+      "needs_review": true
     },
     {
       "id": "lecture14-concept-6",
-      "name": ": Logic programming"
+      "name": "i.e., n + 0 = 0)",
+      "needs_review": true
     },
     {
       "id": "lecture14-concept-7",
-      "name": "Computation vs. Deduction"
+      "name": "rules, i.e., needs human ingenuity to complete",
+      "needs_review": true
     },
     {
       "id": "lecture14-concept-8",
-      "name": "i.e., n + 0 = 0)"
+      "name": "It took 358 years until it was proved!",
+      "needs_review": true
     },
     {
       "id": "lecture14-concept-9",
-      "name": "rules, i.e., needs human ingenuity to complete"
+      "name": ", i.e., needs human ingenuity to complete",
+      "needs_review": true
     },
     {
       "id": "lecture14-concept-10",
-      "name": "It took 358 years until it was proved!"
+      "name": "... Pythagoras→ first proof",
+      "needs_review": true
     },
     {
       "id": "lecture14-concept-11",
-      "name": "Imperative Programming:"
+      "name": "state + modifiable variable + assignment",
+      "needs_review": true
     },
     {
       "id": "lecture14-concept-12",
-      "name": "Object Oriented Programming:"
+      "name": "Lambda calculus + higher-order functions + recursion",
+      "needs_review": true
     },
     {
       "id": "lecture14-concept-13",
-      "name": "Functional Programming:"
+      "name": "Y es: Logic programming",
+      "needs_review": true
     },
     {
       "id": "lecture14-concept-14",
-      "name": "Logic Programming"
+      "name": "Y es",
+      "needs_review": true
     },
     {
       "id": "lecture14-concept-15",
-      "name": "state + modiﬁable variable + assignment"
+      "name": "Example: a2 + b2 = c2 ... Pythagoras→ first proof",
+      "needs_review": true
     },
     {
       "id": "lecture14-concept-16",
-      "name": "Lambda calculus + higher-order functions + recursion"
+      "name": "Another example: an + bn̸= cn, n> 2 (Fermat's last thm)",
+      "needs_review": true
     },
     {
       "id": "lecture14-concept-17",
-      "name": "Y es: Logic programming"
+      "name": "Example: a2 + b2 = c2",
+      "needs_review": true
     },
     {
       "id": "lecture14-concept-18",
-      "name": "Y es"
+      "name": "Is there a way to unify computation and deduction?",
+      "needs_review": true
     },
     {
       "id": "lecture14-concept-19",
-      "name": "Computation: 10 + 0 = 10 (using some predeﬁned rules,"
+      "name": "However, the undecidability results in 20th century implies",
+      "needs_review": true
     },
     {
       "id": "lecture14-concept-20",
-      "name": "Deduction: requires more than automatic application of"
+      "name": "The latter idea is the foundation of logic programming",
+      "needs_review": true
     }
   ],
   "algorithms": [
     {
       "id": "lecture14-algorithm-1",
-      "text": "▶ Inference rules:"
+      "text": "▶ Inference rules:",
+      "needs_review": true
     },
     {
       "id": "lecture14-algorithm-2",
-      "text": "▶ When proving, the conclusion of an inference rule matches"
+      "text": "▶ When proving, the conclusion of an inference rule matches",
+      "needs_review": true
     },
     {
       "id": "lecture14-algorithm-3",
-      "text": "▶ Various algorithms for uniﬁcation (Martelli&Montanari,"
+      "text": "▶ Various algorithms for unification (Martelli&Montanari,",
+      "needs_review": true
     }
   ],
   "formulas": [
     {
       "id": "lecture14-formula-1",
-      "expression": "▶ Computation: 10 + 0 = 10 (using some predeﬁned rules,"
+      "expression": "i.e., n + 0 = 0)",
+      "needs_review": true
     },
     {
       "id": "lecture14-formula-2",
-      "expression": "i.e., n + 0 = 0)"
+      "expression": "▶ Example: a2 + b2 = c2 ... Pythagoras→ first proof",
+      "needs_review": true
     },
     {
       "id": "lecture14-formula-3",
-      "expression": "▶ Example: a2 + b2 = c2 ... Pythagoras→ ﬁrst proof"
+      "expression": "▶ Another example: an + bn̸= cn, n> 2 (Fermat's last thm)",
+      "needs_review": true
     },
     {
       "id": "lecture14-formula-4",
-      "expression": "▶ Another example: an + bn̸= cn, n> 2 (Fermat’s last thm)"
+      "expression": "▶ Example: a2 + b2 = c2",
+      "needs_review": true
     },
     {
       "id": "lecture14-formula-5",
-      "expression": "▶ Example: a2 + b2 = c2"
+      "expression": "... Pythagoras→ first proof",
+      "needs_review": true
     },
     {
       "id": "lecture14-formula-6",
-      "expression": "... Pythagoras→ ﬁrst proof"
+      "expression": "▶ Formulas: φ := p(t1,..., tn)|¬φ|φ∧φ|∃ x.φ",
+      "needs_review": true
     },
     {
       "id": "lecture14-formula-7",
-      "expression": "▶ 1 + 1 = 2 is the result of a computation and a theorem of"
+      "expression": "▶ Let T1 = g(h(z, y ), x, y ) be a term",
+      "needs_review": true
     },
     {
       "id": "lecture14-formula-8",
-      "expression": "▶ Formulas: φ := p(t1,..., tn)|¬φ|φ∧φ|∃ x.φ"
+      "expression": "▶ Then,σ(T1) = σ(g(h(z, y ), x, y )) = g(h(f (a, b), y ′), 3, y ′)).",
+      "needs_review": true
     },
     {
       "id": "lecture14-formula-9",
-      "expression": "▶ σ ={x↦→ 3, y↦→ y ′, z↦→ f (a, b)} - substitution"
-    },
-    {
-      "id": "lecture14-formula-10",
-      "expression": "▶ Let T1 = g(h(z, y ), x, y ) be a term"
-    },
-    {
-      "id": "lecture14-formula-11",
-      "expression": "▶ Then,σ(T1) = σ(g(h(z, y ), x, y )) = g(h(f (a, b), y ′), 3, y ′))."
-    },
-    {
-      "id": "lecture14-formula-12",
-      "expression": "▶ A substitutionσ is the uniﬁer of t1 and t2 ifσ(t1) = σ(t2)."
+      "expression": "▶ A substitutionσ is the unifier of t1 and t2 ifσ(t1) = σ(t2).",
+      "needs_review": true
     }
   ],
   "examples": [
     {
       "id": "lecture14-example-1",
-      "text": "▶ Example: a2 + b2 = c2 ... Pythagoras→ ﬁrst proof"
+      "text": "▶ Example: a2 + b2 = c2 ... Pythagoras→ first proof",
+      "needs_review": true
     },
     {
       "id": "lecture14-example-2",
-      "text": "▶ Another example: an + bn̸= cn, n> 2 (Fermat’s last thm)"
+      "text": "▶ Another example: an + bn̸= cn, n> 2 (Fermat's last thm)",
+      "needs_review": true
     },
     {
       "id": "lecture14-example-3",
-      "text": "▶ Example: a2 + b2 = c2"
+      "text": "▶ Example: a2 + b2 = c2",
+      "needs_review": true
     }
   ],
   "exercises": [],
@@ -277,59 +328,69 @@
   "possible_lesson_breakdown": [
     {
       "id": "lecture14-lesson-1",
-      "title": "Paradigms",
-      "source_topic_id": "lecture14-topic-1"
+      "title": "Logic Programming",
+      "source_topic_id": "lecture14-topic-1",
+      "needs_review": true
     },
     {
       "id": "lecture14-lesson-2",
-      "title": "Logic Programming",
-      "source_topic_id": "lecture14-topic-2"
+      "title": "General facts about PLs",
+      "source_topic_id": "lecture14-topic-2",
+      "needs_review": true
     },
     {
       "id": "lecture14-lesson-3",
-      "title": "General facts about PLs",
-      "source_topic_id": "lecture14-topic-3"
+      "title": "Are there other approaches?",
+      "source_topic_id": "lecture14-topic-3",
+      "needs_review": true
     },
     {
       "id": "lecture14-lesson-4",
-      "title": "We have seen PLs where the computations are based on:",
-      "source_topic_id": "lecture14-topic-4"
+      "title": ": Logic programming",
+      "source_topic_id": "lecture14-topic-4",
+      "needs_review": true
     },
     {
       "id": "lecture14-lesson-5",
-      "title": "Are there other approaches?",
-      "source_topic_id": "lecture14-topic-5"
+      "title": "Computation vs. Deduction",
+      "source_topic_id": "lecture14-topic-5",
+      "needs_review": true
     },
     {
       "id": "lecture14-lesson-6",
-      "title": ": Logic programming",
-      "source_topic_id": "lecture14-topic-6"
+      "title": "i.e., n + 0 = 0)",
+      "source_topic_id": "lecture14-topic-6",
+      "needs_review": true
     },
     {
       "id": "lecture14-lesson-7",
-      "title": "Computation vs. Deduction",
-      "source_topic_id": "lecture14-topic-7"
+      "title": "rules, i.e., needs human ingenuity to complete",
+      "source_topic_id": "lecture14-topic-7",
+      "needs_review": true
     },
     {
       "id": "lecture14-lesson-8",
-      "title": "i.e., n + 0 = 0)",
-      "source_topic_id": "lecture14-topic-8"
+      "title": "It took 358 years until it was proved!",
+      "source_topic_id": "lecture14-topic-8",
+      "needs_review": true
     },
     {
       "id": "lecture14-lesson-9",
-      "title": "rules, i.e., needs human ingenuity to complete",
-      "source_topic_id": "lecture14-topic-9"
+      "title": ", i.e., needs human ingenuity to complete",
+      "source_topic_id": "lecture14-topic-9",
+      "needs_review": true
     },
     {
       "id": "lecture14-lesson-10",
-      "title": "It took 358 years until it was proved!",
-      "source_topic_id": "lecture14-topic-10"
+      "title": "... Pythagoras→ first proof",
+      "source_topic_id": "lecture14-topic-10",
+      "needs_review": true
     }
   ],
   "possible_unit_grouping": [
     {
       "id": "lecture14-unit-1",
-      "title": "lecture14",
+      "title": "Lecture 14",
       "lesson_ids": [
         "lecture14-lesson-1",
         "lecture14-lesson-2",
@@ -341,7 +402,8 @@
         "lecture14-lesson-8",
         "lecture14-lesson-9",
         "lecture14-lesson-10"
-      ]
+      ],
+      "needs_review": true
     }
   ],
   "concept_relationships": [

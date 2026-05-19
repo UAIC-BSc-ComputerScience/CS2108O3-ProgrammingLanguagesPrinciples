@@ -3,271 +3,338 @@
   "source_file": "course/eng/lecture13.pdf",
   "source_filename": "lecture13.pdf",
   "parsing_status": "parsed",
-  "needs_review": false,
+  "needs_review": true,
+  "review_notes": [
+    "Automatically extracted from PDF; truncated or ambiguous entries may still require manual cleanup."
+  ],
   "course_title": "Principles of Programming Languages",
-  "lecture_title": "",
+  "lecture_title": "Lecture 13",
   "main_topics": [
     {
       "id": "lecture13-topic-1",
-      "name": "Paradigms"
+      "name": "Declarative Programming",
+      "needs_review": true
     },
     {
       "id": "lecture13-topic-2",
-      "name": "Declarative Programming"
+      "name": "General facts about PLs - I",
+      "needs_review": true
     },
     {
       "id": "lecture13-topic-3",
-      "name": "Conclusion"
+      "name": "state + modifiable variable + assignment",
+      "needs_review": true
     },
     {
       "id": "lecture13-topic-4",
-      "name": "General facts about PLs - I"
+      "name": "General facts about PLs - II",
+      "needs_review": true
     },
     {
       "id": "lecture13-topic-5",
-      "name": "state + modiﬁable variable + assignment"
+      "name": ". How?",
+      "needs_review": true
     },
     {
       "id": "lecture13-topic-6",
-      "name": "locations"
+      "name": "Functional programming: history + characteristics",
+      "needs_review": true
     },
     {
       "id": "lecture13-topic-7",
-      "name": "General facts about PLs - II"
+      "name": "Some mathematical background",
+      "needs_review": true
     },
     {
       "id": "lecture13-topic-8",
-      "name": "base a PL"
+      "name": ", where f : R→ R",
+      "needs_review": true
     },
     {
       "id": "lecture13-topic-9",
-      "name": "the environment"
-    },
-    {
-      "id": "lecture13-topic-10",
-      "name": "base a PL:"
+      "name": "transformation that f applies to arguments x",
+      "needs_review": true
     }
   ],
   "subtopics": [
     {
       "id": "lecture13-subtopic-1",
-      "name": "Imperative Programming:"
+      "name": "Declarative Programming",
+      "needs_review": true
     },
     {
       "id": "lecture13-subtopic-2",
-      "name": "Object Oriented Programming:"
+      "name": "Functional Programming",
+      "needs_review": true
     },
     {
       "id": "lecture13-subtopic-3",
-      "name": "Declarative Programming"
+      "name": "Logic Programming",
+      "needs_review": true
     },
     {
       "id": "lecture13-subtopic-4",
-      "name": "Functional Programming"
+      "name": "Computation proceeds by modifying values stored in",
+      "needs_review": true
     },
     {
       "id": "lecture13-subtopic-5",
-      "name": "Logic Programming"
+      "name": "The von Neumann Machine",
+      "needs_review": true
     },
     {
       "id": "lecture13-subtopic-6",
-      "name": "Computational model based on:"
+      "name": "Conventional PL are based on this computational model",
+      "needs_review": true
     },
     {
       "id": "lecture13-subtopic-7",
-      "name": "Computation proceeds by modifying values stored in"
+      "name": "It is possible to compute without referring to a state. How?",
+      "needs_review": true
     },
     {
       "id": "lecture13-subtopic-8",
-      "name": "The von Neumann Machine"
+      "name": "... by rewriting expressions",
+      "needs_review": true
     },
     {
       "id": "lecture13-subtopic-9",
-      "name": "Conventional PL are based on this computational model"
+      "name": "It is possible to compute without referring to a state",
+      "needs_review": true
     },
     {
       "id": "lecture13-subtopic-10",
-      "name": "However, this is not the only possible model upon which to"
+      "name": "This paradigm is as old as the imperative one",
+      "needs_review": true
     },
     {
       "id": "lecture13-subtopic-11",
-      "name": "It is possible to compute without referring to a state. How?"
+      "name": "Turing machine vs.λ-calculus (1936)",
+      "needs_review": true
     },
     {
       "id": "lecture13-subtopic-12",
-      "name": "... by rewriting expressions"
+      "name": "Church-Turing thesis",
+      "needs_review": true
     },
     {
       "id": "lecture13-subtopic-13",
-      "name": "The computation is expressed in terms of modiﬁcations of"
+      "name": "Ingredients: higher-order functions + recursion",
+      "needs_review": true
     },
     {
       "id": "lecture13-subtopic-14",
-      "name": "“Pure” principles: do not modify the ‘state’; no side-effects"
+      "name": "PLs: Haskell, Miranda (pure) + Lisp, ML, Scheme, . . .",
+      "needs_review": true
     },
     {
       "id": "lecture13-subtopic-15",
-      "name": "It is possible to compute without referring to a state"
+      "name": "Math function: f (x) = x2",
+      "needs_review": true
     }
   ],
-  "definitions": [],
+  "definitions": [
+    {
+      "id": "lecture13-definition-1",
+      "text": "▶ Definition:",
+      "needs_review": true
+    }
+  ],
   "key_concepts": [
     {
       "id": "lecture13-concept-1",
-      "name": "Paradigms"
+      "name": "Declarative Programming",
+      "needs_review": true
     },
     {
       "id": "lecture13-concept-2",
-      "name": "Declarative Programming"
+      "name": "General facts about PLs - I",
+      "needs_review": true
     },
     {
       "id": "lecture13-concept-3",
-      "name": "Conclusion"
+      "name": "state + modifiable variable + assignment",
+      "needs_review": true
     },
     {
       "id": "lecture13-concept-4",
-      "name": "General facts about PLs - I"
+      "name": "General facts about PLs - II",
+      "needs_review": true
     },
     {
       "id": "lecture13-concept-5",
-      "name": "state + modiﬁable variable + assignment"
+      "name": ". How?",
+      "needs_review": true
     },
     {
       "id": "lecture13-concept-6",
-      "name": "locations"
+      "name": "Functional programming: history + characteristics",
+      "needs_review": true
     },
     {
       "id": "lecture13-concept-7",
-      "name": "General facts about PLs - II"
+      "name": "Some mathematical background",
+      "needs_review": true
     },
     {
       "id": "lecture13-concept-8",
-      "name": "base a PL"
+      "name": ", where f : R→ R",
+      "needs_review": true
     },
     {
       "id": "lecture13-concept-9",
-      "name": "the environment"
+      "name": "transformation that f applies to arguments x",
+      "needs_review": true
     },
     {
       "id": "lecture13-concept-10",
-      "name": "base a PL:"
+      "name": "Functional Programming",
+      "needs_review": true
     },
     {
       "id": "lecture13-concept-11",
-      "name": "Imperative Programming:"
+      "name": "Logic Programming",
+      "needs_review": true
     },
     {
       "id": "lecture13-concept-12",
-      "name": "Object Oriented Programming:"
+      "name": "Computation proceeds by modifying values stored in",
+      "needs_review": true
     },
     {
       "id": "lecture13-concept-13",
-      "name": "Declarative Programming"
+      "name": "The von Neumann Machine",
+      "needs_review": true
     },
     {
       "id": "lecture13-concept-14",
-      "name": "Functional Programming"
+      "name": "Conventional PL are based on this computational model",
+      "needs_review": true
     },
     {
       "id": "lecture13-concept-15",
-      "name": "Logic Programming"
+      "name": "It is possible to compute without referring to a state. How?",
+      "needs_review": true
     },
     {
       "id": "lecture13-concept-16",
-      "name": "Computational model based on:"
+      "name": "... by rewriting expressions",
+      "needs_review": true
     },
     {
       "id": "lecture13-concept-17",
-      "name": "Computation proceeds by modifying values stored in"
+      "name": "It is possible to compute without referring to a state",
+      "needs_review": true
     },
     {
       "id": "lecture13-concept-18",
-      "name": "The von Neumann Machine"
+      "name": "This paradigm is as old as the imperative one",
+      "needs_review": true
     },
     {
       "id": "lecture13-concept-19",
-      "name": "Conventional PL are based on this computational model"
+      "name": "Turing machine vs.λ-calculus (1936)",
+      "needs_review": true
     },
     {
       "id": "lecture13-concept-20",
-      "name": "However, this is not the only possible model upon which to"
+      "name": "Church-Turing thesis",
+      "needs_review": true
     }
   ],
   "algorithms": [],
   "formulas": [
     {
       "id": "lecture13-formula-1",
-      "expression": "▶ Turing machine vs.λ-calculus (1936)"
+      "expression": "▶ Turing machine vs.λ-calculus (1936)",
+      "needs_review": true
     },
     {
       "id": "lecture13-formula-2",
-      "expression": "▶ Math function: f (x) = x2"
+      "expression": "▶ Math function: f (x) = x2",
+      "needs_review": true
     },
     {
       "id": "lecture13-formula-3",
-      "expression": ", where f : R→ R"
+      "expression": ", where f : R→ R",
+      "needs_review": true
     },
     {
       "id": "lecture13-formula-4",
-      "expression": "▶ Functions = expressible values"
+      "expression": "▶ Functions = expressible values",
+      "needs_review": true
     },
     {
       "id": "lecture13-formula-5",
-      "expression": "▶ Math function: f (x) = x2, where f : R→ R"
+      "expression": "▶ Math function: f (x) = x2, where f : R→ R",
+      "needs_review": true
     },
     {
       "id": "lecture13-formula-6",
-      "expression": "▶ Anonymous functions:\\x→ x∗ x – Haskell syntax"
+      "expression": "▶ Anonymous functions:\\x→ x∗ x – Haskell syntax",
+      "needs_review": true
     },
     {
       "id": "lecture13-formula-7",
-      "expression": "▶ Application: (\\x→ x∗ x) 2"
+      "expression": "▶ Application: (\\x→ x∗ x) 2",
+      "needs_review": true
     },
     {
       "id": "lecture13-formula-8",
-      "expression": "λ-calculus"
+      "expression": "▶ Syntax: e ::= x | (e e) | λx. e",
+      "needs_review": true
     },
     {
       "id": "lecture13-formula-9",
-      "expression": "▶ Syntax: e ::= x | (e e) | λx. e"
+      "expression": "▶ λx. e - abstraction",
+      "needs_review": true
     },
     {
       "id": "lecture13-formula-10",
-      "expression": "▶ λx. e - abstraction"
+      "expression": "▶ Examples: 10, λx.x, ((λx.x) 10), (λx.x+y )",
+      "needs_review": true
     },
     {
       "id": "lecture13-formula-11",
-      "expression": "▶ Examples: 10, λx.x, ((λx.x) 10), (λx.x+y )"
+      "expression": "▶ λx. e",
+      "needs_review": true
     },
     {
       "id": "lecture13-formula-12",
-      "expression": "▶ λx. e"
+      "expression": "Fv (e1 e2) = Fv (e1) ∪ Fv (e2) Bv (e1 e2) = Bv (e1) ∪ Bv (e2)",
+      "needs_review": true
     }
   ],
   "examples": [
     {
       "id": "lecture13-example-1",
-      "text": "▶ Example: (λx.x + y )≡α (λz.(x + y )[z/x]) = (λz.z + y )"
+      "text": "▶ Example: (λx.x + y )≡α (λz.(x + y )[z/x]) = (λz.z + y )",
+      "needs_review": true
     },
     {
       "id": "lecture13-example-2",
-      "text": "▶ Example: λx.(λy.x) - normal form"
+      "text": "▶ Example: λx.(λy.x) - normal form",
+      "needs_review": true
     },
     {
       "id": "lecture13-example-3",
-      "text": "▶ Example: λx.((λy.y ) x) - not in normal form"
+      "text": "▶ Example: λx.((λy.y ) x) - not in normal form",
+      "needs_review": true
     },
     {
       "id": "lecture13-example-4",
-      "text": "▶ Example:"
+      "text": "▶ Example:",
+      "needs_review": true
     },
     {
       "id": "lecture13-example-5",
-      "text": "Haskell example explained"
+      "text": "Haskell example explained",
+      "needs_review": true
     },
     {
       "id": "lecture13-example-6",
-      "text": "Another example (the redex under the lambda abstraction is"
+      "text": "Another example (the redex under the lambda abstraction is",
+      "needs_review": true
     }
   ],
   "exercises": [],
@@ -276,59 +343,63 @@
   "possible_lesson_breakdown": [
     {
       "id": "lecture13-lesson-1",
-      "title": "Paradigms",
-      "source_topic_id": "lecture13-topic-1"
+      "title": "Declarative Programming",
+      "source_topic_id": "lecture13-topic-1",
+      "needs_review": true
     },
     {
       "id": "lecture13-lesson-2",
-      "title": "Declarative Programming",
-      "source_topic_id": "lecture13-topic-2"
+      "title": "General facts about PLs - I",
+      "source_topic_id": "lecture13-topic-2",
+      "needs_review": true
     },
     {
       "id": "lecture13-lesson-3",
-      "title": "Conclusion",
-      "source_topic_id": "lecture13-topic-3"
+      "title": "state + modifiable variable + assignment",
+      "source_topic_id": "lecture13-topic-3",
+      "needs_review": true
     },
     {
       "id": "lecture13-lesson-4",
-      "title": "General facts about PLs - I",
-      "source_topic_id": "lecture13-topic-4"
+      "title": "General facts about PLs - II",
+      "source_topic_id": "lecture13-topic-4",
+      "needs_review": true
     },
     {
       "id": "lecture13-lesson-5",
-      "title": "state + modiﬁable variable + assignment",
-      "source_topic_id": "lecture13-topic-5"
+      "title": ". How?",
+      "source_topic_id": "lecture13-topic-5",
+      "needs_review": true
     },
     {
       "id": "lecture13-lesson-6",
-      "title": "locations",
-      "source_topic_id": "lecture13-topic-6"
+      "title": "Functional programming: history + characteristics",
+      "source_topic_id": "lecture13-topic-6",
+      "needs_review": true
     },
     {
       "id": "lecture13-lesson-7",
-      "title": "General facts about PLs - II",
-      "source_topic_id": "lecture13-topic-7"
+      "title": "Some mathematical background",
+      "source_topic_id": "lecture13-topic-7",
+      "needs_review": true
     },
     {
       "id": "lecture13-lesson-8",
-      "title": "base a PL",
-      "source_topic_id": "lecture13-topic-8"
+      "title": ", where f : R→ R",
+      "source_topic_id": "lecture13-topic-8",
+      "needs_review": true
     },
     {
       "id": "lecture13-lesson-9",
-      "title": "the environment",
-      "source_topic_id": "lecture13-topic-9"
-    },
-    {
-      "id": "lecture13-lesson-10",
-      "title": "base a PL:",
-      "source_topic_id": "lecture13-topic-10"
+      "title": "transformation that f applies to arguments x",
+      "source_topic_id": "lecture13-topic-9",
+      "needs_review": true
     }
   ],
   "possible_unit_grouping": [
     {
       "id": "lecture13-unit-1",
-      "title": "lecture13",
+      "title": "Lecture 13",
       "lesson_ids": [
         "lecture13-lesson-1",
         "lecture13-lesson-2",
@@ -338,9 +409,9 @@
         "lecture13-lesson-6",
         "lecture13-lesson-7",
         "lecture13-lesson-8",
-        "lecture13-lesson-9",
-        "lecture13-lesson-10"
-      ]
+        "lecture13-lesson-9"
+      ],
+      "needs_review": true
     }
   ],
   "concept_relationships": [
@@ -397,13 +468,6 @@
       "id": "lecture13-relation-8",
       "from_concept_id": "lecture13-topic-8",
       "to_concept_id": "lecture13-topic-9",
-      "relationship_type": "precedes",
-      "needs_review": true
-    },
-    {
-      "id": "lecture13-relation-9",
-      "from_concept_id": "lecture13-topic-9",
-      "to_concept_id": "lecture13-topic-10",
       "relationship_type": "precedes",
       "needs_review": true
     }

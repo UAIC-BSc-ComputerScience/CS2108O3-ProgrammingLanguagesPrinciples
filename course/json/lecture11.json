@@ -3,257 +3,319 @@
   "source_file": "course/eng/lecture11.pdf",
   "source_filename": "lecture11.pdf",
   "parsing_status": "parsed",
-  "needs_review": false,
+  "needs_review": true,
+  "review_notes": [
+    "Automatically extracted from PDF; truncated or ambiguous entries may still require manual cleanup."
+  ],
   "course_title": "Principles of Programming Languages",
-  "lecture_title": "",
+  "lecture_title": "Lecture 11",
   "main_topics": [
     {
       "id": "lecture11-topic-1",
-      "name": "Motivation"
+      "name": "Expressions",
+      "needs_review": true
     },
     {
       "id": "lecture11-topic-2",
-      "name": "Demo(s)"
+      "name": "Defining a stack machine",
+      "needs_review": true
     },
     {
       "id": "lecture11-topic-3",
-      "name": "Expressions"
+      "name": "Compilation & Soundness",
+      "needs_review": true
     },
     {
       "id": "lecture11-topic-4",
-      "name": "Deﬁning a stack machine"
+      "name": "Simple expressions in Coq",
+      "needs_review": true
     },
     {
       "id": "lecture11-topic-5",
-      "name": "Compilation & Soundness"
+      "name": "Exp ::= Nat | Id | Exp \"+\" Exp | Exp \"*\" Exp",
+      "needs_review": true
     },
     {
       "id": "lecture11-topic-6",
-      "name": "about them"
+      "name": "Inductive Exp :=",
+      "needs_review": true
     },
     {
       "id": "lecture11-topic-7",
-      "name": "Simple expressions in Coq"
+      "name": "| const : nat -> Exp",
+      "needs_review": true
     },
     {
       "id": "lecture11-topic-8",
-      "name": "Exp ::= Nat | Id | Exp \"+\" Exp | Exp \"*\" Exp"
+      "name": "| id : string -> Exp",
+      "needs_review": true
     },
     {
       "id": "lecture11-topic-9",
-      "name": "Inductive Exp :="
+      "name": "| plus : Exp -> Exp -> Exp",
+      "needs_review": true
     },
     {
       "id": "lecture11-topic-10",
-      "name": "| const : nat -> Exp"
+      "name": "| times : Exp -> Exp -> Exp.",
+      "needs_review": true
     }
   ],
   "subtopics": [
     {
       "id": "lecture11-subtopic-1",
-      "name": "Interactive theorem provers: Coq, Isabelle"
+      "name": "Interactive theorem provers: Coq, Isabelle",
+      "needs_review": true
     },
     {
       "id": "lecture11-subtopic-2",
-      "name": "Why?"
+      "name": "Mathematical proofs are often big and lacking details",
+      "needs_review": true
     },
     {
       "id": "lecture11-subtopic-3",
-      "name": "Mathematical proofs are often big and lacking details"
+      "name": "Proofs can be developed using computers",
+      "needs_review": true
     },
     {
       "id": "lecture11-subtopic-4",
-      "name": "Proofs can be developed using computers"
+      "name": "Use a tool for handling all proof details",
+      "needs_review": true
     },
     {
       "id": "lecture11-subtopic-5",
-      "name": "Use a tool for handling all proof details"
+      "name": "Make sure proofs are exact - computer checked",
+      "needs_review": true
     },
     {
       "id": "lecture11-subtopic-6",
-      "name": "Make sure proofs are exact - computer checked"
+      "name": "These can be used to define PLs and to prove properties",
+      "needs_review": true
     },
     {
       "id": "lecture11-subtopic-7",
-      "name": "These can be used to deﬁne PLs and to prove properties"
+      "name": "Expressions are interpreted in an environment, their",
+      "needs_review": true
     },
     {
       "id": "lecture11-subtopic-8",
-      "name": "Simple language of expressions - BNF:"
+      "name": "We show howExp can be compiled to the stack machine",
+      "needs_review": true
     },
     {
       "id": "lecture11-subtopic-9",
-      "name": "(Abstract) syntax can be deﬁned usingInductive:"
+      "name": "We prove compilation correct!",
+      "needs_review": true
     },
     {
       "id": "lecture11-subtopic-10",
-      "name": "Expressions are interpreted in an environment, their"
+      "name": "Link: http://compcert.inria.fr/",
+      "needs_review": true
     },
     {
       "id": "lecture11-subtopic-11",
-      "name": "The interpretation function:"
+      "name": "Source language: a very large subset of C",
+      "needs_review": true
     },
     {
       "id": "lecture11-subtopic-12",
-      "name": "Syntax:"
+      "name": "Target language: PowerPC/ARM/x86 assembly",
+      "needs_review": true
     },
     {
       "id": "lecture11-subtopic-13",
-      "name": "Semantics:"
+      "name": "Compiler written from scratch + proof",
+      "needs_review": true
     },
     {
       "id": "lecture11-subtopic-14",
-      "name": "Run instructions:"
+      "name": "50000 lines of Coq",
+      "needs_review": true
     },
     {
       "id": "lecture11-subtopic-15",
-      "name": "Compilation ofExp to the stack machine:"
+      "name": "4 person-years",
+      "needs_review": true
     }
   ],
   "definitions": [],
   "key_concepts": [
     {
       "id": "lecture11-concept-1",
-      "name": "Motivation"
+      "name": "Expressions",
+      "needs_review": true
     },
     {
       "id": "lecture11-concept-2",
-      "name": "Demo(s)"
+      "name": "Defining a stack machine",
+      "needs_review": true
     },
     {
       "id": "lecture11-concept-3",
-      "name": "Expressions"
+      "name": "Compilation & Soundness",
+      "needs_review": true
     },
     {
       "id": "lecture11-concept-4",
-      "name": "Deﬁning a stack machine"
+      "name": "Simple expressions in Coq",
+      "needs_review": true
     },
     {
       "id": "lecture11-concept-5",
-      "name": "Compilation & Soundness"
+      "name": "Exp ::= Nat | Id | Exp \"+\" Exp | Exp \"*\" Exp",
+      "needs_review": true
     },
     {
       "id": "lecture11-concept-6",
-      "name": "about them"
+      "name": "Inductive Exp :=",
+      "needs_review": true
     },
     {
       "id": "lecture11-concept-7",
-      "name": "Simple expressions in Coq"
+      "name": "| const : nat -> Exp",
+      "needs_review": true
     },
     {
       "id": "lecture11-concept-8",
-      "name": "Exp ::= Nat | Id | Exp \"+\" Exp | Exp \"*\" Exp"
+      "name": "| id : string -> Exp",
+      "needs_review": true
     },
     {
       "id": "lecture11-concept-9",
-      "name": "Inductive Exp :="
+      "name": "| plus : Exp -> Exp -> Exp",
+      "needs_review": true
     },
     {
       "id": "lecture11-concept-10",
-      "name": "| const : nat -> Exp"
+      "name": "| times : Exp -> Exp -> Exp.",
+      "needs_review": true
     },
     {
       "id": "lecture11-concept-11",
-      "name": "Interactive theorem provers: Coq, Isabelle"
+      "name": "Interactive theorem provers: Coq, Isabelle",
+      "needs_review": true
     },
     {
       "id": "lecture11-concept-12",
-      "name": "Why?"
+      "name": "Mathematical proofs are often big and lacking details",
+      "needs_review": true
     },
     {
       "id": "lecture11-concept-13",
-      "name": "Mathematical proofs are often big and lacking details"
+      "name": "Proofs can be developed using computers",
+      "needs_review": true
     },
     {
       "id": "lecture11-concept-14",
-      "name": "Proofs can be developed using computers"
+      "name": "Use a tool for handling all proof details",
+      "needs_review": true
     },
     {
       "id": "lecture11-concept-15",
-      "name": "Use a tool for handling all proof details"
+      "name": "Make sure proofs are exact - computer checked",
+      "needs_review": true
     },
     {
       "id": "lecture11-concept-16",
-      "name": "Make sure proofs are exact - computer checked"
+      "name": "These can be used to define PLs and to prove properties",
+      "needs_review": true
     },
     {
       "id": "lecture11-concept-17",
-      "name": "These can be used to deﬁne PLs and to prove properties"
+      "name": "Expressions are interpreted in an environment, their",
+      "needs_review": true
     },
     {
       "id": "lecture11-concept-18",
-      "name": "Simple language of expressions - BNF:"
+      "name": "We show howExp can be compiled to the stack machine",
+      "needs_review": true
     },
     {
       "id": "lecture11-concept-19",
-      "name": "(Abstract) syntax can be deﬁned usingInductive:"
+      "name": "We prove compilation correct!",
+      "needs_review": true
     },
     {
       "id": "lecture11-concept-20",
-      "name": "Expressions are interpreted in an environment, their"
+      "name": "Link: http://compcert.inria.fr/",
+      "needs_review": true
     }
   ],
   "algorithms": [
     {
       "id": "lecture11-algorithm-1",
-      "text": "of ﬂight control and navigation algorithms"
+      "text": "of flight control and navigation algorithms",
+      "needs_review": true
     }
   ],
   "formulas": [
     {
       "id": "lecture11-formula-1",
-      "expression": "Exp ::= Nat | Id | Exp \"+\" Exp | Exp \"*\" Exp"
+      "expression": "Exp ::= Nat | Id | Exp \"+\" Exp | Exp \"*\" Exp",
+      "needs_review": true
     },
     {
       "id": "lecture11-formula-2",
-      "expression": "Inductive Exp :="
+      "expression": "Inductive Exp :=",
+      "needs_review": true
     },
     {
       "id": "lecture11-formula-3",
-      "expression": "(sigma : Var -> nat) : nat :="
+      "expression": "(sigma : Var -> nat) : nat :=",
+      "needs_review": true
     },
     {
       "id": "lecture11-formula-4",
-      "expression": "| const x => x"
+      "expression": "| const x => x",
+      "needs_review": true
     },
     {
       "id": "lecture11-formula-5",
-      "expression": "| id s => sigma s"
+      "expression": "| id s => sigma s",
+      "needs_review": true
     },
     {
       "id": "lecture11-formula-6",
-      "expression": "| plus e1 e2=>(interpret e1 sigma)+(interpret e2 sigma)"
+      "expression": "| plus e1 e2=>(interpret e1 sigma)+(interpret e2 sigma)",
+      "needs_review": true
     },
     {
       "id": "lecture11-formula-7",
-      "expression": "| times e1 e2=>(interpret e1 sigma)*(interpret e2 sigma)"
+      "expression": "| times e1 e2=>(interpret e1 sigma)*(interpret e2 sigma)",
+      "needs_review": true
     },
     {
       "id": "lecture11-formula-8",
-      "expression": "Inductive Instruction :="
+      "expression": "Inductive Instruction :=",
+      "needs_review": true
     },
     {
       "id": "lecture11-formula-9",
-      "expression": "(env : Var -> nat) (stack : list nat) :="
+      "expression": "(env : Var -> nat) (stack : list nat) :=",
+      "needs_review": true
     },
     {
       "id": "lecture11-formula-10",
-      "expression": "| push_const n => n :: stack"
+      "expression": "| push_const n => n :: stack",
+      "needs_review": true
     },
     {
       "id": "lecture11-formula-11",
-      "expression": "| push_var v => (env v) :: stack"
+      "expression": "| push_var v => (env v) :: stack",
+      "needs_review": true
     },
     {
       "id": "lecture11-formula-12",
-      "expression": "| add => match stack with"
+      "expression": "| n1 :: n2 :: s' => (n1 + n2) :: s'",
+      "needs_review": true
     }
   ],
   "examples": [],
   "exercises": [
     {
       "id": "lecture11-exercise-1",
-      "text": "Exercise: a stack machine"
+      "text": "Exercise: a stack machine",
+      "needs_review": true
     }
   ],
   "prerequisites": [],
@@ -261,59 +323,69 @@
   "possible_lesson_breakdown": [
     {
       "id": "lecture11-lesson-1",
-      "title": "Motivation",
-      "source_topic_id": "lecture11-topic-1"
+      "title": "Expressions",
+      "source_topic_id": "lecture11-topic-1",
+      "needs_review": true
     },
     {
       "id": "lecture11-lesson-2",
-      "title": "Demo(s)",
-      "source_topic_id": "lecture11-topic-2"
+      "title": "Defining a stack machine",
+      "source_topic_id": "lecture11-topic-2",
+      "needs_review": true
     },
     {
       "id": "lecture11-lesson-3",
-      "title": "Expressions",
-      "source_topic_id": "lecture11-topic-3"
+      "title": "Compilation & Soundness",
+      "source_topic_id": "lecture11-topic-3",
+      "needs_review": true
     },
     {
       "id": "lecture11-lesson-4",
-      "title": "Deﬁning a stack machine",
-      "source_topic_id": "lecture11-topic-4"
+      "title": "Simple expressions in Coq",
+      "source_topic_id": "lecture11-topic-4",
+      "needs_review": true
     },
     {
       "id": "lecture11-lesson-5",
-      "title": "Compilation & Soundness",
-      "source_topic_id": "lecture11-topic-5"
+      "title": "Exp ::= Nat | Id | Exp \"+\" Exp | Exp \"*\" Exp",
+      "source_topic_id": "lecture11-topic-5",
+      "needs_review": true
     },
     {
       "id": "lecture11-lesson-6",
-      "title": "about them",
-      "source_topic_id": "lecture11-topic-6"
+      "title": "Inductive Exp :=",
+      "source_topic_id": "lecture11-topic-6",
+      "needs_review": true
     },
     {
       "id": "lecture11-lesson-7",
-      "title": "Simple expressions in Coq",
-      "source_topic_id": "lecture11-topic-7"
+      "title": "| const : nat -> Exp",
+      "source_topic_id": "lecture11-topic-7",
+      "needs_review": true
     },
     {
       "id": "lecture11-lesson-8",
-      "title": "Exp ::= Nat | Id | Exp \"+\" Exp | Exp \"*\" Exp",
-      "source_topic_id": "lecture11-topic-8"
+      "title": "| id : string -> Exp",
+      "source_topic_id": "lecture11-topic-8",
+      "needs_review": true
     },
     {
       "id": "lecture11-lesson-9",
-      "title": "Inductive Exp :=",
-      "source_topic_id": "lecture11-topic-9"
+      "title": "| plus : Exp -> Exp -> Exp",
+      "source_topic_id": "lecture11-topic-9",
+      "needs_review": true
     },
     {
       "id": "lecture11-lesson-10",
-      "title": "| const : nat -> Exp",
-      "source_topic_id": "lecture11-topic-10"
+      "title": "| times : Exp -> Exp -> Exp.",
+      "source_topic_id": "lecture11-topic-10",
+      "needs_review": true
     }
   ],
   "possible_unit_grouping": [
     {
       "id": "lecture11-unit-1",
-      "title": "lecture11",
+      "title": "Lecture 11",
       "lesson_ids": [
         "lecture11-lesson-1",
         "lecture11-lesson-2",
@@ -325,7 +397,8 @@
         "lecture11-lesson-8",
         "lecture11-lesson-9",
         "lecture11-lesson-10"
-      ]
+      ],
+      "needs_review": true
     }
   ],
   "concept_relationships": [

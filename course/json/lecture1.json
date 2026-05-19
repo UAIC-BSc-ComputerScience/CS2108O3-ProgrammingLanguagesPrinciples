@@ -3,291 +3,339 @@
   "source_file": "course/eng/lecture1.pdf",
   "source_filename": "lecture1.pdf",
   "parsing_status": "parsed",
-  "needs_review": false,
+  "needs_review": true,
+  "review_notes": [
+    "Automatically extracted from PDF; truncated or ambiguous entries may still require manual cleanup."
+  ],
   "course_title": "Principles of Programming Languages",
   "lecture_title": "Lecture 1: Introduction",
   "main_topics": [
     {
       "id": "lecture1-topic-1",
-      "name": "General course information"
+      "name": "General course information",
+      "needs_review": true
     },
     {
       "id": "lecture1-topic-2",
-      "name": "Preliminary discussion"
+      "name": "Preliminary discussion",
+      "needs_review": true
     },
     {
       "id": "lecture1-topic-3",
-      "name": "History"
-    },
-    {
-      "id": "lecture1-topic-4",
-      "name": "Main Paradigms"
+      "name": "Main Paradigms",
+      "needs_review": true
     }
   ],
   "subtopics": [
     {
       "id": "lecture1-subtopic-1",
-      "name": "Learning a new PL is nowadays a requirement"
+      "name": "Learning a new PL is nowadays a requirement",
+      "needs_review": true
     },
     {
       "id": "lecture1-subtopic-2",
-      "name": "“Programmers need to move from one PL to another with"
+      "name": "PLs have their similarities, analogies, inherited",
+      "needs_review": true
     },
     {
       "id": "lecture1-subtopic-3",
-      "name": "PLs have their similarities, analogies, inherited"
+      "name": "Have a better understanding of the PLs you already know",
+      "needs_review": true
     },
     {
       "id": "lecture1-subtopic-4",
-      "name": "The deﬁnition of a programming language:"
+      "name": "Ability to learn a new PL fast",
+      "needs_review": true
     },
     {
       "id": "lecture1-subtopic-5",
-      "name": "Have a better understanding of the PLs you already know"
+      "name": "Get familiar with a framework for defining languages",
+      "needs_review": true
     },
     {
       "id": "lecture1-subtopic-6",
-      "name": "Ability to learn a new PL fast"
+      "name": "Team: Andrei Arusoaie",
+      "needs_review": true
     },
     {
       "id": "lecture1-subtopic-7",
-      "name": "Get familiar with a framework for deﬁning languages"
+      "name": "Period: 1st semester (Fall 2021), 2nd year",
+      "needs_review": true
     },
     {
       "id": "lecture1-subtopic-8",
-      "name": "Team: Andrei Arusoaie"
+      "name": "14 (full activity) weeks",
+      "needs_review": true
     },
     {
       "id": "lecture1-subtopic-9",
-      "name": "Period: 1st semester (Fall 2021), 2nd year"
+      "name": "Final grade = 20 (lab assignments) + 80 (2 exams)",
+      "needs_review": true
     },
     {
       "id": "lecture1-subtopic-10",
-      "name": "https://www.uaic.ro/studii/structura-anului-universitar/"
+      "name": "Assignments: each lab has a dedicated assignment that",
+      "needs_review": true
     },
     {
       "id": "lecture1-subtopic-11",
-      "name": "14 (full activity) weeks"
+      "name": "Exams: 80 pts = 40 pts(week #8) + 40 pts(week #14)",
+      "needs_review": true
     },
     {
       "id": "lecture1-subtopic-12",
-      "name": "Final grade = 20 (lab assignments) + 80 (2 exams)"
+      "name": "Bonuses: interesting solutions",
+      "needs_review": true
     },
     {
       "id": "lecture1-subtopic-13",
-      "name": "Assignments: each lab has a dedicated assignment that"
+      "name": "EN: https://profs.info.uaic.ro/~arusoaie.andrei/",
+      "needs_review": true
     },
     {
       "id": "lecture1-subtopic-14",
-      "name": "Exams: 80 pts = 40 pts(week #8) + 40 pts(week #14)"
+      "name": "Lab: Coq",
+      "needs_review": true
     },
     {
       "id": "lecture1-subtopic-15",
-      "name": "Bonuses: interesting solutions"
+      "name": "Web: https://coq.inria.fr/",
+      "needs_review": true
     }
   ],
-  "definitions": [],
+  "definitions": [
+    {
+      "id": "lecture1-definition-1",
+      "text": "▶ The definition of a programming language:",
+      "needs_review": true
+    }
+  ],
   "key_concepts": [
     {
       "id": "lecture1-concept-1",
-      "name": "General course information"
+      "name": "General course information",
+      "needs_review": true
     },
     {
       "id": "lecture1-concept-2",
-      "name": "Preliminary discussion"
+      "name": "Preliminary discussion",
+      "needs_review": true
     },
     {
       "id": "lecture1-concept-3",
-      "name": "History"
+      "name": "Main Paradigms",
+      "needs_review": true
     },
     {
       "id": "lecture1-concept-4",
-      "name": "Main Paradigms"
+      "name": "Learning a new PL is nowadays a requirement",
+      "needs_review": true
     },
     {
       "id": "lecture1-concept-5",
-      "name": "Learning a new PL is nowadays a requirement"
+      "name": "PLs have their similarities, analogies, inherited",
+      "needs_review": true
     },
     {
       "id": "lecture1-concept-6",
-      "name": "“Programmers need to move from one PL to another with"
+      "name": "Have a better understanding of the PLs you already know",
+      "needs_review": true
     },
     {
       "id": "lecture1-concept-7",
-      "name": "PLs have their similarities, analogies, inherited"
+      "name": "Ability to learn a new PL fast",
+      "needs_review": true
     },
     {
       "id": "lecture1-concept-8",
-      "name": "The deﬁnition of a programming language:"
+      "name": "Get familiar with a framework for defining languages",
+      "needs_review": true
     },
     {
       "id": "lecture1-concept-9",
-      "name": "Have a better understanding of the PLs you already know"
+      "name": "Team: Andrei Arusoaie",
+      "needs_review": true
     },
     {
       "id": "lecture1-concept-10",
-      "name": "Ability to learn a new PL fast"
+      "name": "Period: 1st semester (Fall 2021), 2nd year",
+      "needs_review": true
     },
     {
       "id": "lecture1-concept-11",
-      "name": "Get familiar with a framework for deﬁning languages"
+      "name": "14 (full activity) weeks",
+      "needs_review": true
     },
     {
       "id": "lecture1-concept-12",
-      "name": "Team: Andrei Arusoaie"
+      "name": "Final grade = 20 (lab assignments) + 80 (2 exams)",
+      "needs_review": true
     },
     {
       "id": "lecture1-concept-13",
-      "name": "Period: 1st semester (Fall 2021), 2nd year"
+      "name": "Assignments: each lab has a dedicated assignment that",
+      "needs_review": true
     },
     {
       "id": "lecture1-concept-14",
-      "name": "https://www.uaic.ro/studii/structura-anului-universitar/"
+      "name": "Exams: 80 pts = 40 pts(week #8) + 40 pts(week #14)",
+      "needs_review": true
     },
     {
       "id": "lecture1-concept-15",
-      "name": "14 (full activity) weeks"
+      "name": "Bonuses: interesting solutions",
+      "needs_review": true
     },
     {
       "id": "lecture1-concept-16",
-      "name": "Final grade = 20 (lab assignments) + 80 (2 exams)"
+      "name": "EN: https://profs.info.uaic.ro/~arusoaie.andrei/",
+      "needs_review": true
     },
     {
       "id": "lecture1-concept-17",
-      "name": "Assignments: each lab has a dedicated assignment that"
+      "name": "Lab: Coq",
+      "needs_review": true
     },
     {
       "id": "lecture1-concept-18",
-      "name": "Exams: 80 pts = 40 pts(week #8) + 40 pts(week #14)"
-    },
-    {
-      "id": "lecture1-concept-19",
-      "name": "Bonuses: interesting solutions"
-    },
-    {
-      "id": "lecture1-concept-20",
-      "name": "RO:"
+      "name": "Web: https://coq.inria.fr/",
+      "needs_review": true
     }
   ],
   "algorithms": [
     {
       "id": "lecture1-algorithm-1",
-      "text": "▶ well suited to express algorithms"
+      "text": "▶ well suited to express algorithms",
+      "needs_review": true
     },
     {
       "id": "lecture1-algorithm-2",
-      "text": "▶ 1950: ALGOL = ALGOrithmic Languages (family of"
+      "text": "▶ 1950: ALGOL = ALGOrithmic Languages (family of",
+      "needs_review": true
     },
     {
       "id": "lecture1-algorithm-3",
-      "text": "▶ Algorithm = Logic + Control"
+      "text": "▶ Algorithm = Logic + Control",
+      "needs_review": true
     }
   ],
   "formulas": [
     {
       "id": "lecture1-formula-1",
-      "expression": "▶ Final grade = 20 (lab assignments) + 80 (2 exams)"
+      "expression": "▶ Final grade = 20 (lab assignments) + 80 (2 exams)",
+      "needs_review": true
     },
     {
       "id": "lecture1-formula-2",
-      "expression": "▶ Exams: 80 pts = 40 pts(week #8) + 40 pts(week #14)"
+      "expression": "▶ Exams: 80 pts = 40 pts(week #8) + 40 pts(week #14)",
+      "needs_review": true
     },
     {
       "id": "lecture1-formula-3",
-      "expression": "▶ 1950: ALGOL = ALGOrithmic Languages (family of"
+      "expression": "▶ 1957: FORTRAN = FORmula TRANslation",
+      "needs_review": true
     },
     {
       "id": "lecture1-formula-4",
-      "expression": "▶ 1957: FORTRAN = FORmula TRANslation"
+      "expression": "▶ 1960: LISP = LISt Processor",
+      "needs_review": true
     },
     {
       "id": "lecture1-formula-5",
-      "expression": "▶ 1960: LISP = LISt Processor"
+      "expression": "mysum n = if (n < 0)",
+      "needs_review": true
     },
     {
       "id": "lecture1-formula-6",
-      "expression": "s = 0;"
+      "expression": "▶ Computations = evaluation of mathematical functions",
+      "needs_review": true
     },
     {
       "id": "lecture1-formula-7",
-      "expression": "s = s + n;"
+      "expression": "X = john .",
+      "needs_review": true
     },
     {
       "id": "lecture1-formula-8",
-      "expression": "n = n - 1;"
+      "expression": "▶ Algorithm = Logic + Control",
+      "needs_review": true
     },
     {
       "id": "lecture1-formula-9",
-      "expression": "this.name = name;"
+      "expression": "▶ PL = Syntax + Semantics",
+      "needs_review": true
     },
     {
       "id": "lecture1-formula-10",
-      "expression": "Driver john = new Driver(\"John\");"
-    },
-    {
-      "id": "lecture1-formula-11",
-      "expression": "boolean status = john.getStatus();"
-    },
-    {
-      "id": "lecture1-formula-12",
-      "expression": "isDriving = false;"
+      "expression": "▶ Grammars (BNF = Backus-Naur Form)",
+      "needs_review": true
     }
   ],
   "examples": [
     {
       "id": "lecture1-example-1",
-      "text": "Example program:"
+      "text": "Example program:",
+      "needs_review": true
     },
     {
       "id": "lecture1-example-2",
-      "text": "Example (Java):"
+      "text": "Example (Java):",
+      "needs_review": true
     },
     {
       "id": "lecture1-example-3",
-      "text": "Example:"
+      "text": "Example:",
+      "needs_review": true
     },
     {
       "id": "lecture1-example-4",
-      "text": "Example (Prolog):"
+      "text": "Example (Prolog):",
+      "needs_review": true
     }
   ],
   "exercises": [],
   "prerequisites": [
     {
       "id": "lecture1-prerequisite-1",
-      "text": "▶ Learning a new PL is nowadays a requirement"
+      "text": "▶ Learning a new PL is nowadays a requirement",
+      "needs_review": true
     }
   ],
   "learning_objectives": [
     {
       "id": "lecture1-objective-1",
-      "text": "understand the basic mechanisms behind the creation of a PL"
+      "text": "understand the basic mechanisms behind the creation of a PL",
+      "needs_review": true
     },
     {
       "id": "lecture1-objective-2",
-      "text": "Skills to develop"
+      "text": "Skills to develop",
+      "needs_review": true
+    },
+    {
+      "id": "lecture1-objective-3",
+      "text": "Syntax + Semantics",
+      "needs_review": true
     }
   ],
   "possible_lesson_breakdown": [
     {
       "id": "lecture1-lesson-1",
       "title": "General course information",
-      "source_topic_id": "lecture1-topic-1"
+      "source_topic_id": "lecture1-topic-1",
+      "needs_review": true
     },
     {
       "id": "lecture1-lesson-2",
       "title": "Preliminary discussion",
-      "source_topic_id": "lecture1-topic-2"
+      "source_topic_id": "lecture1-topic-2",
+      "needs_review": true
     },
     {
       "id": "lecture1-lesson-3",
-      "title": "History",
-      "source_topic_id": "lecture1-topic-3"
-    },
-    {
-      "id": "lecture1-lesson-4",
       "title": "Main Paradigms",
-      "source_topic_id": "lecture1-topic-4"
+      "source_topic_id": "lecture1-topic-3",
+      "needs_review": true
     }
   ],
   "possible_unit_grouping": [
@@ -297,9 +345,9 @@
       "lesson_ids": [
         "lecture1-lesson-1",
         "lecture1-lesson-2",
-        "lecture1-lesson-3",
-        "lecture1-lesson-4"
-      ]
+        "lecture1-lesson-3"
+      ],
+      "needs_review": true
     }
   ],
   "concept_relationships": [
@@ -314,13 +362,6 @@
       "id": "lecture1-relation-2",
       "from_concept_id": "lecture1-topic-2",
       "to_concept_id": "lecture1-topic-3",
-      "relationship_type": "precedes",
-      "needs_review": true
-    },
-    {
-      "id": "lecture1-relation-3",
-      "from_concept_id": "lecture1-topic-3",
-      "to_concept_id": "lecture1-topic-4",
       "relationship_type": "precedes",
       "needs_review": true
     }

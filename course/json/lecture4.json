@@ -3,280 +3,348 @@
   "source_file": "course/eng/lecture4.pdf",
   "source_filename": "lecture4.pdf",
   "parsing_status": "parsed",
-  "needs_review": false,
+  "needs_review": true,
+  "review_notes": [
+    "Automatically extracted from PDF; truncated or ambiguous entries may still require manual cleanup."
+  ],
   "course_title": "Principles of Programming Languages",
-  "lecture_title": "Lecture 4: Abstract syntax and semantics of",
+  "lecture_title": "Lecture 4: Abstract syntax and semantics of expressions",
   "main_topics": [
     {
       "id": "lecture4-topic-1",
-      "name": "Alphabet. Lexical analysis. Parsing."
+      "name": "Alphabet. Lexical analysis. Parsing.",
+      "needs_review": true
     },
     {
       "id": "lecture4-topic-2",
-      "name": "Parse Trees"
+      "name": "Parse Trees",
+      "needs_review": true
     },
     {
       "id": "lecture4-topic-3",
-      "name": "Abstract syntax trees"
+      "name": "Abstract syntax trees",
+      "needs_review": true
     },
     {
       "id": "lecture4-topic-4",
-      "name": "Sentences in a programming language"
+      "name": "Sentences in a programming language",
+      "needs_review": true
     },
     {
       "id": "lecture4-topic-5",
-      "name": "Which phrases are correct?"
+      "name": "Which phrases are correct?",
+      "needs_review": true
     },
     {
       "id": "lecture4-topic-6",
-      "name": "Overview: alphabet, lexical analysis, syntax."
+      "name": "Overview: alphabet, lexical analysis, syntax.",
+      "needs_review": true
     },
     {
       "id": "lecture4-topic-7",
-      "name": "constituting the words (or tokens)"
+      "name": "constituting the words (or tokens)",
+      "needs_review": true
     },
     {
       "id": "lecture4-topic-8",
-      "name": "“legal” phrases"
+      "name": "\"legal\" phrases",
+      "needs_review": true
     },
     {
       "id": "lecture4-topic-9",
-      "name": "Alphabet"
+      "name": "Lexical analysis",
+      "needs_review": true
     },
     {
       "id": "lecture4-topic-10",
-      "name": "The Alphabet of C from the Standard has 96 symbols:"
+      "name": "assigned meaning from that sequence: words or tokens",
+      "needs_review": true
     }
   ],
   "subtopics": [
     {
       "id": "lecture4-subtopic-1",
-      "name": "int x; x = x + 2"
+      "name": "Alphabet : set of (allowed) symbols",
+      "needs_review": true
     },
     {
       "id": "lecture4-subtopic-2",
-      "name": "int x; x = x + 2;"
+      "name": "Lexical analysis: identify the sequence of symbols",
+      "needs_review": true
     },
     {
       "id": "lecture4-subtopic-3",
-      "name": "if (a > 0) then x = 1; else x = -1;"
+      "name": "Lexical rules",
+      "needs_review": true
     },
     {
       "id": "lecture4-subtopic-4",
-      "name": "(a > 0) ? x = 1 : x = -1;"
+      "name": "Syntax: describes which sequences of words constitute",
+      "needs_review": true
     },
     {
       "id": "lecture4-subtopic-5",
-      "name": "Alphabet : set of (allowed) symbols"
+      "name": "Separators: space, horizontal and vertical tab, form feed,",
+      "needs_review": true
     },
     {
       "id": "lecture4-subtopic-6",
-      "name": "Lexical analysis: identify the sequence of symbols"
+      "name": "Tokens= pieces with assigned/identified meaning",
+      "needs_review": true
     },
     {
       "id": "lecture4-subtopic-7",
-      "name": "Lexical rules"
+      "name": "Integers: 6, 0,−2, +3",
+      "needs_review": true
     },
     {
       "id": "lecture4-subtopic-8",
-      "name": "Syntax: describes which sequences of words constitute"
+      "name": "Lexical rules: used to describe atomic language",
+      "needs_review": true
     },
     {
       "id": "lecture4-subtopic-9",
-      "name": "Grammars"
+      "name": "Regular expressions, a.k.a regex",
+      "needs_review": true
     },
     {
       "id": "lecture4-subtopic-10",
-      "name": "a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,"
+      "name": "Regex for integers:[\\+-]?\\d+",
+      "needs_review": true
     },
     {
       "id": "lecture4-subtopic-11",
-      "name": "0,1,2,3,4,5,6,7,8,9"
+      "name": "Answer: we define the grammar of the language",
+      "needs_review": true
     },
     {
       "id": "lecture4-subtopic-12",
-      "name": "! \" # % & ’ ( ) * + , - . /"
+      "name": "Noam Chomsky: generative grammar",
+      "needs_review": true
     },
     {
       "id": "lecture4-subtopic-13",
-      "name": ": ; < = > ? [ \\ ] ^ _ { | } ~"
+      "name": "Parser = program which attempts to do this transformation",
+      "needs_review": true
     },
     {
       "id": "lecture4-subtopic-14",
-      "name": "Separators: space, horizontal and vertical tab, form feed,"
+      "name": "Only valid programs can be parsed!",
+      "needs_review": true
     },
     {
       "id": "lecture4-subtopic-15",
-      "name": "Input: if (a > 0) then x = 1; else x = -1;"
+      "name": "Language of palindromic strings using symbols a and b",
+      "needs_review": true
     }
   ],
   "definitions": [],
   "key_concepts": [
     {
       "id": "lecture4-concept-1",
-      "name": "Alphabet. Lexical analysis. Parsing."
+      "name": "Alphabet. Lexical analysis. Parsing.",
+      "needs_review": true
     },
     {
       "id": "lecture4-concept-2",
-      "name": "Parse Trees"
+      "name": "Parse Trees",
+      "needs_review": true
     },
     {
       "id": "lecture4-concept-3",
-      "name": "Abstract syntax trees"
+      "name": "Abstract syntax trees",
+      "needs_review": true
     },
     {
       "id": "lecture4-concept-4",
-      "name": "Sentences in a programming language"
+      "name": "Sentences in a programming language",
+      "needs_review": true
     },
     {
       "id": "lecture4-concept-5",
-      "name": "Which phrases are correct?"
+      "name": "Which phrases are correct?",
+      "needs_review": true
     },
     {
       "id": "lecture4-concept-6",
-      "name": "Overview: alphabet, lexical analysis, syntax."
+      "name": "Overview: alphabet, lexical analysis, syntax.",
+      "needs_review": true
     },
     {
       "id": "lecture4-concept-7",
-      "name": "constituting the words (or tokens)"
+      "name": "constituting the words (or tokens)",
+      "needs_review": true
     },
     {
       "id": "lecture4-concept-8",
-      "name": "“legal” phrases"
+      "name": "\"legal\" phrases",
+      "needs_review": true
     },
     {
       "id": "lecture4-concept-9",
-      "name": "Alphabet"
+      "name": "Lexical analysis",
+      "needs_review": true
     },
     {
       "id": "lecture4-concept-10",
-      "name": "The Alphabet of C from the Standard has 96 symbols:"
+      "name": "assigned meaning from that sequence: words or tokens",
+      "needs_review": true
     },
     {
       "id": "lecture4-concept-11",
-      "name": "int x; x = x + 2"
+      "name": "Alphabet : set of (allowed) symbols",
+      "needs_review": true
     },
     {
       "id": "lecture4-concept-12",
-      "name": "int x; x = x + 2;"
+      "name": "Lexical analysis: identify the sequence of symbols",
+      "needs_review": true
     },
     {
       "id": "lecture4-concept-13",
-      "name": "if (a > 0) then x = 1; else x = -1;"
+      "name": "Lexical rules",
+      "needs_review": true
     },
     {
       "id": "lecture4-concept-14",
-      "name": "(a > 0) ? x = 1 : x = -1;"
+      "name": "Syntax: describes which sequences of words constitute",
+      "needs_review": true
     },
     {
       "id": "lecture4-concept-15",
-      "name": "Alphabet : set of (allowed) symbols"
+      "name": "Separators: space, horizontal and vertical tab, form feed,",
+      "needs_review": true
     },
     {
       "id": "lecture4-concept-16",
-      "name": "Lexical analysis: identify the sequence of symbols"
+      "name": "Tokens= pieces with assigned/identified meaning",
+      "needs_review": true
     },
     {
       "id": "lecture4-concept-17",
-      "name": "Lexical rules"
+      "name": "Integers: 6, 0,−2, +3",
+      "needs_review": true
     },
     {
       "id": "lecture4-concept-18",
-      "name": "Syntax: describes which sequences of words constitute"
+      "name": "Lexical rules: used to describe atomic language",
+      "needs_review": true
     },
     {
       "id": "lecture4-concept-19",
-      "name": "Grammars"
+      "name": "Regular expressions, a.k.a regex",
+      "needs_review": true
     },
     {
       "id": "lecture4-concept-20",
-      "name": "a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,"
+      "name": "Regex for integers:[\\+-]?\\d+",
+      "needs_review": true
     }
   ],
   "algorithms": [
     {
       "id": "lecture4-algorithm-1",
-      "text": "algorithm that solves the problem above"
+      "text": "algorithm that solves the problem above",
+      "needs_review": true
     }
   ],
   "formulas": [
     {
       "id": "lecture4-formula-1",
-      "expression": "▶ int x; x = x + 2"
+      "expression": "▶ Tokens= pieces with assigned/identified meaning",
+      "needs_review": true
     },
     {
       "id": "lecture4-formula-2",
-      "expression": "▶ int x; x = x + 2;"
+      "expression": "▶ Parser = program which attempts to do this transformation",
+      "needs_review": true
     },
     {
       "id": "lecture4-formula-3",
-      "expression": "▶ if (a > 0) then x = 1; else x = -1;"
+      "expression": "▶ P→ϵ",
+      "needs_review": true
     },
     {
       "id": "lecture4-formula-4",
-      "expression": "▶ (a > 0) ? x = 1 : x = -1;"
+      "expression": "▶ P→ b",
+      "needs_review": true
     },
     {
       "id": "lecture4-formula-5",
-      "expression": "▶ : ; < = > ? [ \\ ] ^ _ { | } ~"
+      "expression": "▶ P→ aPa",
+      "needs_review": true
     },
     {
       "id": "lecture4-formula-6",
-      "expression": "▶ Input: if (a > 0) then x = 1; else x = -1;"
+      "expression": "▶ P→ bPb",
+      "needs_review": true
     },
     {
       "id": "lecture4-formula-7",
-      "expression": "▶ Output: if,(,a,>,0,),then,x,=,1,;,else,x,=,-1,;"
+      "expression": "P ::= ϵ (1)",
+      "needs_review": true
     },
     {
       "id": "lecture4-formula-8",
-      "expression": "▶ Tokens= pieces with assigned/identiﬁed meaning"
+      "expression": "P→4 aPa→5 abPba→1 abba",
+      "needs_review": true
     },
     {
       "id": "lecture4-formula-9",
-      "expression": "Lexical analyzer (lexer) = a program that implements an"
+      "expression": "▶ Derivation: P→4 aPa→5 abPba→1 abba",
+      "needs_review": true
     },
     {
       "id": "lecture4-formula-10",
-      "expression": "▶ The alphabet A ={+,−}∪ N"
+      "expression": "Int ::= [\\+-]?[0-9]+",
+      "needs_review": true
     },
     {
       "id": "lecture4-formula-11",
-      "expression": "▶ Parser = program which attempts to do this transformation"
+      "expression": "Exp ::= Int",
+      "needs_review": true
     },
     {
       "id": "lecture4-formula-12",
-      "expression": "▶ The alphabet A ={a, b}"
+      "expression": "▶ E→ E + E // infix",
+      "needs_review": true
     }
   ],
   "examples": [
     {
       "id": "lecture4-example-1",
-      "text": "Example:"
+      "text": "Example:",
+      "needs_review": true
     },
     {
       "id": "lecture4-example-2",
-      "text": "Example I - Lexical rules"
+      "text": "Example I - Lexical rules",
+      "needs_review": true
     },
     {
       "id": "lecture4-example-3",
-      "text": "Example II - Grammar"
+      "text": "Example II - Grammar",
+      "needs_review": true
     },
     {
       "id": "lecture4-example-4",
-      "text": "BNF - example I"
+      "text": "BNF - example I",
+      "needs_review": true
     },
     {
       "id": "lecture4-example-5",
-      "text": "▶ Example: derivation for abba"
+      "text": "▶ Example: derivation for abba",
+      "needs_review": true
     },
     {
       "id": "lecture4-example-6",
-      "text": "BNF - example II"
+      "text": "BNF - example II",
+      "needs_review": true
     },
     {
       "id": "lecture4-example-7",
-      "text": "Example: arithmetic expressions"
+      "text": "Example: arithmetic expressions",
+      "needs_review": true
     }
   ],
   "exercises": [],
@@ -286,58 +354,68 @@
     {
       "id": "lecture4-lesson-1",
       "title": "Alphabet. Lexical analysis. Parsing.",
-      "source_topic_id": "lecture4-topic-1"
+      "source_topic_id": "lecture4-topic-1",
+      "needs_review": true
     },
     {
       "id": "lecture4-lesson-2",
       "title": "Parse Trees",
-      "source_topic_id": "lecture4-topic-2"
+      "source_topic_id": "lecture4-topic-2",
+      "needs_review": true
     },
     {
       "id": "lecture4-lesson-3",
       "title": "Abstract syntax trees",
-      "source_topic_id": "lecture4-topic-3"
+      "source_topic_id": "lecture4-topic-3",
+      "needs_review": true
     },
     {
       "id": "lecture4-lesson-4",
       "title": "Sentences in a programming language",
-      "source_topic_id": "lecture4-topic-4"
+      "source_topic_id": "lecture4-topic-4",
+      "needs_review": true
     },
     {
       "id": "lecture4-lesson-5",
       "title": "Which phrases are correct?",
-      "source_topic_id": "lecture4-topic-5"
+      "source_topic_id": "lecture4-topic-5",
+      "needs_review": true
     },
     {
       "id": "lecture4-lesson-6",
       "title": "Overview: alphabet, lexical analysis, syntax.",
-      "source_topic_id": "lecture4-topic-6"
+      "source_topic_id": "lecture4-topic-6",
+      "needs_review": true
     },
     {
       "id": "lecture4-lesson-7",
       "title": "constituting the words (or tokens)",
-      "source_topic_id": "lecture4-topic-7"
+      "source_topic_id": "lecture4-topic-7",
+      "needs_review": true
     },
     {
       "id": "lecture4-lesson-8",
-      "title": "“legal” phrases",
-      "source_topic_id": "lecture4-topic-8"
+      "title": "\"legal\" phrases",
+      "source_topic_id": "lecture4-topic-8",
+      "needs_review": true
     },
     {
       "id": "lecture4-lesson-9",
-      "title": "Alphabet",
-      "source_topic_id": "lecture4-topic-9"
+      "title": "Lexical analysis",
+      "source_topic_id": "lecture4-topic-9",
+      "needs_review": true
     },
     {
       "id": "lecture4-lesson-10",
-      "title": "The Alphabet of C from the Standard has 96 symbols:",
-      "source_topic_id": "lecture4-topic-10"
+      "title": "assigned meaning from that sequence: words or tokens",
+      "source_topic_id": "lecture4-topic-10",
+      "needs_review": true
     }
   ],
   "possible_unit_grouping": [
     {
       "id": "lecture4-unit-1",
-      "title": "Lecture 4: Abstract syntax and semantics of",
+      "title": "Lecture 4: Abstract syntax and semantics of expressions",
       "lesson_ids": [
         "lecture4-lesson-1",
         "lecture4-lesson-2",
@@ -349,7 +427,8 @@
         "lecture4-lesson-8",
         "lecture4-lesson-9",
         "lecture4-lesson-10"
-      ]
+      ],
+      "needs_review": true
     }
   ],
   "concept_relationships": [
